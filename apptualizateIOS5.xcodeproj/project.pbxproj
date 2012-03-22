@@ -29,6 +29,10 @@
 		4A6BD0C5151AB447009D801B /* ProductsViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C3151AB447009D801B /* ProductsViewControlleriPad.xib */; };
 		4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */; };
 		4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */; };
+		4AF6A718151AE1790026DB46 /* ProductsParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */; };
+		4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */; };
+		4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */; };
+		4AF6A71E151AE2C00026DB46 /* StoresParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A71C151AE2C00026DB46 /* StoresParentViewController.xib */; };
 		C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */; };
 		C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */; };
 		C06095A6151AA473001517EB /* LoginViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095A4151AA473001517EB /* LoginViewControlleriPad.m */; };
@@ -96,6 +100,12 @@
 		4A6BD0C6151AB45C009D801B /* FeaturedViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedViewControlleriPad.h; sourceTree = "<group>"; };
 		4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewControlleriPad.m; sourceTree = "<group>"; };
 		4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewControlleriPad.xib; sourceTree = "<group>"; };
+		4AF6A715151AE1790026DB46 /* ProductsParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParentViewController.h; sourceTree = "<group>"; };
+		4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParentViewController.m; sourceTree = "<group>"; };
+		4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsParentViewController.xib; sourceTree = "<group>"; };
+		4AF6A71A151AE2BF0026DB46 /* StoresParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoresParentViewController.h; sourceTree = "<group>"; };
+		4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoresParentViewController.m; sourceTree = "<group>"; };
+		4AF6A71C151AE2C00026DB46 /* StoresParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoresParentViewController.xib; sourceTree = "<group>"; };
 		C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlleriPhone.h; sourceTree = "<group>"; };
 		C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlleriPhone.m; sourceTree = "<group>"; };
 		C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewControlleriPhone.xib; sourceTree = "<group>"; };
@@ -284,6 +294,7 @@
 		4A6BD0CB151AB8FB009D801B /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */,
 				C06095C6151AADB1001517EB /* ProductsViewController.xib */,
 			);
 			name = Products;
@@ -292,6 +303,7 @@
 		4A6BD0CC151AB8FE009D801B /* Featured */ = {
 			isa = PBXGroup;
 			children = (
+				C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */,
 				C06095C1151AAD1D001517EB /* FeaturedViewController.xib */,
 			);
 			name = Featured;
@@ -300,6 +312,7 @@
 		4A6BD0CD151AB8FF009D801B /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				4AF6A71C151AE2C00026DB46 /* StoresParentViewController.xib */,
 				C06095CB151AADF2001517EB /* StoresViewController.xib */,
 			);
 			name = Stores;
@@ -431,7 +444,6 @@
 				C06095C0151AAD1D001517EB /* FeaturedViewController.m */,
 				C06467AF151ADE490092BF31 /* FeaturedParentViewController.h */,
 				C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */,
-				C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */,
 			);
 			name = Featured;
 			sourceTree = "<group>";
@@ -441,6 +453,8 @@
 			children = (
 				C06095C4151AADB1001517EB /* ProductsViewController.h */,
 				C06095C5151AADB1001517EB /* ProductsViewController.m */,
+				4AF6A715151AE1790026DB46 /* ProductsParentViewController.h */,
+				4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -450,6 +464,8 @@
 			children = (
 				C06095C9151AADF2001517EB /* StoresViewController.h */,
 				C06095CA151AADF2001517EB /* StoresViewController.m */,
+				4AF6A71A151AE2BF0026DB46 /* StoresParentViewController.h */,
+				4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -583,6 +599,8 @@
 				D396D503151ADCDD0090F2A7 /* registro-on.png in Resources */,
 				D396D504151ADCDD0090F2A7 /* registro.png in Resources */,
 				C06467B3151ADE490092BF31 /* FeaturedParentViewController.xib in Resources */,
+				4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */,
+				4AF6A71E151AE2C00026DB46 /* StoresParentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +649,8 @@
 				4A6BD0C4151AB447009D801B /* ProductsViewControlleriPad.m in Sources */,
 				4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */,
 				C06467B2151ADE490092BF31 /* FeaturedParentViewController.m in Sources */,
+				4AF6A718151AE1790026DB46 /* ProductsParentViewController.m in Sources */,
+				4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

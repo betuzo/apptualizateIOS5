@@ -1,19 +1,16 @@
 //
-//  HomeViewController.m
+//  ProductsParentViewController.m
 //  apptualizateIOS5
 //
-//  Created by Misael Pérez Chamorro on 3/21/12.
+//  Created by Roberto Salvador Olguín Lozano on 21/03/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "FeaturedParentViewController.h"
 #import "ProductsParentViewController.h"
-#import "StoresParentViewController.h"
 
-@implementation HomeViewController
-
-@synthesize homeTabBarController = _homeTabBarController;
+@implementation ProductsParentViewController
+@synthesize productsViewController = _productsViewController;
+@synthesize productsNavigationController = _productsNavigationController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,19 +34,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	
-	UIViewController *viewController1 = [[FeaturedParentViewController alloc] initWithNibName:@"FeaturedParentViewController" bundle:nil];
-	UIViewController *viewController2 = [[ProductsParentViewController alloc] initWithNibName:@"ProductsParentViewController" bundle:nil];
-	UIViewController *viewController3 = [[StoresParentViewController alloc] initWithNibName:@"StoresParentViewController" bundle:nil];
-	
-	_homeTabBarController = [[UITabBarController alloc] init];
-	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
- 	[_homeTabBarController.view setFrame:self.view.bounds];
-	
-	[self.view addSubview:_homeTabBarController.view];
-
     // Do any additional setup after loading the view from its nib.
+    
+    _productsViewController = [[ProductsViewController alloc]initWithNibName:@"ProductsViewController" bundle:nil];
+	_productsNavigationController = [[UINavigationController alloc] initWithRootViewController:productsViewController];
+	
+	[_productsNavigationController.view setFrame:self.view.bounds];
+	[self.view addSubview:_productsNavigationController.view];
 }
 
 - (void)viewDidUnload
