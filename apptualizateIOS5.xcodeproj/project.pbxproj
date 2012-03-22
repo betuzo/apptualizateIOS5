@@ -21,6 +21,8 @@
 		4A6BD07F151A54AE009D801B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6BD05D151A54AE009D801B /* Foundation.framework */; };
 		4A6BD087151A54AE009D801B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD085151A54AE009D801B /* InfoPlist.strings */; };
 		4A6BD08A151A54AE009D801B /* apptualizateIOS5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD089151A54AE009D801B /* apptualizateIOS5Tests.m */; };
+		C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */; };
+		C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		4A6BD086151A54AE009D801B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A6BD088151A54AE009D801B /* apptualizateIOS5Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apptualizateIOS5Tests.h; sourceTree = "<group>"; };
 		4A6BD089151A54AE009D801B /* apptualizateIOS5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = apptualizateIOS5Tests.m; sourceTree = "<group>"; };
+		C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlleriPhone.h; sourceTree = "<group>"; };
+		C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlleriPhone.m; sourceTree = "<group>"; };
+		C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewControlleriPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,8 @@
 		4A6BD061151A54AE009D801B /* apptualizateIOS5 */ = {
 			isa = PBXGroup;
 			children = (
+				C0609598151AA0B8001517EB /* iPad */,
+				C0609595151AA0A4001517EB /* iPhone */,
 				4A6BD06A151A54AE009D801B /* AppDelegate.h */,
 				4A6BD06B151A54AE009D801B /* AppDelegate.m */,
 				4A6BD06D151A54AE009D801B /* ViewController.h */,
@@ -152,6 +159,23 @@
 				4A6BD085151A54AE009D801B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0609595151AA0A4001517EB /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */,
+				C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */,
+				C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		C0609598151AA0B8001517EB /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +252,7 @@
 				4A6BD066151A54AE009D801B /* InfoPlist.strings in Resources */,
 				4A6BD072151A54AE009D801B /* ViewController_iPhone.xib in Resources */,
 				4A6BD075151A54AE009D801B /* ViewController_iPad.xib in Resources */,
+				C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +290,7 @@
 				4A6BD068151A54AE009D801B /* main.m in Sources */,
 				4A6BD06C151A54AE009D801B /* AppDelegate.m in Sources */,
 				4A6BD06F151A54AE009D801B /* ViewController.m in Sources */,
+				C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +470,7 @@
 				4A6BD08F151A54AE009D801B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A6BD090151A54AE009D801B /* Build configuration list for PBXNativeTarget "apptualizateIOS5Tests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +479,7 @@
 				4A6BD092151A54AE009D801B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

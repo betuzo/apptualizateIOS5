@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginViewControlleriPhone.h"
 
 @implementation ViewController
 
@@ -21,12 +22,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        
+		LoginViewControlleriPhone *loginView = [[LoginViewControlleriPhone alloc]initWithNibName:@"LoginViewControlleriPhone" bundle:nil];
+		
+		[loginView.view setFrame:self.view.bounds];
+		[self.view addSubview:loginView.view];
+		
+    } else {
+        
+    }
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+	
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
