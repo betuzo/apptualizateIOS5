@@ -12,6 +12,9 @@
 
 @implementation FeaturedViewControlleriPad
 @synthesize featuredTableViewController = _featuredTableViewController;
+@synthesize featuredProducts = _featuredProducts;
+@synthesize productView = _productView;
+@synthesize imagesArray = _imagesArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +40,15 @@
     [super viewDidLoad];
 	[_featuredTableViewController setDelegate:self];
 	[_featuredTableViewController setDataSource:self];
+	_featuredProducts = [[NSArray alloc] initWithObjects:
+						 [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", @"mini-iphone", nil],
+						 [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", @"mini-iphone-blanco", nil],
+						 [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
+						 [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", @"mini-iphone", nil], 
+						 [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
+						 nil];
+	
+	_imagesArray = [[NSArray alloc]initWithObjects:@"newIpad.png",@"iPhone4s.png",@"macBig.png",@"iPodnanoBig.png",nil];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -80,11 +92,20 @@
         cell = (ProductsCellViewController *)[nib objectAtIndex:0];
     }
 	
-	cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //cell.textLabel.text = @"Producto";
+	cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    
+    
+    [[cell nameProduct] setText:[[[_featuredProducts objectAtIndex:indexPath.row] allObjects] objectAtIndex:0]];
+    [[cell descProduct] setText:[[[_featuredProducts objectAtIndex:indexPath.row] allObjects] objectAtIndex:1]];
+    [[cell imageProduct] setImage:[UIImage imageNamed:[[[_featuredProducts objectAtIndex:indexPath.row] allObjects] objectAtIndex:2]]];
 	
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[_productView setImage:[UIImage imageNamed:[_imagesArray objectAtIndex:indexPath.row]]];
+
+}
 
 @end

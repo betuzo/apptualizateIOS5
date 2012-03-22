@@ -11,8 +11,14 @@
 @interface FeaturedViewControlleriPad : UIViewController <UITableViewDelegate , UITableViewDataSource>
 {
 	IBOutlet UITableView *featuredTableViewController;
+	IBOutlet UIImageView *productView;
 }
 
 @property (nonatomic,strong) IBOutlet UITableView *featuredTableViewController;  
+@property (nonatomic, strong) NSArray *featuredProducts;
+@property (nonatomic, strong) NSArray *imagesArray;
+@property (nonatomic, strong) IBOutlet UIImageView *productView;
+
+
 
 @end
