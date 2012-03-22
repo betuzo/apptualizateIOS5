@@ -40,6 +40,7 @@
 		4AF6A729151AFC0A0026DB46 /* mini-iphone-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A726151AFC090026DB46 /* mini-iphone-negro.png */; };
 		4AF6A72A151AFC0A0026DB46 /* mini-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A727151AFC0A0026DB46 /* mini-iphone.png */; };
 		4AF6A72E151AFEB10026DB46 /* principal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A72D151AFEB10026DB46 /* principal.png */; };
+		4AFC5D8E151B162A00A83EEF /* header-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5D8D151B162A00A83EEF /* header-iphone.png */; };
 		C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */; };
 		C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */; };
 		C06095A6151AA473001517EB /* LoginViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095A4151AA473001517EB /* LoginViewControlleriPad.m */; };
@@ -124,6 +125,7 @@
 		4AF6A726151AFC090026DB46 /* mini-iphone-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-iphone-negro.png"; sourceTree = "<group>"; };
 		4AF6A727151AFC0A0026DB46 /* mini-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-iphone.png"; sourceTree = "<group>"; };
 		4AF6A72D151AFEB10026DB46 /* principal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = principal.png; sourceTree = "<group>"; };
+		4AFC5D8D151B162A00A83EEF /* header-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-iphone.png"; path = "../../../../../../Volumes/UNTITLED/header-iphone.png"; sourceTree = "<group>"; };
 		C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlleriPhone.h; sourceTree = "<group>"; };
 		C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlleriPhone.m; sourceTree = "<group>"; };
 		C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewControlleriPhone.xib; sourceTree = "<group>"; };
@@ -506,6 +508,7 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AFC5D8D151B162A00A83EEF /* header-iphone.png */,
 				4AF6A72D151AFEB10026DB46 /* principal.png */,
 				4AF6A725151AFC090026DB46 /* mini-iphone-blanco.png */,
 				4AF6A726151AFC090026DB46 /* mini-iphone-negro.png */,
@@ -650,6 +653,7 @@
 				C06467D2151B06830092BF31 /* iPhone4S.png in Resources */,
 				C06467D5151B068B0092BF31 /* newIpad.png in Resources */,
 				C06467D7151B06A10092BF31 /* header.png in Resources */,
+				4AFC5D8E151B162A00A83EEF /* header-iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -67,7 +67,7 @@
         cell = (ProductsCellViewController *)[nib objectAtIndex:0];
     }
 	
-	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	cell.selectionStyle = UITableViewCellSelectionStyleGray;
     //cell.textLabel.text = @"Producto";
 	
     return cell;

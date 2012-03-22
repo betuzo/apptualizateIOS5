@@ -37,6 +37,8 @@
 	
 	FeaturedViewController *controller = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
 	_featuredProdcutsNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    [_featuredProdcutsNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header-iphone"] forBarMetrics:UIBarMetricsDefault];
 	
 	[_featuredProdcutsNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_featuredProdcutsNavigationController.view];
