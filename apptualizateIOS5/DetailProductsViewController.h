@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailProductsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface DetailProductsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) NSArray *detailsProducts;
 

@@ -42,23 +42,25 @@
     
     rectButton.origin.x = 0;
     rectButton.origin.y = 0;
-    
-    //UIButton * leftButtonItem = [[UIButton alloc] initWithFrame:rectButton];
-    
+        
     UIButton *leftButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIColor *buttonColorDefault = [UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0];
-    UIColor *buttonColorHighlight = [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0];
 
+    UIButton *rightButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+
+    [rightButtonItem addTarget:self action:@selector(goShopView:) forControlEvents:UIControlEventTouchUpInside];
+    [rightButtonItem setFrame:rectButton];
+    [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-verde"] forState:UIControlStateNormal];
     
     [leftButtonItem addTarget:self action:@selector(goBackView:) forControlEvents:UIControlEventTouchUpInside];
     [leftButtonItem setFrame:rectButton];
     [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-verde"] forState:UIControlStateNormal];
     
-    [leftButtonItem setTitleColor:buttonColorDefault forState:UIControlStateNormal];
-    [leftButtonItem setTitleColor:buttonColorHighlight forState:UIControlStateHighlighted];
-
     UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
     
+    UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButtonItem];
+    
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
     
     UISegmentedControl* switchView=[[UISegmentedControl alloc] initWithItems:[[NSMutableArray alloc] initWithObjects:@"Blanco",@"Negro",nil]];
     int w = 120;
@@ -73,14 +75,11 @@
         
     [[self view ] addSubview:switchView];
     
-    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
-    
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void) changeColor:(id) sender
 {
-    NSLog(@"changeColor");
     if ([sender selectedSegmentIndex]==1) {
         [sender setImage:[UIImage imageNamed:@"blanco"] forSegmentAtIndex:0];
         [sender setImage:[UIImage imageNamed:@"negro-on"] forSegmentAtIndex:1];
@@ -90,11 +89,24 @@
     }
 }
 
+- (void) goShopView:(id) sender
+{
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Grabamos su producto"
+                                        delegate:self
+                               cancelButtonTitle:nil
+                          destructiveButtonTitle:nil
+                               otherButtonTitles:@"Grabar mi producto", @"Agregar sin grabado", nil];
+    [sheet showInView:self.view];
+}
+
+- (void)actionSheetCancel:(UIActionSheet *)actionSheet
+{
+    [actionSheet removeFromSuperview];
+}
+
 - (void) goBackView:(id) sender
 {
-    NSLog(@"goBackView");
     [self.navigationController popViewControllerAnimated:YES];
-
 }
 
 - (void)viewDidUnload
@@ -120,10 +132,11 @@
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleGray;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     cell.textLabel.text = [[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:0];
     cell.detailTextLabel.text = [[[_detailsProducts objectAtIndex:indexPath.row]allObjects] objectAtIndex:1];
+    
     return cell;
 }
 
