@@ -13,7 +13,9 @@
 @implementation FeaturedViewController
 
 @synthesize featuredProducts = _featuredProducts;
-@synthesize myFeaturedImage;
+@synthesize myFeaturedImage = _myFeaturedImage;
+@synthesize descProduct = _descProduct;
+@synthesize nameProduct = _nameProduct;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,7 +39,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
+    if ([_featuredProducts count] > 1) {
+        [[self nameProduct] setText:[[[_featuredProducts objectAtIndex:1] allObjects] objectAtIndex:0]];
+        [[self descProduct] setText:[[[_featuredProducts objectAtIndex:1] allObjects] objectAtIndex:1]];   
+        [[self myFeaturedImage] setImage:[UIImage imageNamed:[[[_featuredProducts objectAtIndex:1] allObjects] objectAtIndex:2]]];
+    }
   
     // Do any additional setup after loading the view from its nib.
 }

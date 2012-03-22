@@ -67,8 +67,8 @@
                                     self.view.frame.size.height/3,w,h)];
     switchView.selectedSegmentIndex=0;
     switchView.segmentedControlStyle=UISegmentedControlStyleBar;
-    //[switchView setImage:[UIImage imageNamed:@"blanco-on"] forSegmentAtIndex:0];
-    //[switchView setImage:[UIImage imageNamed:@"negro"] forSegmentAtIndex:1];
+    [switchView setImage:[UIImage imageNamed:@"negro"] forSegmentAtIndex:0];
+    [switchView setImage:[UIImage imageNamed:@"blanco-on"] forSegmentAtIndex:1];
     [switchView addTarget:self action:@selector(changeColor:) forControlEvents:UIControlEventValueChanged];
         
     [[self view ] addSubview:switchView];
