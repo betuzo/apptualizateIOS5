@@ -101,7 +101,7 @@
 						<string key="NSFrame">{{40, 320}, {85, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="394551231"/>
 						<string key="NSReuseIdentifierKey">_NS:225</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -184,12 +184,13 @@
 						<reference key="IBUIFontDescription" ref="98935166"/>
 						<reference key="IBUIFont" ref="645921732"/>
 					</object>
-					<object class="IBUIButton" id="679104380">
+					<object class="IBUIButton" id="394551231">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{209, 320}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="1033713866"/>
 						<string key="NSReuseIdentifierKey">_NS:225</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -231,12 +232,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">showHome:</string>
-						<reference key="source" ref="679104380"/>
+						<string key="label">presentHomeView:</string>
+						<reference key="source" ref="394551231"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">16</int>
+					<int key="connectionID">17</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -257,7 +258,7 @@
 							<reference ref="717305399"/>
 							<reference ref="56350224"/>
 							<reference ref="574707574"/>
-							<reference ref="679104380"/>
+							<reference ref="394551231"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -304,7 +305,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="679104380"/>
+						<reference key="object" ref="394551231"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -327,7 +328,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">16</int>
+			<int key="maxID">17</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -335,13 +336,13 @@
 					<string key="className">LoginViewControlleriPhone</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showHome:</string>
+						<string key="NS.key.0">presentHomeView:</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">showHome:</string>
+						<string key="NS.key.0">presentHomeView:</string>
 						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">showHome:</string>
+							<string key="name">presentHomeView:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</object>

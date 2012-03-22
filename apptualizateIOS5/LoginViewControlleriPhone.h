@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginViewControlleriPhone : UIViewController
+{
+	
+}
 
-- (IBAction)showHome:(id)sender;
-
+-(IBAction)presentHomeView:(id)sender;
 @end

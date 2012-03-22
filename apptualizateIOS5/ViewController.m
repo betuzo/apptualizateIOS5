@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "LoginViewControlleriPhone.h"
-#import "LoginViewControlleriPad.h"
+
 
 @implementation ViewController
 
+@synthesize loginViewiPhone = _loginViewiPhone;
+@synthesize loginViewiPad = _loginViewiPad;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -26,17 +27,17 @@
 	
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         
-		LoginViewControlleriPhone *loginView = [[LoginViewControlleriPhone alloc]initWithNibName:@"LoginViewControlleriPhone" bundle:nil];
+		_loginViewiPhone = [[LoginViewControlleriPhone alloc]initWithNibName:@"LoginViewControlleriPhone" bundle:nil];
 		
-		[loginView.view setFrame:self.view.bounds];
-		[self.view addSubview:loginView.view];
+		[_loginViewiPhone.view setFrame:self.view.bounds];
+		[self.view addSubview:_loginViewiPhone.view];
 		
     } else {
        
-		LoginViewControlleriPad *loginView = [[LoginViewControlleriPad alloc]initWithNibName:@"LoginViewControlleriPad" bundle:nil];
+		_loginViewiPad = [[LoginViewControlleriPad alloc]initWithNibName:@"LoginViewControlleriPad" bundle:nil];
 		
-		[loginView.view setFrame:self.view.bounds];
-		[self.view addSubview:loginView.view];
+		[_loginViewiPad.view setFrame:self.view.bounds];
+		[self.view addSubview:_loginViewiPad.view];
 		
 		
     }
