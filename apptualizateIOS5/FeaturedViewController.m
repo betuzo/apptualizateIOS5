@@ -13,7 +13,7 @@
 @implementation FeaturedViewController
 
 @synthesize featuredProducts = _featuredProducts;
-@synthesize myFeaturedImage;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

@@ -13,6 +13,4 @@
 }
 
 @property (nonatomic, strong) NSArray *featuredProducts;
-@property (nonatomic,retain) IBOutlet UIImageView *myFeaturedImage;
-
 @end
