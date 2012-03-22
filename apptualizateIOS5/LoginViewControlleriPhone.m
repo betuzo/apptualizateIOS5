@@ -28,6 +28,12 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+-(IBAction)presentHomeView:(id)sender
+{
+	NSLog(@"tap");
+}
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -50,11 +56,5 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)showHome:(id)sender
-{
-	HomeViewController *homeViewController = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-	
-	[self presentModalViewController:homeViewController animated:YES];
-}
 
 @end
