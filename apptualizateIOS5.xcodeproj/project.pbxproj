@@ -324,6 +324,7 @@
 		C06095A9151AAA85001517EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D396D4F4151AC8720090F2A7 /* Loyalty */,
 				C06095BE151AACFC001517EB /* Stores */,
 				C06095BD151AACDA001517EB /* Products */,
 				C06095BC151AACCE001517EB /* Featured */,
@@ -336,6 +337,7 @@
 		C06095AA151AAAB2001517EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D396D4F3151AC8620090F2A7 /* Loyalty */,
 				4A6BD0CD151AB8FF009D801B /* Stores */,
 				4A6BD0CC151AB8FE009D801B /* Featured */,
 				4A6BD0CB151AB8FB009D801B /* Products */,
@@ -452,6 +454,20 @@
 				D396D4F1151ABB360090F2A7 /* macstore Ipad.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D396D4F3151AC8620090F2A7 /* Loyalty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Loyalty;
+			sourceTree = "<group>";
+		};
+		D396D4F4151AC8720090F2A7 /* Loyalty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Loyalty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
