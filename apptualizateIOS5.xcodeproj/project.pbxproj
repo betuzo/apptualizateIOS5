@@ -21,6 +21,14 @@
 		4A6BD07F151A54AE009D801B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6BD05D151A54AE009D801B /* Foundation.framework */; };
 		4A6BD087151A54AE009D801B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD085151A54AE009D801B /* InfoPlist.strings */; };
 		4A6BD08A151A54AE009D801B /* apptualizateIOS5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD089151A54AE009D801B /* apptualizateIOS5Tests.m */; };
+		4A6BD0B9151AB3A1009D801B /* HomeViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0B7151AB3A1009D801B /* HomeViewControlleriPad.m */; };
+		4A6BD0BA151AB3A1009D801B /* HomeViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0B8151AB3A1009D801B /* HomeViewControlleriPad.xib */; };
+		4A6BD0BE151AB3EE009D801B /* StoresViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0BC151AB3EE009D801B /* StoresViewControlleriPad.m */; };
+		4A6BD0BF151AB3EE009D801B /* StoresViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0BD151AB3EE009D801B /* StoresViewControlleriPad.xib */; };
+		4A6BD0C4151AB447009D801B /* ProductsViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C2151AB447009D801B /* ProductsViewControlleriPad.m */; };
+		4A6BD0C5151AB447009D801B /* ProductsViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C3151AB447009D801B /* ProductsViewControlleriPad.xib */; };
+		4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */; };
+		4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */; };
 		C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */; };
 		C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */; };
 		C06095A6151AA473001517EB /* LoginViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095A4151AA473001517EB /* LoginViewControlleriPad.m */; };
@@ -66,6 +74,18 @@
 		4A6BD086151A54AE009D801B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A6BD088151A54AE009D801B /* apptualizateIOS5Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apptualizateIOS5Tests.h; sourceTree = "<group>"; };
 		4A6BD089151A54AE009D801B /* apptualizateIOS5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = apptualizateIOS5Tests.m; sourceTree = "<group>"; };
+		4A6BD0B6151AB3A1009D801B /* HomeViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControlleriPad.h; sourceTree = "<group>"; };
+		4A6BD0B7151AB3A1009D801B /* HomeViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControlleriPad.m; sourceTree = "<group>"; };
+		4A6BD0B8151AB3A1009D801B /* HomeViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewControlleriPad.xib; sourceTree = "<group>"; };
+		4A6BD0BB151AB3EE009D801B /* StoresViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoresViewControlleriPad.h; sourceTree = "<group>"; };
+		4A6BD0BC151AB3EE009D801B /* StoresViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoresViewControlleriPad.m; sourceTree = "<group>"; };
+		4A6BD0BD151AB3EE009D801B /* StoresViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoresViewControlleriPad.xib; sourceTree = "<group>"; };
+		4A6BD0C1151AB447009D801B /* ProductsViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsViewControlleriPad.h; sourceTree = "<group>"; };
+		4A6BD0C2151AB447009D801B /* ProductsViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsViewControlleriPad.m; sourceTree = "<group>"; };
+		4A6BD0C3151AB447009D801B /* ProductsViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsViewControlleriPad.xib; sourceTree = "<group>"; };
+		4A6BD0C6151AB45C009D801B /* FeaturedViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedViewControlleriPad.h; sourceTree = "<group>"; };
+		4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewControlleriPad.m; sourceTree = "<group>"; };
+		4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewControlleriPad.xib; sourceTree = "<group>"; };
 		C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlleriPhone.h; sourceTree = "<group>"; };
 		C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlleriPhone.m; sourceTree = "<group>"; };
 		C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewControlleriPhone.xib; sourceTree = "<group>"; };
@@ -186,6 +206,60 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4A6BD0B0151AB30D009D801B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BD0B6151AB3A1009D801B /* HomeViewControlleriPad.h */,
+				4A6BD0B7151AB3A1009D801B /* HomeViewControlleriPad.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4A6BD0B2151AB32C009D801B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BD0B8151AB3A1009D801B /* HomeViewControlleriPad.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4A6BD0B3151AB341009D801B /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BD0C6151AB45C009D801B /* FeaturedViewControlleriPad.h */,
+				4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */,
+				4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */,
+			);
+			name = Featured;
+			sourceTree = "<group>";
+		};
+		4A6BD0B4151AB344009D801B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BD0C1151AB447009D801B /* ProductsViewControlleriPad.h */,
+				4A6BD0C2151AB447009D801B /* ProductsViewControlleriPad.m */,
+				4A6BD0C3151AB447009D801B /* ProductsViewControlleriPad.xib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A6BD0B5151AB347009D801B /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BD0BB151AB3EE009D801B /* StoresViewControlleriPad.h */,
+				4A6BD0BC151AB3EE009D801B /* StoresViewControlleriPad.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		4A6BD0C0151AB417009D801B /* Strores */ = {
+			isa = PBXGroup;
+			children = (
+				4A6BD0BD151AB3EE009D801B /* StoresViewControlleriPad.xib */,
+			);
+			name = Strores;
+			sourceTree = "<group>";
+		};
 		C0609595151AA0A4001517EB /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +319,10 @@
 		C06095AC151AAAEE001517EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A6BD0B5151AB347009D801B /* Stores */,
+				4A6BD0B4151AB344009D801B /* Products */,
+				4A6BD0B3151AB341009D801B /* Featured */,
+				4A6BD0B0151AB30D009D801B /* Home */,
 				C06095AE151AAB0B001517EB /* Login */,
 			);
 			name = Controllers;
@@ -253,6 +331,8 @@
 		C06095AD151AAAFA001517EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A6BD0C0151AB417009D801B /* Strores */,
+				4A6BD0B2151AB32C009D801B /* Home */,
 				C06095AF151AAB1E001517EB /* Login */,
 			);
 			name = Views;
@@ -402,6 +482,10 @@
 				C06095C3151AAD1D001517EB /* FeaturedViewController.xib in Resources */,
 				C06095C8151AADB1001517EB /* ProductsViewController.xib in Resources */,
 				C06095CD151AADF2001517EB /* StoresViewController.xib in Resources */,
+				4A6BD0BA151AB3A1009D801B /* HomeViewControlleriPad.xib in Resources */,
+				4A6BD0BF151AB3EE009D801B /* StoresViewControlleriPad.xib in Resources */,
+				4A6BD0C5151AB447009D801B /* ProductsViewControlleriPad.xib in Resources */,
+				4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +529,10 @@
 				C06095C2151AAD1D001517EB /* FeaturedViewController.m in Sources */,
 				C06095C7151AADB1001517EB /* ProductsViewController.m in Sources */,
 				C06095CC151AADF2001517EB /* StoresViewController.m in Sources */,
+				4A6BD0B9151AB3A1009D801B /* HomeViewControlleriPad.m in Sources */,
+				4A6BD0BE151AB3EE009D801B /* StoresViewControlleriPad.m in Sources */,
+				4A6BD0C4151AB447009D801B /* ProductsViewControlleriPad.m in Sources */,
+				4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
