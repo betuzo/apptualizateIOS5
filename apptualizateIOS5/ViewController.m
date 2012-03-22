@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LoginViewControlleriPhone.h"
+#import "LoginViewControlleriPad.h"
 
 @implementation ViewController
 
@@ -31,7 +32,13 @@
 		[self.view addSubview:loginView.view];
 		
     } else {
-        
+       
+		LoginViewControlleriPad *loginView = [[LoginViewControlleriPad alloc]initWithNibName:@"LoginViewControlleriPad" bundle:nil];
+		
+		[loginView.view setFrame:self.view.bounds];
+		[self.view addSubview:loginView.view];
+		
+		
     }
 
 	// Do any additional setup after loading the view, typically from a nib.
