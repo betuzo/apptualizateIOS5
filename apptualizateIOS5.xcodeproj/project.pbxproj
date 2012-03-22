@@ -29,10 +29,18 @@
 		4A6BD0C5151AB447009D801B /* ProductsViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C3151AB447009D801B /* ProductsViewControlleriPad.xib */; };
 		4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */; };
 		4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */; };
-		4AC5EA10151BB5E000BA9253 /* blanco-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA0C151BB5E000BA9253 /* blanco-on.png */; };
-		4AC5EA11151BB5E000BA9253 /* blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA0D151BB5E000BA9253 /* blanco.png */; };
-		4AC5EA12151BB5E000BA9253 /* negro-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA0E151BB5E000BA9253 /* negro-on.png */; };
-		4AC5EA13151BB5E000BA9253 /* negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA0F151BB5E000BA9253 /* negro.png */; };
+		4AC5EA18151BB9A700BA9253 /* blanco-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA14151BB9A600BA9253 /* blanco-on.png */; };
+		4AC5EA19151BB9A700BA9253 /* blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA15151BB9A700BA9253 /* blanco.png */; };
+		4AC5EA1A151BB9A700BA9253 /* negro-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA16151BB9A700BA9253 /* negro-on.png */; };
+		4AC5EA1B151BB9A700BA9253 /* negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA17151BB9A700BA9253 /* negro.png */; };
+		4AC5EA21151BC3B100BA9253 /* LoyaltyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA1F151BC3B100BA9253 /* LoyaltyViewController.m */; };
+		4AC5EA22151BC3B100BA9253 /* LoyaltyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA20151BC3B100BA9253 /* LoyaltyViewController.xib */; };
+		4AC5EA26151BC3D100BA9253 /* LoyaltyParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA24151BC3D100BA9253 /* LoyaltyParentViewController.m */; };
+		4AC5EA27151BC3D100BA9253 /* LoyaltyParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA25151BC3D100BA9253 /* LoyaltyParentViewController.xib */; };
+		4AC5EA2B151BC57600BA9253 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA29151BC57600BA9253 /* ShopViewController.m */; };
+		4AC5EA2C151BC57600BA9253 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2A151BC57600BA9253 /* ShopViewController.xib */; };
+		4AC5EA30151BC58500BA9253 /* ShopParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2E151BC58500BA9253 /* ShopParentViewController.m */; };
+		4AC5EA31151BC58500BA9253 /* ShopParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2F151BC58500BA9253 /* ShopParentViewController.xib */; };
 		4AF6A718151AE1790026DB46 /* ProductsParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */; };
 		4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */; };
 		4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */; };
@@ -153,10 +161,22 @@
 		4A6BD0C6151AB45C009D801B /* FeaturedViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedViewControlleriPad.h; sourceTree = "<group>"; };
 		4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewControlleriPad.m; sourceTree = "<group>"; };
 		4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewControlleriPad.xib; sourceTree = "<group>"; };
-		4AC5EA0C151BB5E000BA9253 /* blanco-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blanco-on.png"; sourceTree = "<group>"; };
-		4AC5EA0D151BB5E000BA9253 /* blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blanco.png; sourceTree = "<group>"; };
-		4AC5EA0E151BB5E000BA9253 /* negro-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "negro-on.png"; sourceTree = "<group>"; };
-		4AC5EA0F151BB5E000BA9253 /* negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negro.png; sourceTree = "<group>"; };
+		4AC5EA14151BB9A600BA9253 /* blanco-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blanco-on.png"; sourceTree = "<group>"; };
+		4AC5EA15151BB9A700BA9253 /* blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blanco.png; sourceTree = "<group>"; };
+		4AC5EA16151BB9A700BA9253 /* negro-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "negro-on.png"; sourceTree = "<group>"; };
+		4AC5EA17151BB9A700BA9253 /* negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negro.png; sourceTree = "<group>"; };
+		4AC5EA1E151BC3B100BA9253 /* LoyaltyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoyaltyViewController.h; sourceTree = "<group>"; };
+		4AC5EA1F151BC3B100BA9253 /* LoyaltyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoyaltyViewController.m; sourceTree = "<group>"; };
+		4AC5EA20151BC3B100BA9253 /* LoyaltyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoyaltyViewController.xib; sourceTree = "<group>"; };
+		4AC5EA23151BC3D100BA9253 /* LoyaltyParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoyaltyParentViewController.h; sourceTree = "<group>"; };
+		4AC5EA24151BC3D100BA9253 /* LoyaltyParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoyaltyParentViewController.m; sourceTree = "<group>"; };
+		4AC5EA25151BC3D100BA9253 /* LoyaltyParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoyaltyParentViewController.xib; sourceTree = "<group>"; };
+		4AC5EA28151BC57600BA9253 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		4AC5EA29151BC57600BA9253 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		4AC5EA2A151BC57600BA9253 /* ShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
+		4AC5EA2D151BC58400BA9253 /* ShopParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopParentViewController.h; sourceTree = "<group>"; };
+		4AC5EA2E151BC58500BA9253 /* ShopParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopParentViewController.m; sourceTree = "<group>"; };
+		4AC5EA2F151BC58500BA9253 /* ShopParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopParentViewController.xib; sourceTree = "<group>"; };
 		4AF6A715151AE1790026DB46 /* ProductsParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParentViewController.h; sourceTree = "<group>"; };
 		4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParentViewController.m; sourceTree = "<group>"; };
 		4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsParentViewController.xib; sourceTree = "<group>"; };
@@ -429,6 +449,26 @@
 			name = Stores;
 			sourceTree = "<group>";
 		};
+		4AC5EA1C151BC32900BA9253 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5EA28151BC57600BA9253 /* ShopViewController.h */,
+				4AC5EA29151BC57600BA9253 /* ShopViewController.m */,
+				4AC5EA2D151BC58400BA9253 /* ShopParentViewController.h */,
+				4AC5EA2E151BC58500BA9253 /* ShopParentViewController.m */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		4AC5EA1D151BC36900BA9253 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5EA2A151BC57600BA9253 /* ShopViewController.xib */,
+				4AC5EA2F151BC58500BA9253 /* ShopParentViewController.xib */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
 		4AF6A724151AFB8D0026DB46 /* Controlls */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +511,7 @@
 		C06095A9151AAA85001517EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA1C151BC32900BA9253 /* Shop */,
 				D396D4F4151AC8720090F2A7 /* Loyalty */,
 				C06095BE151AACFC001517EB /* Stores */,
 				C06095BD151AACDA001517EB /* Products */,
@@ -484,6 +525,7 @@
 		C06095AA151AAAB2001517EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA1D151BC36900BA9253 /* Shop */,
 				D396D4F3151AC8620090F2A7 /* Loyalty */,
 				4A6BD0CD151AB8FF009D801B /* Stores */,
 				4A6BD0CC151AB8FE009D801B /* Featured */,
@@ -596,10 +638,10 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AC5EA0C151BB5E000BA9253 /* blanco-on.png */,
-				4AC5EA0D151BB5E000BA9253 /* blanco.png */,
-				4AC5EA0E151BB5E000BA9253 /* negro-on.png */,
-				4AC5EA0F151BB5E000BA9253 /* negro.png */,
+				4AC5EA14151BB9A600BA9253 /* blanco-on.png */,
+				4AC5EA15151BB9A700BA9253 /* blanco.png */,
+				4AC5EA16151BB9A700BA9253 /* negro-on.png */,
+				4AC5EA17151BB9A700BA9253 /* negro.png */,
 				4AFC5DDE151B937400A83EEF /* boton-atras-on.png */,
 				4AFC5DDF151B937400A83EEF /* boton-atras.png */,
 				D396D57B151B94450090F2A7 /* Accesorios.png */,
@@ -667,6 +709,8 @@
 		D396D4F3151AC8620090F2A7 /* Loyalty */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA20151BC3B100BA9253 /* LoyaltyViewController.xib */,
+				4AC5EA25151BC3D100BA9253 /* LoyaltyParentViewController.xib */,
 			);
 			name = Loyalty;
 			sourceTree = "<group>";
@@ -674,6 +718,10 @@
 		D396D4F4151AC8720090F2A7 /* Loyalty */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA1E151BC3B100BA9253 /* LoyaltyViewController.h */,
+				4AC5EA1F151BC3B100BA9253 /* LoyaltyViewController.m */,
+				4AC5EA23151BC3D100BA9253 /* LoyaltyParentViewController.h */,
+				4AC5EA24151BC3D100BA9253 /* LoyaltyParentViewController.m */,
 			);
 			name = Loyalty;
 			sourceTree = "<group>";
@@ -819,10 +867,14 @@
 				D396D584151B94450090F2A7 /* iPodNano.png in Resources */,
 				D396D585151B94450090F2A7 /* iPodShuffle.png in Resources */,
 				D396D586151B94450090F2A7 /* iPodTouch.png in Resources */,
-				4AC5EA10151BB5E000BA9253 /* blanco-on.png in Resources */,
-				4AC5EA11151BB5E000BA9253 /* blanco.png in Resources */,
-				4AC5EA12151BB5E000BA9253 /* negro-on.png in Resources */,
-				4AC5EA13151BB5E000BA9253 /* negro.png in Resources */,
+				4AC5EA18151BB9A700BA9253 /* blanco-on.png in Resources */,
+				4AC5EA19151BB9A700BA9253 /* blanco.png in Resources */,
+				4AC5EA1A151BB9A700BA9253 /* negro-on.png in Resources */,
+				4AC5EA1B151BB9A700BA9253 /* negro.png in Resources */,
+				4AC5EA22151BC3B100BA9253 /* LoyaltyViewController.xib in Resources */,
+				4AC5EA27151BC3D100BA9253 /* LoyaltyParentViewController.xib in Resources */,
+				4AC5EA2C151BC57600BA9253 /* ShopViewController.xib in Resources */,
+				4AC5EA31151BC58500BA9253 /* ShopParentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +927,10 @@
 				4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */,
 				4AF6A722151AE9360026DB46 /* ProductsCellViewController.m in Sources */,
 				4AFC5D97151B28BF00A83EEF /* DetailProductsViewController.m in Sources */,
+				4AC5EA21151BC3B100BA9253 /* LoyaltyViewController.m in Sources */,
+				4AC5EA26151BC3D100BA9253 /* LoyaltyParentViewController.m in Sources */,
+				4AC5EA2B151BC57600BA9253 /* ShopViewController.m in Sources */,
+				4AC5EA30151BC58500BA9253 /* ShopParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

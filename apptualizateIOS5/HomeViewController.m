@@ -10,6 +10,8 @@
 #import "FeaturedParentViewController.h"
 #import "ProductsParentViewController.h"
 #import "StoresParentViewController.h"
+#import "LoyaltyViewController.h"
+#import "ShopViewController.h"
 
 @implementation HomeViewController
 
@@ -42,9 +44,11 @@
 	UIViewController *viewController1 = [[FeaturedParentViewController alloc] initWithNibName:@"FeaturedParentViewController" bundle:nil];
 	UIViewController *viewController2 = [[ProductsParentViewController alloc] initWithNibName:@"ProductsParentViewController" bundle:nil];
 	UIViewController *viewController3 = [[StoresParentViewController alloc] initWithNibName:@"StoresParentViewController" bundle:nil];
+    UIViewController *viewController4 = [[LoyaltyViewController alloc] initWithNibName:@"LoyaltyViewController" bundle:nil];
+    UIViewController *viewController5 = [[ShopViewController alloc] initWithNibName:@"ShopViewController" bundle:nil];
 	
 	_homeTabBarController = [[UITabBarController alloc] init];
-	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
+	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,viewController4,viewController5,nil];
  	[_homeTabBarController.view setFrame:self.view.bounds];
 	
 	[self.view addSubview:_homeTabBarController.view];

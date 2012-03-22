@@ -63,7 +63,7 @@
     UISegmentedControl* switchView=[[UISegmentedControl alloc] initWithItems:[[NSMutableArray alloc] initWithObjects:@"Blanco",@"Negro",nil]];
     int w = 120;
     int h = 28;
-    [switchView setFrame:CGRectMake(self.view.frame.size.width/2 - (w/2) ,
+    [switchView setFrame:CGRectMake(self.view.frame.size.width/2 ,
                                     self.view.frame.size.height/3,w,h)];
     switchView.selectedSegmentIndex=0;
     switchView.segmentedControlStyle=UISegmentedControlStyleBar;
@@ -81,6 +81,13 @@
 - (void) changeColor:(id) sender
 {
     NSLog(@"changeColor");
+    if ([sender selectedSegmentIndex]==1) {
+        [sender setImage:[UIImage imageNamed:@"blanco"] forSegmentAtIndex:0];
+        [sender setImage:[UIImage imageNamed:@"negro-on"] forSegmentAtIndex:1];
+    }else{
+        [sender setImage:[UIImage imageNamed:@"blanco-on"] forSegmentAtIndex:0];
+        [sender setImage:[UIImage imageNamed:@"negro"] forSegmentAtIndex:1];
+    }
 }
 
 - (void) goBackView:(id) sender
