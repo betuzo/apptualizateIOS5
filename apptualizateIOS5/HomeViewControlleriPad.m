@@ -38,6 +38,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+	
+	UIImageView *headerView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 1024, 46)];
+	[headerView setImage:[UIImage imageNamed:@"header.png"]];
     UIView *ribbonView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 1024, 46)];
 	[ribbonView setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
 	
@@ -50,7 +53,7 @@
 	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
  	[_homeTabBarController.view setFrame:self.view.bounds];
 	
-	[_homeTabBarController.view addSubview:ribbonView];
+	[_homeTabBarController.view addSubview:headerView];
 	[self.view addSubview:_homeTabBarController.view];
 	
     
