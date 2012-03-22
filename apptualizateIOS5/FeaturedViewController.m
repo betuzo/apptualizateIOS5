@@ -58,24 +58,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"ProductsCellViewController";
-    
-    ProductsCellViewController * cell = (ProductsCellViewController *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    NSArray * nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProductsCellViewController" owner:self options:nil];
-    
+    static NSString *CellIdentifier = @"Cell";
+	
+    ProductsCellViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
     if (cell == nil) {
-        for (id objetoActual in nibObjects) {
-            if ([objetoActual isKindOfClass:[UITableViewCell class]] && 
-                [[objetoActual reuseIdentifier] isEqualToString:CellIdentifier]) {
-                cell = objetoActual;
-            }
-        }
+		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ProductsCellViewController" owner:self options:nil];
+        cell = (ProductsCellViewController *)[nib objectAtIndex:0];
     }
-    
-    [[cell descProduct]setText:@"Descripcion"];
-    [[cell nameProduct]setText:@"Nombre"];
-    
+	
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //cell.textLabel.text = @"Producto";
+	
     return cell;
 
 }

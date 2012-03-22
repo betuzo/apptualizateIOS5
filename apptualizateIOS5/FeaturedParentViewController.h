@@ -12,11 +12,9 @@
 @interface FeaturedParentViewController : UIViewController
 {
 	UINavigationController *featuredProdcutsNavigationController;
-	FeaturedViewController *featuredViewController;
 
 }
 
 @property (nonatomic,strong) UINavigationController *featuredProdcutsNavigationController;
-@property (nonatomic,strong) FeaturedViewController *featuredViewController;
 
 @end

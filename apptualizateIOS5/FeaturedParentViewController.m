@@ -11,7 +11,6 @@
 @implementation FeaturedParentViewController
 
 @synthesize featuredProdcutsNavigationController = _featuredProdcutsNavigationController;
-@synthesize featuredViewController = _featuredViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,8 +35,8 @@
 {
     [super viewDidLoad];
 	
-	_featuredViewController = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
-	_featuredProdcutsNavigationController = [[UINavigationController alloc] initWithRootViewController:featuredViewController];
+	FeaturedViewController *controller = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
+	_featuredProdcutsNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 	
 	[_featuredProdcutsNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_featuredProdcutsNavigationController.view];
