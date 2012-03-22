@@ -260,6 +260,30 @@
 			name = Strores;
 			sourceTree = "<group>";
 		};
+		4A6BD0CB151AB8FB009D801B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C06095C6151AADB1001517EB /* ProductsViewController.xib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A6BD0CC151AB8FE009D801B /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				C06095C1151AAD1D001517EB /* FeaturedViewController.xib */,
+			);
+			name = Featured;
+			sourceTree = "<group>";
+		};
+		4A6BD0CD151AB8FF009D801B /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				C06095CB151AADF2001517EB /* StoresViewController.xib */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
 		C0609595151AA0A4001517EB /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +326,9 @@
 		C06095AA151AAAB2001517EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A6BD0CD151AB8FF009D801B /* Stores */,
+				4A6BD0CC151AB8FE009D801B /* Featured */,
+				4A6BD0CB151AB8FB009D801B /* Products */,
 				C06095B6151AAB96001517EB /* Home */,
 				C06095AB151AAAC9001517EB /* Login */,
 			);
@@ -377,7 +404,6 @@
 			children = (
 				C06095BF151AAD1D001517EB /* FeaturedViewController.h */,
 				C06095C0151AAD1D001517EB /* FeaturedViewController.m */,
-				C06095C1151AAD1D001517EB /* FeaturedViewController.xib */,
 			);
 			name = Featured;
 			sourceTree = "<group>";
@@ -387,7 +413,6 @@
 			children = (
 				C06095C4151AADB1001517EB /* ProductsViewController.h */,
 				C06095C5151AADB1001517EB /* ProductsViewController.m */,
-				C06095C6151AADB1001517EB /* ProductsViewController.xib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,7 +422,6 @@
 			children = (
 				C06095C9151AADF2001517EB /* StoresViewController.h */,
 				C06095CA151AADF2001517EB /* StoresViewController.m */,
-				C06095CB151AADF2001517EB /* StoresViewController.xib */,
 			);
 			name = Stores;
 			sourceTree = "<group>";

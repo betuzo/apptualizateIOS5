@@ -7,8 +7,13 @@
 //
 
 #import "HomeViewControlleriPad.h"
+#import "StoresViewControlleriPad.h"
+#import "ProductsViewControlleriPad.h"
+#import "FeaturedViewControlleriPad.h"
 
 @implementation HomeViewControlleriPad
+
+@synthesize homeTabBarController = _homeTabBarController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +38,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UIViewController *viewController1 = [[FeaturedViewControlleriPad alloc] initWithNibName:@"FeaturedViewControlleriPad" bundle:nil];
+	UIViewController *viewController2 = [[ProductsViewControlleriPad alloc] initWithNibName:@"ProductsViewControlleriPad" bundle:nil];
+	UIViewController *viewController3 = [[StoresViewControlleriPad alloc] initWithNibName:@"StoresViewControlleriPad" bundle:nil];
+	
+	_homeTabBarController = [[UITabBarController alloc] init];
+	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
+ 	[_homeTabBarController.view setFrame:self.view.bounds];
+	
+	[self.view addSubview:_homeTabBarController.view];
+    
 }
 
 - (void)viewDidUnload

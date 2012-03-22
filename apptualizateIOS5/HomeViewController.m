@@ -39,7 +39,7 @@
     [super viewDidLoad];
 	
 	
-	/*UIViewController *viewController1 = [[FeaturedViewController alloc] initWithNibName:@"FeaturedViewController" bundle:nil];
+	UIViewController *viewController1 = [[FeaturedViewController alloc] initWithNibName:@"FeaturedViewController" bundle:nil];
 	UIViewController *viewController2 = [[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil];
 	UIViewController *viewController3 = [[StoresViewController alloc] initWithNibName:@"StoresViewController" bundle:nil];
 	
@@ -49,7 +49,6 @@
 	
 	[self.view addSubview:_homeTabBarController.view];
 
-	*/
     // Do any additional setup after loading the view from its nib.
 }
 

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewControlleriPad : UIViewController
-
+{
+	UITabBarController *homeTabBarController;
+}
+@property (nonatomic , strong) UITabBarController *homeTabBarController;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewControlleriPad.h"
+#import "HomeViewControlleriPad.h"
 
 @implementation LoginViewControlleriPad
 
@@ -47,5 +48,14 @@
     // Return YES for supported orientations
 	return YES;
 }
+
+-(IBAction)presentHomeViewiPad:(id)sender
+{
+    NSLog(@"presentHomeView");
+    HomeViewControlleriPad *homeViewControlleriPad = [[HomeViewControlleriPad alloc] initWithNibName:@"HomeViewControlleriPad" bundle:nil];
+    [self presentModalViewController:homeViewControlleriPad animated:YES];
+    
+}
+
 
 @end

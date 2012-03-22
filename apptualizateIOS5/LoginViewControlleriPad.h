@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginViewControlleriPad : UIViewController
+{
+    
+}
+
+-(IBAction)presentHomeViewiPad:(id)sender;
 
 @end

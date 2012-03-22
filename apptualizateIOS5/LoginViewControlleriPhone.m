@@ -30,7 +30,9 @@
 
 -(IBAction)presentHomeView:(id)sender
 {
-	NSLog(@"tap");
+    NSLog(@"presentHomeView");
+    HomeViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    [self presentModalViewController:homeViewController animated:YES];
 }
 
 
