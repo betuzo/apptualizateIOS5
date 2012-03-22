@@ -35,6 +35,10 @@
 		4AF6A71E151AE2C00026DB46 /* StoresParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A71C151AE2C00026DB46 /* StoresParentViewController.xib */; };
 		4AF6A722151AE9360026DB46 /* ProductsCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A720151AE9360026DB46 /* ProductsCellViewController.m */; };
 		4AF6A723151AE9360026DB46 /* ProductsCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A721151AE9360026DB46 /* ProductsCellViewController.xib */; };
+		4AF6A728151AFC0A0026DB46 /* mini-iphone-blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A725151AFC090026DB46 /* mini-iphone-blanco.png */; };
+		4AF6A729151AFC0A0026DB46 /* mini-iphone-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A726151AFC090026DB46 /* mini-iphone-negro.png */; };
+		4AF6A72A151AFC0A0026DB46 /* mini-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A727151AFC0A0026DB46 /* mini-iphone.png */; };
+		4AF6A72C151AFC770026DB46 /* principal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A72B151AFC770026DB46 /* principal.png */; };
 		C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */; };
 		C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */; };
 		C06095A6151AA473001517EB /* LoginViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095A4151AA473001517EB /* LoginViewControlleriPad.m */; };
@@ -111,6 +115,10 @@
 		4AF6A71F151AE9360026DB46 /* ProductsCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsCellViewController.h; sourceTree = "<group>"; };
 		4AF6A720151AE9360026DB46 /* ProductsCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsCellViewController.m; sourceTree = "<group>"; };
 		4AF6A721151AE9360026DB46 /* ProductsCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsCellViewController.xib; sourceTree = "<group>"; };
+		4AF6A725151AFC090026DB46 /* mini-iphone-blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-iphone-blanco.png"; sourceTree = "<group>"; };
+		4AF6A726151AFC090026DB46 /* mini-iphone-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-iphone-negro.png"; sourceTree = "<group>"; };
+		4AF6A727151AFC0A0026DB46 /* mini-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-iphone.png"; sourceTree = "<group>"; };
+		4AF6A72B151AFC770026DB46 /* principal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = principal.png; sourceTree = "<group>"; };
 		C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlleriPhone.h; sourceTree = "<group>"; };
 		C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlleriPhone.m; sourceTree = "<group>"; };
 		C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewControlleriPhone.xib; sourceTree = "<group>"; };
@@ -323,6 +331,16 @@
 			name = Stores;
 			sourceTree = "<group>";
 		};
+		4AF6A724151AFB8D0026DB46 /* Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				4AF6A71F151AE9360026DB46 /* ProductsCellViewController.h */,
+				4AF6A720151AE9360026DB46 /* ProductsCellViewController.m */,
+				4AF6A721151AE9360026DB46 /* ProductsCellViewController.xib */,
+			);
+			name = Controlls;
+			sourceTree = "<group>";
+		};
 		C0609595151AA0A4001517EB /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,9 +467,6 @@
 				C06095C0151AAD1D001517EB /* FeaturedViewController.m */,
 				C06467AF151ADE490092BF31 /* FeaturedParentViewController.h */,
 				C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */,
-				4AF6A71F151AE9360026DB46 /* ProductsCellViewController.h */,
-				4AF6A720151AE9360026DB46 /* ProductsCellViewController.m */,
-				4AF6A721151AE9360026DB46 /* ProductsCellViewController.xib */,
 			);
 			name = Featured;
 			sourceTree = "<group>";
@@ -481,6 +496,11 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AF6A72B151AFC770026DB46 /* principal.png */,
+				4AF6A725151AFC090026DB46 /* mini-iphone-blanco.png */,
+				4AF6A726151AFC090026DB46 /* mini-iphone-negro.png */,
+				4AF6A727151AFC0A0026DB46 /* mini-iphone.png */,
+				4AF6A724151AFB8D0026DB46 /* Controlls */,
 				D396D4FD151ADCDD0090F2A7 /* entrar-on.png */,
 				D396D4FE151ADCDD0090F2A7 /* entrar.png */,
 				D396D4FF151ADCDD0090F2A7 /* registro-on.png */,
@@ -610,6 +630,10 @@
 				4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */,
 				4AF6A71E151AE2C00026DB46 /* StoresParentViewController.xib in Resources */,
 				4AF6A723151AE9360026DB46 /* ProductsCellViewController.xib in Resources */,
+				4AF6A728151AFC0A0026DB46 /* mini-iphone-blanco.png in Resources */,
+				4AF6A729151AFC0A0026DB46 /* mini-iphone-negro.png in Resources */,
+				4AF6A72A151AFC0A0026DB46 /* mini-iphone.png in Resources */,
+				4AF6A72C151AFC770026DB46 /* principal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
