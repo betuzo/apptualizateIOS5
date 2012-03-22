@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "ProductsCellViewController.h"
+#import "ProductsCellViewController.h" 
 
 @implementation ProductsCellViewController
 
@@ -33,6 +33,23 @@
     [super setSelected:selected animated:animated];
     
     // Configure the view for the selected state
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    NSLog(@"drawRect");
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+	
+	// Fill in the background
+	CGContextSetFillColorWithColor(context, graphBackgroundColor());
+	CGContextFillRect(context, self.bounds);
+	
+	CGContextTranslateCTM(context, 0.0, 56.0);
+    
+	// Draw the grid lines
+	DrawGridlines(context, 26.0, 6.0);
+    
 }
 
 @end
