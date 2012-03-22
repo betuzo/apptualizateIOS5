@@ -8,6 +8,13 @@
 
 #import "ProductsCellViewController.h" 
 
+#pragma mark - Quartz Helpers
+
+
+
+
+// Functions used to draw all content
+
 @implementation ProductsCellViewController
 
 @synthesize nameProduct = _nameProduct;
@@ -17,7 +24,6 @@
 @synthesize imageProduct = _imageProduct;
 
 @synthesize detailProduct = _detailProduct;
-
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -42,13 +48,13 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
 	
 	// Fill in the background
-	CGContextSetFillColorWithColor(context, graphBackgroundColor());
+	//CGContextSetFillColorWithColor(context, graphBackgroundColor());
 	CGContextFillRect(context, self.bounds);
 	
 	CGContextTranslateCTM(context, 0.0, 56.0);
     
 	// Draw the grid lines
-	DrawGridlines(context, 26.0, 6.0);
+	//DrawGridlines(context, 26.0, 6.0);
     
 }
 
