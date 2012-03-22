@@ -100,20 +100,36 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    
     FeaturedViewController *controllerSecondChild = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
+    switch ([indexPath row]) {
+        case 0:
+            [controllerSecondChild setFeaturedProducts:[[NSArray alloc] initWithObjects:
+                                                        [[NSArray alloc] initWithObjects:@"Mac Book Air", @"El más liviano del mundo", @"MacBookAir", nil],
+                                                        [[NSArray alloc] initWithObjects:@"Mac Book Pro", @"Potencia y Rendimiento", @"MacBookPro", nil],
+                                                        [[NSArray alloc] initWithObjects:@"Mac Mini", @"Procesadores hasta 2 veces rápido", @"MacMini", nil], 
+                                                        [[NSArray alloc] initWithObjects:@"iMac", @"La definitiva todo en uno", @"iMac", nil], 
+                                                        [[NSArray alloc] initWithObjects:@"Mac Pro", @"Con el poder de 12", @"MacPro", nil],
+                                                        [[NSArray alloc] initWithObjects:@"OS X Lion", @"El Sistema más avanzado", @"OSXLion", nil],
+                                                        nil] ];
+            
+            
+            break;
+        case 1:
+            [controllerSecondChild setFeaturedProducts:[[NSArray alloc] initWithObjects:
+                                                        [[NSArray alloc] initWithObjects:@"iPod Shuffle", @"La combinación perfecta", @"iPodShuffle", nil],
+                                                        [[NSArray alloc] initWithObjects:@"iPod Nano", @"MultiTouch, MultiTalentoso", @"iPodNano", nil],
+                                                        [[NSArray alloc] initWithObjects:@"iPod Classic", @"Tus 40,000 principales", @"iPodClassic", nil], 
+                                                        [[NSArray alloc] initWithObjects:@"iPod Touch", @"Música, Juegos, iMessage", @"iPodTouch", nil], 
+                                                        [[NSArray alloc] initWithObjects:@"Apple TV", @"Con el mejor contenido en HD", @"AppleTV", nil],
+                                                        [[NSArray alloc] initWithObjects:@"Accesorios", @"Todos los accesorios que necesitas", @"Accesorios", nil],
+                                                        nil] ];
+            break;
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:controllerSecondChild animated:YES];
     
-    [controllerSecondChild setFeaturedProducts:[[NSArray alloc] initWithObjects:
-                                                [[NSArray alloc] initWithObjects:@"Mac Book Air", @"El más liviano del mundo", @"MacBookAir", nil],
-                                                [[NSArray alloc] initWithObjects:@"Mac Book Pro", @"Potencia y Rendimiento", @"MacBookPro", nil],
-                                                [[NSArray alloc] initWithObjects:@"Mac Mini", @"Procesadores hasta 2 veces rápido", @"MacMini", nil], 
-                                                [[NSArray alloc] initWithObjects:@"iMac", @"La definitiva todo en uno", @"iMac", nil], 
-                                                [[NSArray alloc] initWithObjects:@"Mac Pro", @"Con el poder de 12", @"MacPro", nil],
-                                                [[NSArray alloc] initWithObjects:@"OS X Lion", @"El Sistema más avanzado", @"OSXLion", nil],
-                                                nil] ];
     
-	[self.navigationController pushViewController:controllerSecondChild animated:YES];
     
 	
 }

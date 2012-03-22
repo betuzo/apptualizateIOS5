@@ -102,6 +102,12 @@
 		D396D577151B80F10090F2A7 /* MacMini.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D571151B80F10090F2A7 /* MacMini.png */; };
 		D396D578151B80F10090F2A7 /* MacPro.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D572151B80F10090F2A7 /* MacPro.png */; };
 		D396D579151B80F10090F2A7 /* OSXLion.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D573151B80F10090F2A7 /* OSXLion.png */; };
+		D396D581151B94450090F2A7 /* Accesorios.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57B151B94450090F2A7 /* Accesorios.png */; };
+		D396D582151B94450090F2A7 /* AppleTV.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57C151B94450090F2A7 /* AppleTV.png */; };
+		D396D583151B94450090F2A7 /* iPodClassic.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57D151B94450090F2A7 /* iPodClassic.png */; };
+		D396D584151B94450090F2A7 /* iPodNano.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57E151B94450090F2A7 /* iPodNano.png */; };
+		D396D585151B94450090F2A7 /* iPodShuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57F151B94450090F2A7 /* iPodShuffle.png */; };
+		D396D586151B94450090F2A7 /* iPodTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D580151B94450090F2A7 /* iPodTouch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +237,12 @@
 		D396D571151B80F10090F2A7 /* MacMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacMini.png; sourceTree = "<group>"; };
 		D396D572151B80F10090F2A7 /* MacPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacPro.png; sourceTree = "<group>"; };
 		D396D573151B80F10090F2A7 /* OSXLion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OSXLion.png; sourceTree = "<group>"; };
+		D396D57B151B94450090F2A7 /* Accesorios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Accesorios.png; sourceTree = "<group>"; };
+		D396D57C151B94450090F2A7 /* AppleTV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleTV.png; sourceTree = "<group>"; };
+		D396D57D151B94450090F2A7 /* iPodClassic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodClassic.png; sourceTree = "<group>"; };
+		D396D57E151B94450090F2A7 /* iPodNano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodNano.png; sourceTree = "<group>"; };
+		D396D57F151B94450090F2A7 /* iPodShuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodShuffle.png; sourceTree = "<group>"; };
+		D396D580151B94450090F2A7 /* iPodTouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodTouch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -590,6 +602,12 @@
 				4AFC5DDF151B937400A83EEF /* boton-atras.png */,
 				4AFC5DE0151B937400A83EEF /* negro-on.png */,
 				4AFC5DE1151B937400A83EEF /* negro.png */,
+				D396D57B151B94450090F2A7 /* Accesorios.png */,
+				D396D57C151B94450090F2A7 /* AppleTV.png */,
+				D396D57D151B94450090F2A7 /* iPodClassic.png */,
+				D396D57E151B94450090F2A7 /* iPodNano.png */,
+				D396D57F151B94450090F2A7 /* iPodShuffle.png */,
+				D396D580151B94450090F2A7 /* iPodTouch.png */,
 				D396D56E151B80F10090F2A7 /* iMac.png */,
 				D396D56F151B80F10090F2A7 /* MacBookAir.png */,
 				D396D570151B80F10090F2A7 /* MacBookPro.png */,
@@ -799,6 +817,12 @@
 				4AFC5DE5151B937400A83EEF /* boton-atras.png in Resources */,
 				4AFC5DE6151B937400A83EEF /* negro-on.png in Resources */,
 				4AFC5DE7151B937400A83EEF /* negro.png in Resources */,
+				D396D581151B94450090F2A7 /* Accesorios.png in Resources */,
+				D396D582151B94450090F2A7 /* AppleTV.png in Resources */,
+				D396D583151B94450090F2A7 /* iPodClassic.png in Resources */,
+				D396D584151B94450090F2A7 /* iPodNano.png in Resources */,
+				D396D585151B94450090F2A7 /* iPodShuffle.png in Resources */,
+				D396D586151B94450090F2A7 /* iPodTouch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
