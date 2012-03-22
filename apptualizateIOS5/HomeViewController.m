@@ -1,15 +1,19 @@
 //
-//  LoginViewControlleriPhone.m
+//  HomeViewController.m
 //  apptualizateIOS5
 //
 //  Created by Misael Pérez Chamorro on 3/21/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "LoginViewControlleriPhone.h"
 #import "HomeViewController.h"
+#import "FeaturedViewController.h"
+#import "ProductsViewController.h"
+#import "StoresViewController.h"
 
-@implementation LoginViewControlleriPhone
+@implementation HomeViewController
+
+@synthesize homeTabBarController = _homeTabBarController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +38,18 @@
 {
     [super viewDidLoad];
 	
+	
+	/*UIViewController *viewController1 = [[FeaturedViewController alloc] initWithNibName:@"FeaturedViewController" bundle:nil];
+	UIViewController *viewController2 = [[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil];
+	UIViewController *viewController3 = [[StoresViewController alloc] initWithNibName:@"StoresViewController" bundle:nil];
+	
+	_homeTabBarController = [[UITabBarController alloc] init];
+	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
+ 	[_homeTabBarController.view setFrame:self.view.bounds];
+	
+	[self.view addSubview:_homeTabBarController.view];
+
+	*/
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -48,13 +64,6 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (IBAction)showHome:(id)sender
-{
-	HomeViewController *homeViewController = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-	
-	[self presentModalViewController:homeViewController animated:YES];
 }
 
 @end

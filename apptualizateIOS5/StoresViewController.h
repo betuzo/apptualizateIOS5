@@ -1,5 +1,5 @@
 //
-//  LoginViewControlleriPhone.h
+//  StoresViewController.h
 //  apptualizateIOS5
 //
 //  Created by Misael Pérez Chamorro on 3/21/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewControlleriPhone : UIViewController
-
-- (IBAction)showHome:(id)sender;
+@interface StoresViewController : UIViewController
 
 @end

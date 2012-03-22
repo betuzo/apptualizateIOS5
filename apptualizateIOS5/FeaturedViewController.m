@@ -1,15 +1,14 @@
 //
-//  LoginViewControlleriPhone.m
+//  FeaturedViewController.m
 //  apptualizateIOS5
 //
 //  Created by Misael Pérez Chamorro on 3/21/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "LoginViewControlleriPhone.h"
-#import "HomeViewController.h"
+#import "FeaturedViewController.h"
 
-@implementation LoginViewControlleriPhone
+@implementation FeaturedViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,7 +32,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -48,13 +46,6 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (IBAction)showHome:(id)sender
-{
-	HomeViewController *homeViewController = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-	
-	[self presentModalViewController:homeViewController animated:YES];
 }
 
 @end
