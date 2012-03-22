@@ -1,2 +1,23 @@
-apptualizateIOS5.xcodeproj/project.xcworkspace/xcuserdata/misaelpc.xcuserdatad/UserInterfaceState.xcuserstate
-.DS_Store*
+# OSX
+.DS_Store
+profile
+
+
+# Xcode
+build/*
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+xcuserdata
+*.moved-aside
+
+
+# Textmate
+.tm_build_errors
+
+# SVN
+.svn
+
+
