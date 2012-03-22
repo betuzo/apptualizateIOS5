@@ -81,7 +81,7 @@
     }
 	
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = @"Producto";
+    //cell.textLabel.text = @"Producto";
 	
     return cell;
 }
