@@ -41,6 +41,8 @@
 		C06095C8151AADB1001517EB /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06095C6151AADB1001517EB /* ProductsViewController.xib */; };
 		C06095CC151AADF2001517EB /* StoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095CA151AADF2001517EB /* StoresViewController.m */; };
 		C06095CD151AADF2001517EB /* StoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06095CB151AADF2001517EB /* StoresViewController.xib */; };
+		C06467B2151ADE490092BF31 /* FeaturedParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */; };
+		C06467B3151ADE490092BF31 /* FeaturedParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */; };
 		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
 		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
 		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
@@ -112,6 +114,9 @@
 		C06095C9151AADF2001517EB /* StoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoresViewController.h; sourceTree = "<group>"; };
 		C06095CA151AADF2001517EB /* StoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoresViewController.m; sourceTree = "<group>"; };
 		C06095CB151AADF2001517EB /* StoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoresViewController.xib; sourceTree = "<group>"; };
+		C06467AF151ADE490092BF31 /* FeaturedParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedParentViewController.h; sourceTree = "<group>"; };
+		C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedParentViewController.m; sourceTree = "<group>"; };
+		C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedParentViewController.xib; sourceTree = "<group>"; };
 		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
 		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
 		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
@@ -424,6 +429,9 @@
 			children = (
 				C06095BF151AAD1D001517EB /* FeaturedViewController.h */,
 				C06095C0151AAD1D001517EB /* FeaturedViewController.m */,
+				C06467AF151ADE490092BF31 /* FeaturedParentViewController.h */,
+				C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */,
+				C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */,
 			);
 			name = Featured;
 			sourceTree = "<group>";
@@ -574,6 +582,7 @@
 				D396D502151ADCDD0090F2A7 /* entrar.png in Resources */,
 				D396D503151ADCDD0090F2A7 /* registro-on.png in Resources */,
 				D396D504151ADCDD0090F2A7 /* registro.png in Resources */,
+				C06467B3151ADE490092BF31 /* FeaturedParentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +630,7 @@
 				4A6BD0BE151AB3EE009D801B /* StoresViewControlleriPad.m in Sources */,
 				4A6BD0C4151AB447009D801B /* ProductsViewControlleriPad.m in Sources */,
 				4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */,
+				C06467B2151ADE490092BF31 /* FeaturedParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

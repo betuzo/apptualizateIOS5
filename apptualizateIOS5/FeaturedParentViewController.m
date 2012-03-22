@@ -1,15 +1,17 @@
 //
-//  FeaturedViewController.m
+//  FeaturedParentViewController.m
 //  apptualizateIOS5
 //
 //  Created by Misael Pérez Chamorro on 3/21/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "FeaturedViewController.h"
+#import "FeaturedParentViewController.h"
 
-@implementation FeaturedViewController
+@implementation FeaturedParentViewController
 
+@synthesize featuredProdcutsNavigationController = _featuredProdcutsNavigationController;
+@synthesize featuredViewController = _featuredViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +36,11 @@
 {
     [super viewDidLoad];
 	
+	_featuredViewController = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
+	_featuredProdcutsNavigationController = [[UINavigationController alloc] initWithRootViewController:featuredViewController];
+	
+	[_featuredProdcutsNavigationController.view setFrame:self.view.bounds];
+	[self.view addSubview:_featuredProdcutsNavigationController.view];
     // Do any additional setup after loading the view from its nib.
 }
 

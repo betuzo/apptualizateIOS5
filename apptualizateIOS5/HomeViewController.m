@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import "FeaturedViewController.h"
+#import "FeaturedParentViewController.h"
 #import "ProductsViewController.h"
 #import "StoresViewController.h"
 
@@ -39,7 +39,7 @@
     [super viewDidLoad];
 	
 	
-	UIViewController *viewController1 = [[FeaturedViewController alloc] initWithNibName:@"FeaturedViewController" bundle:nil];
+	UIViewController *viewController1 = [[FeaturedParentViewController alloc] initWithNibName:@"FeaturedParentViewController" bundle:nil];
 	UIViewController *viewController2 = [[ProductsViewController alloc] initWithNibName:@"ProductsViewController" bundle:nil];
 	UIViewController *viewController3 = [[StoresViewController alloc] initWithNibName:@"StoresViewController" bundle:nil];
 	
