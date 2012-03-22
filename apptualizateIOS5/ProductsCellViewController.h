@@ -17,6 +17,4 @@
 
 @property(nonatomic, strong)IBOutlet UIImageView * imageProduct;
 
-@property(nonatomic, strong)IBOutlet UIButton * detailProduct;
-
 @end

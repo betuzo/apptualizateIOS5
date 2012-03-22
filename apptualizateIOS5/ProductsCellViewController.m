@@ -23,8 +23,6 @@
 
 @synthesize imageProduct = _imageProduct;
 
-@synthesize detailProduct = _detailProduct;
-
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -46,15 +44,22 @@
     NSLog(@"drawRect");
     
     CGContextRef context = UIGraphicsGetCurrentContext();
-	
-	// Fill in the background
-	//CGContextSetFillColorWithColor(context, graphBackgroundColor());
-	CGContextFillRect(context, self.bounds);
-	
-	CGContextTranslateCTM(context, 0.0, 56.0);
     
-	// Draw the grid lines
-	//DrawGridlines(context, 26.0, 6.0);
+    int y = 0;
+    int x = 0;
+    
+  
+    CGContextMoveToPoint(context, x, y);
+    CGContextAddLineToPoint(context, x +320, y);
+	
+    
+    CGColorSpaceRef gray = CGColorSpaceCreateDeviceGray();
+	CGFloat comps[] = {0.5, 1.0 };
+	CGColorRef color = CGColorCreate(gray, comps);
+	CGColorSpaceRelease(gray);
+	    
+	CGContextSetStrokeColorWithColor(context, color);
+	CGContextStrokePath(context);
     
 }
 
