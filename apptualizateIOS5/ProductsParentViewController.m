@@ -9,7 +9,7 @@
 #import "ProductsParentViewController.h"
 
 @implementation ProductsParentViewController
-@synthesize productsViewController = _productsViewController;
+
 @synthesize productsNavigationController = _productsNavigationController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,8 +37,8 @@
     // Do any additional setup after loading the view from its nib.
     
     
-    _productsViewController = [[ProductsViewController alloc]initWithNibName:@"ProductsViewController" bundle:nil];
-	_productsNavigationController = [[UINavigationController alloc] initWithRootViewController:productsViewController];
+    ProductsViewController *controller = [[ProductsViewController alloc]initWithNibName:@"ProductsViewController" bundle:nil];
+	_productsNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 	
 	[_productsNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_productsNavigationController.view];

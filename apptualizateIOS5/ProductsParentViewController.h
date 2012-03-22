@@ -12,10 +12,10 @@
 @interface ProductsParentViewController : UIViewController
 {
 	UINavigationController *productsNavigationController;
-	ProductsViewController *productsViewController;
+
     
 }
 
 @property (nonatomic,strong) UINavigationController *productsNavigationController;
-@property (nonatomic,strong) ProductsViewController *productsViewController;
+
 @end
