@@ -7,8 +7,11 @@
 //
 
 #import "FeaturedViewControlleriPad.h"
+#import "ProductsCellViewController.h"
+
 
 @implementation FeaturedViewControlleriPad
+@synthesize featuredTableViewController = _featuredTableViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[_featuredTableViewController setDelegate:self];
+	[_featuredTableViewController setDataSource:self];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -47,5 +52,39 @@
     // Return YES for supported orientations
 	return YES;
 }
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	//#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+	//#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 4;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+	
+    ProductsCellViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
+    if (cell == nil) {
+		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ProductsCellViewController" owner:self options:nil];
+        cell = (ProductsCellViewController *)[nib objectAtIndex:0];
+    }
+	
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.text = @"Producto";
+	
+    return cell;
+}
+
 
 @end

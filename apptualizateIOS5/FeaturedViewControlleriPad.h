@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FeaturedViewControlleriPad : UIViewController
+@interface FeaturedViewControlleriPad : UIViewController <UITableViewDelegate , UITableViewDataSource>
+{
+	IBOutlet UITableView *featuredTableViewController;
+}
+
+@property (nonatomic,strong) IBOutlet UITableView *featuredTableViewController;  
 
 @end
