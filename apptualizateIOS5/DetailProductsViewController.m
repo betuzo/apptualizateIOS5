@@ -1,16 +1,14 @@
 //
-//  FeaturedParentViewController.m
+//  DetailProductsViewController.m
 //  apptualizateIOS5
 //
-//  Created by Misael Pérez Chamorro on 3/21/12.
+//  Created by Roberto Salvador Olguín Lozano on 22/03/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "FeaturedParentViewController.h"
+#import "DetailProductsViewController.h"
 
-@implementation FeaturedParentViewController
-
-@synthesize featuredProdcutsNavigationController = _featuredProdcutsNavigationController;
+@implementation DetailProductsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,18 +32,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	FeaturedViewController *controller = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
-	_featuredProdcutsNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-    
-    [_featuredProdcutsNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header-iphone"] forBarMetrics:UIBarMetricsDefault];
-
-    [[UIBarButtonItem appearance] setBackgroundImage:[UIImage imageNamed:@"registro"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-     
-    
-	[_featuredProdcutsNavigationController.view setFrame:self.view.bounds];
-	[self.view addSubview:_featuredProdcutsNavigationController.view];
     // Do any additional setup after loading the view from its nib.
 }
 
