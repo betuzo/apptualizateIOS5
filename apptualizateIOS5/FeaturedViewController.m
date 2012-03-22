@@ -7,6 +7,7 @@
 //
 
 #import "FeaturedViewController.h"
+#import "ProductsCellViewController.h"
 
 @implementation FeaturedViewController
 
@@ -48,6 +49,35 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"ProductsCellViewController";
+    
+    ProductsCellViewController * cell = (ProductsCellViewController *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    NSArray * nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProductsCellViewController" owner:self options:nil];
+    
+    if (cell == nil) {
+        for (id objetoActual in nibObjects) {
+            if ([objetoActual isKindOfClass:[UITableViewCell class]] && 
+                [[objetoActual reuseIdentifier] isEqualToString:CellIdentifier]) {
+                cell = objetoActual;
+            }
+        }
+    }
+    
+    [[cell descProduct]setText:@"Descripcion"];
+    [[cell nameProduct]setText:@"Nombre"];
+    
+    return cell;
+
 }
 
 @end
