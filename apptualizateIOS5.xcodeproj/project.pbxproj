@@ -90,6 +90,12 @@
 		D396D551151B74B20090F2A7 /* iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D54D151B74B20090F2A7 /* iPhone.png */; };
 		D396D552151B74B20090F2A7 /* iPod.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D54E151B74B20090F2A7 /* iPod.png */; };
 		D396D553151B74B20090F2A7 /* Mac.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D54F151B74B20090F2A7 /* Mac.png */; };
+		D396D574151B80F10090F2A7 /* iMac.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D56E151B80F10090F2A7 /* iMac.png */; };
+		D396D575151B80F10090F2A7 /* MacBookAir.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D56F151B80F10090F2A7 /* MacBookAir.png */; };
+		D396D576151B80F10090F2A7 /* MacBookPro.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D570151B80F10090F2A7 /* MacBookPro.png */; };
+		D396D577151B80F10090F2A7 /* MacMini.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D571151B80F10090F2A7 /* MacMini.png */; };
+		D396D578151B80F10090F2A7 /* MacPro.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D572151B80F10090F2A7 /* MacPro.png */; };
+		D396D579151B80F10090F2A7 /* OSXLion.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D573151B80F10090F2A7 /* OSXLion.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +213,12 @@
 		D396D54D151B74B20090F2A7 /* iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone.png; sourceTree = "<group>"; };
 		D396D54E151B74B20090F2A7 /* iPod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPod.png; sourceTree = "<group>"; };
 		D396D54F151B74B20090F2A7 /* Mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mac.png; sourceTree = "<group>"; };
+		D396D56E151B80F10090F2A7 /* iMac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iMac.png; sourceTree = "<group>"; };
+		D396D56F151B80F10090F2A7 /* MacBookAir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacBookAir.png; sourceTree = "<group>"; };
+		D396D570151B80F10090F2A7 /* MacBookPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacBookPro.png; sourceTree = "<group>"; };
+		D396D571151B80F10090F2A7 /* MacMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacMini.png; sourceTree = "<group>"; };
+		D396D572151B80F10090F2A7 /* MacPro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacPro.png; sourceTree = "<group>"; };
+		D396D573151B80F10090F2A7 /* OSXLion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OSXLion.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +572,12 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D396D56E151B80F10090F2A7 /* iMac.png */,
+				D396D56F151B80F10090F2A7 /* MacBookAir.png */,
+				D396D570151B80F10090F2A7 /* MacBookPro.png */,
+				D396D571151B80F10090F2A7 /* MacMini.png */,
+				D396D572151B80F10090F2A7 /* MacPro.png */,
+				D396D573151B80F10090F2A7 /* OSXLion.png */,
 				4AFC5DD6151B781100A83EEF /* boton-verde.png */,
 				4AFC5DB3151B769C00A83EEF /* boton-gris.png */,
 				4AFC5DB4151B769C00A83EEF /* boton-naranja.png */,
@@ -751,6 +769,12 @@
 				4AFC5DD3151B769C00A83EEF /* mini-macbookpro.png in Resources */,
 				4AFC5DD4151B769C00A83EEF /* mini-minimac.png in Resources */,
 				4AFC5DD7151B781100A83EEF /* boton-verde.png in Resources */,
+				D396D574151B80F10090F2A7 /* iMac.png in Resources */,
+				D396D575151B80F10090F2A7 /* MacBookAir.png in Resources */,
+				D396D576151B80F10090F2A7 /* MacBookPro.png in Resources */,
+				D396D577151B80F10090F2A7 /* MacMini.png in Resources */,
+				D396D578151B80F10090F2A7 /* MacPro.png in Resources */,
+				D396D579151B80F10090F2A7 /* OSXLion.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

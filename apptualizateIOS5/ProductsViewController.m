@@ -9,7 +9,8 @@
 #import "ProductsViewController.h"
 #import "ProductsParentViewController.h"
 #import "ProductsCellViewController.h"
-#import "DetailProductsViewController.h"
+
+#import "FeaturedParentViewController.h"
 
 
 @implementation ProductsViewController
@@ -73,23 +74,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
  
-    /*static NSString *CellTableIdentifier = @"CellTableIdentifier";
-    static BOOL nibsRegistered = NO;
-    if (!nibsRegistered) {
-        UINib *nib=[UINib nibWithNibName:@"ProductsCellViewController" bundle:nil];
-        [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
-        nibsRegistered=YES;
-        }
-    ProductsCellViewController *cell=[tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
-    if (cell==nil) {
-        cell=[[ProductsCellViewController alloc]initWithStyle:UITableViewCellSelectionStyleGray reuseIdentifier:CellTableIdentifier];
-    }
-        NSUInteger row=[indexPath row];
-        NSDictionary *rowData=[self.listData objectAtIndex:row];
-        [[cell nameProduct] setText:[rowData objectForKey:@"Name"]];
-        [[cell descProduct] setText:[rowData objectForKey:@"Description"]];
 
-    return cell;*/
     static NSString *CellIdentifier = @"Cell";
 	
     ProductsCellViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -115,11 +100,20 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     
-    DetailProductsViewController *detailViewController = [[DetailProductsViewController alloc] initWithNibName:@"DetailProductsViewController" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    FeaturedViewController *controllerSecondChild = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
+    
+    [controllerSecondChild setFeaturedProducts:[[NSArray alloc] initWithObjects:
+                                                [[NSArray alloc] initWithObjects:@"Mac Book Air", @"El más liviano del mundo", @"MacBookAir", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mac Book Pro", @"Potencia y Rendimiento", @"MacBookPro", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mac Mini", @"Procesadores hasta 2 veces rápido", @"MacMini", nil], 
+                                                [[NSArray alloc] initWithObjects:@"iMac", @"La definitiva todo en uno", @"iMac", nil], 
+                                                [[NSArray alloc] initWithObjects:@"Mac Pro", @"Con el poder de 12", @"MacPro", nil],
+                                                [[NSArray alloc] initWithObjects:@"OS X Lion", @"El Sistema más avanzado", @"OSXLion", nil],
+                                                nil] ];
+    
+	[self.navigationController pushViewController:controllerSecondChild animated:YES];
     
 	
 }

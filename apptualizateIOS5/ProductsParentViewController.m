@@ -8,6 +8,8 @@
 
 #import "ProductsParentViewController.h"
 
+
+
 @implementation ProductsParentViewController
 
 @synthesize productsNavigationController = _productsNavigationController;
@@ -35,6 +37,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    
     
     
     ProductsViewController *controller = [[ProductsViewController alloc]initWithNibName:@"ProductsViewController" bundle:nil];
