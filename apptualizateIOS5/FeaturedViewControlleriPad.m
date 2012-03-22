@@ -48,7 +48,7 @@
 						 [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
 						 nil];
 	
-	_imagesArray = [[NSArray alloc]initWithObjects:@"newIpad.png",@"iPhone4s.png",@"macBig.png",@"iPodnanoBig.png",nil];
+	_imagesArray = [[NSArray alloc]initWithObjects:@"newIpad.png",@"iPhone4S.png",@"macBig.png",@"iPodnanoBig.png",nil];
     // Do any additional setup after loading the view from its nib.
 }
 
