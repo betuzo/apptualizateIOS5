@@ -90,7 +90,16 @@
 {
     
     DetailProductsViewController *detailViewController = [[DetailProductsViewController alloc] initWithNibName:@"DetailProductsViewController" bundle:nil];
-    // ...
+    
+    
+    [detailViewController setDetailsProducts:[[NSArray alloc] initWithObjects:
+                                     [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", nil],
+                                     [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", nil],
+                                     [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", nil], 
+                                     [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", nil], 
+                                     [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", nil], 
+                                     nil] ];
+    
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
     

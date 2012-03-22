@@ -60,6 +60,12 @@
 		4AFC5DD3151B769C00A83EEF /* mini-macbookpro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DC2151B769C00A83EEF /* mini-macbookpro.png */; };
 		4AFC5DD4151B769C00A83EEF /* mini-minimac.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DC3151B769C00A83EEF /* mini-minimac.png */; };
 		4AFC5DD7151B781100A83EEF /* boton-verde.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DD6151B781100A83EEF /* boton-verde.png */; };
+		4AFC5DE2151B937400A83EEF /* blanco-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DDC151B937400A83EEF /* blanco-on.png */; };
+		4AFC5DE3151B937400A83EEF /* blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DDD151B937400A83EEF /* blanco.png */; };
+		4AFC5DE4151B937400A83EEF /* boton-atras-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DDE151B937400A83EEF /* boton-atras-on.png */; };
+		4AFC5DE5151B937400A83EEF /* boton-atras.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DDF151B937400A83EEF /* boton-atras.png */; };
+		4AFC5DE6151B937400A83EEF /* negro-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DE0151B937400A83EEF /* negro-on.png */; };
+		4AFC5DE7151B937400A83EEF /* negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AFC5DE1151B937400A83EEF /* negro.png */; };
 		C060959C151AA0EB001517EB /* LoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */; };
 		C060959D151AA0EB001517EB /* LoginViewControlleriPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */; };
 		C06095A6151AA473001517EB /* LoginViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095A4151AA473001517EB /* LoginViewControlleriPad.m */; };
@@ -182,6 +188,12 @@
 		4AFC5DC2151B769C00A83EEF /* mini-macbookpro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-macbookpro.png"; sourceTree = "<group>"; };
 		4AFC5DC3151B769C00A83EEF /* mini-minimac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mini-minimac.png"; sourceTree = "<group>"; };
 		4AFC5DD6151B781100A83EEF /* boton-verde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-verde.png"; sourceTree = "<group>"; };
+		4AFC5DDC151B937400A83EEF /* blanco-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blanco-on.png"; sourceTree = "<group>"; };
+		4AFC5DDD151B937400A83EEF /* blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blanco.png; sourceTree = "<group>"; };
+		4AFC5DDE151B937400A83EEF /* boton-atras-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-atras-on.png"; sourceTree = "<group>"; };
+		4AFC5DDF151B937400A83EEF /* boton-atras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-atras.png"; sourceTree = "<group>"; };
+		4AFC5DE0151B937400A83EEF /* negro-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "negro-on.png"; sourceTree = "<group>"; };
+		4AFC5DE1151B937400A83EEF /* negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negro.png; sourceTree = "<group>"; };
 		C0609599151AA0EB001517EB /* LoginViewControlleriPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlleriPhone.h; sourceTree = "<group>"; };
 		C060959A151AA0EB001517EB /* LoginViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlleriPhone.m; sourceTree = "<group>"; };
 		C060959B151AA0EB001517EB /* LoginViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewControlleriPhone.xib; sourceTree = "<group>"; };
@@ -584,6 +596,12 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AFC5DDC151B937400A83EEF /* blanco-on.png */,
+				4AFC5DDD151B937400A83EEF /* blanco.png */,
+				4AFC5DDE151B937400A83EEF /* boton-atras-on.png */,
+				4AFC5DDF151B937400A83EEF /* boton-atras.png */,
+				4AFC5DE0151B937400A83EEF /* negro-on.png */,
+				4AFC5DE1151B937400A83EEF /* negro.png */,
 				D396D57B151B94450090F2A7 /* Accesorios.png */,
 				D396D57C151B94450090F2A7 /* AppleTV.png */,
 				D396D57D151B94450090F2A7 /* iPodClassic.png */,
@@ -793,6 +811,12 @@
 				D396D577151B80F10090F2A7 /* MacMini.png in Resources */,
 				D396D578151B80F10090F2A7 /* MacPro.png in Resources */,
 				D396D579151B80F10090F2A7 /* OSXLion.png in Resources */,
+				4AFC5DE2151B937400A83EEF /* blanco-on.png in Resources */,
+				4AFC5DE3151B937400A83EEF /* blanco.png in Resources */,
+				4AFC5DE4151B937400A83EEF /* boton-atras-on.png in Resources */,
+				4AFC5DE5151B937400A83EEF /* boton-atras.png in Resources */,
+				4AFC5DE6151B937400A83EEF /* negro-on.png in Resources */,
+				4AFC5DE7151B937400A83EEF /* negro.png in Resources */,
 				D396D581151B94450090F2A7 /* Accesorios.png in Resources */,
 				D396D582151B94450090F2A7 /* AppleTV.png in Resources */,
 				D396D583151B94450090F2A7 /* iPodClassic.png in Resources */,

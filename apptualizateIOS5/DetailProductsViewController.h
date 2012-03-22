@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailProductsViewController : UIViewController
+@interface DetailProductsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) NSArray *detailsProducts;
 
 @end

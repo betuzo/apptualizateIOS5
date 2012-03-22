@@ -38,9 +38,9 @@
 	FeaturedViewController *controller = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
     
     [controller setFeaturedProducts:[[NSArray alloc] initWithObjects:
-                                    [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", @"mini-iphone", nil],
-                                    [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", @"mini-iphone-blanco", nil],
-                                    [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
+                                    [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", @"mini-IpodT", nil],
+                                    [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", @"mini-iPodN", nil],
+                                    [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", @"mini-iPad", nil], 
                                     [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", @"mini-iphone", nil], 
                                     [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
                                     nil] ];
@@ -53,11 +53,6 @@
     
 	[self.view addSubview:_featuredProdcutsNavigationController.view];
     // Do any additional setup after loading the view from its nib.
-}
-
-- (void) goBackView:(id) sender
-{
-    NSLog(@"goBackView");
 }
 
 - (void)viewDidUnload
