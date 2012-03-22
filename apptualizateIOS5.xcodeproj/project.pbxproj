@@ -41,6 +41,10 @@
 		C06095C8151AADB1001517EB /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06095C6151AADB1001517EB /* ProductsViewController.xib */; };
 		C06095CC151AADF2001517EB /* StoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06095CA151AADF2001517EB /* StoresViewController.m */; };
 		C06095CD151AADF2001517EB /* StoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06095CB151AADF2001517EB /* StoresViewController.xib */; };
+		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
+		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
+		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
+		D396D4F2151ABB360090F2A7 /* macstore Ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4F1151ABB360090F2A7 /* macstore Ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +108,10 @@
 		C06095C9151AADF2001517EB /* StoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoresViewController.h; sourceTree = "<group>"; };
 		C06095CA151AADF2001517EB /* StoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoresViewController.m; sourceTree = "<group>"; };
 		C06095CB151AADF2001517EB /* StoresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoresViewController.xib; sourceTree = "<group>"; };
+		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
+		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
+		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
+		D396D4F1151ABB360090F2A7 /* macstore Ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "macstore Ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +295,7 @@
 		C0609595151AA0A4001517EB /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D396D4E8151ABAD00090F2A7 /* Resources */,
 				C06095AA151AAAB2001517EB /* Views */,
 				C06095A9151AAA85001517EB /* Controllers */,
 			);
@@ -296,6 +305,7 @@
 		C0609598151AA0B8001517EB /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				D396D4EA151ABADE0090F2A7 /* Resources */,
 				C06095AD151AAAFA001517EB /* Views */,
 				C06095AC151AAAEE001517EB /* Controllers */,
 			);
@@ -426,6 +436,24 @@
 			name = Stores;
 			sourceTree = "<group>";
 		};
+		D396D4E8151ABAD00090F2A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D396D4EB151ABB000090F2A7 /* FondoIphone.png */,
+				D396D4EC151ABB000090F2A7 /* macstore.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D396D4EA151ABADE0090F2A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */,
+				D396D4F1151ABB360090F2A7 /* macstore Ipad.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,6 +538,10 @@
 				4A6BD0BF151AB3EE009D801B /* StoresViewControlleriPad.xib in Resources */,
 				4A6BD0C5151AB447009D801B /* ProductsViewControlleriPad.xib in Resources */,
 				4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */,
+				D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */,
+				D396D4EE151ABB000090F2A7 /* macstore.png in Resources */,
+				D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */,
+				D396D4F2151ABB360090F2A7 /* macstore Ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
