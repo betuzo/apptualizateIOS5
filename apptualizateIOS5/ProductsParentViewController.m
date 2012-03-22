@@ -40,6 +40,10 @@
     ProductsViewController *controller = [[ProductsViewController alloc]initWithNibName:@"ProductsViewController" bundle:nil];
 	_productsNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 	
+    [_productsNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header-iphone"] forBarMetrics:UIBarMetricsDefault];
+    
+    [[UIBarButtonItem appearance] setBackgroundImage:[UIImage imageNamed:@"registro"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
 	[_productsNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_productsNavigationController.view];
 }
