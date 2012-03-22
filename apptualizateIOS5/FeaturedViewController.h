@@ -12,5 +12,5 @@
 {
 }
 
-
+@property (nonatomic, strong) NSArray *featuredProducts;
 @end

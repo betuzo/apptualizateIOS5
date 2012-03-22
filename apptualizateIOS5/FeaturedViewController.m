@@ -8,9 +8,11 @@
 
 #import "FeaturedViewController.h"
 #import "ProductsCellViewController.h"
+#import "DetailProductsViewController.h"
 
 @implementation FeaturedViewController
 
+@synthesize featuredProducts = _featuredProducts;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +37,13 @@
 {
     [super viewDidLoad];
 	
+    _featuredProducts = [[NSArray alloc] initWithObjects:
+                                 [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", @"mini-iphone", nil],
+                                 [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", @"mini-iphone-blanco", nil],
+                                 [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
+                                 [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", @"mini-iphone", nil], 
+                                 [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
+                                 nil];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -53,7 +62,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return [_featuredProducts  count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,9 +76,12 @@
         cell = (ProductsCellViewController *)[nib objectAtIndex:0];
     }
 	
-	cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //cell.textLabel.text = @"Producto";
-	
+	cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    
+    
+    [[cell nameProduct] setText:[[[_featuredProducts objectAtIndex:indexPath.row] allObjects] objectAtIndex:0]];
+    [[cell descProduct] setText:[[[_featuredProducts objectAtIndex:indexPath.row] allObjects] objectAtIndex:1]];
+    [[cell imageProduct] setImage:[UIImage imageNamed:[[[_featuredProducts objectAtIndex:indexPath.row] allObjects] objectAtIndex:2]]];	
     return cell;
 
 }
@@ -77,6 +89,17 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    DetailProductsViewController *detailViewController = [[DetailProductsViewController alloc] initWithNibName:@"DetailProductsViewController" bundle:nil];
+    // ...
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+	
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ProductsViewController.h"
 #import "ProductsParentViewController.h"
+#import "ProductsCellViewController.h"
 
 
 @implementation ProductsViewController
@@ -36,8 +37,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSArray *array=[[NSArray alloc] initWithObjects:@"Mac",@"Ipod",@"Iphone",@"Ipad", nil];
-    self.listData=array;
+    NSDictionary *row1=[[NSDictionary alloc]initWithObjectsAndKeys:@"Mac",@"Name",@"Destopk y Laptops",@"Description", nil];
+    NSDictionary *row2=[[NSDictionary alloc]initWithObjectsAndKeys:@"Ipod",@"Name",@"Escucha tu musica",@"Description", nil];
+    NSDictionary *row3=[[NSDictionary alloc]initWithObjectsAndKeys:@"Iphone",@"Name",@"Smartphones 4 y 4S",@"Description", nil];
+    NSDictionary *row4=[[NSDictionary alloc]initWithObjectsAndKeys:@"Ipad",@"Name",@"Ipad2 y New Ipad",@"Description", nil];
+    self.listData=[[NSArray alloc]initWithObjects:row1,row2,row3,row4, nil];
 }
 
 - (void)viewDidUnload
@@ -60,13 +64,36 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    /*static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
     if (cell==nil) {
         cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
     }
     NSUInteger row=[indexPath row];
     cell.textLabel.text=[listData objectAtIndex:row];
+    return cell;*/
+    static NSString *CellTableIdentifier = @"CellTableIdentifier";
+    static BOOL nibsRegistered = NO;
+    if (!nibsRegistered) {
+        UINib *nib=[UINib nibWithNibName:@"ProductsCellViewController" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];
+        nibsRegistered=YES;
+        }
+    ProductsCellViewController *cell=[tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
+    if (cell==nil) {
+        cell=[[ProductsCellViewController alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellTableIdentifier];
+    }
+        NSUInteger row=[indexPath row];
+        NSDictionary *rowData=[self.listData objectAtIndex:row];
+        [[cell nameProduct] setText:[rowData objectForKey:@"Name"]];
+        [[cell descProduct] setText:[rowData objectForKey:@"Description"]];
+
     return cell;
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 @end
