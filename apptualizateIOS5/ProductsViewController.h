@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductsViewController : UIViewController
 
+@interface ProductsViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@property (strong,nonatomic) NSArray *listData;
 @end

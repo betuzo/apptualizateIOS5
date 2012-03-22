@@ -36,6 +36,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    
     _productsViewController = [[ProductsViewController alloc]initWithNibName:@"ProductsViewController" bundle:nil];
 	_productsNavigationController = [[UINavigationController alloc] initWithRootViewController:productsViewController];
 	
