@@ -38,7 +38,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    UIView *ribbonView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 1024, 46)];
+	[ribbonView setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
+	
+	
     UIViewController *viewController1 = [[FeaturedViewControlleriPad alloc] initWithNibName:@"FeaturedViewControlleriPad" bundle:nil];
 	UIViewController *viewController2 = [[ProductsViewControlleriPad alloc] initWithNibName:@"ProductsViewControlleriPad" bundle:nil];
 	UIViewController *viewController3 = [[StoresViewControlleriPad alloc] initWithNibName:@"StoresViewControlleriPad" bundle:nil];
@@ -47,7 +50,9 @@
 	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
  	[_homeTabBarController.view setFrame:self.view.bounds];
 	
+	[_homeTabBarController.view addSubview:ribbonView];
 	[self.view addSubview:_homeTabBarController.view];
+	
     
 }
 
