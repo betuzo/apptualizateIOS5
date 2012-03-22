@@ -44,10 +44,10 @@
     NSDictionary *row4=[[NSDictionary alloc]initWithObjectsAndKeys:@"Ipad",@"Name",@"Ipad2 y New Ipad",@"Description", nil];
     self.listData=[[NSArray alloc]initWithObjects:row1,row2,row3,row4, nil];*/
     _listData = [[NSArray alloc] initWithObjects:
-                         [[NSArray alloc] initWithObjects:@"Mac", @"Destopk y Laptops", @"mini-iphone", nil],
-                         [[NSArray alloc] initWithObjects:@"iPod", @"Escucha tu música favorita", @"mini-iphone-blanco", nil],
-                         [[NSArray alloc] initWithObjects:@"iPhone", @"Smartphones 4 y 4S", @"mini-iphone", nil], 
-                         [[NSArray alloc] initWithObjects:@"iPad", @"Ipad2 y el Nuevo Ipad", @"mini-iphone-negro", nil], 
+                         [[NSArray alloc] initWithObjects:@"Mac", @"Destopk y Laptops", @"Mac", nil],
+                         [[NSArray alloc] initWithObjects:@"iPod", @"Escucha tu música favorita", @"iPod", nil],
+                         [[NSArray alloc] initWithObjects:@"iPhone", @"Smartphones 4 y 4S", @"iPhone", nil], 
+                         [[NSArray alloc] initWithObjects:@"iPad", @"Ipad2 y el Nuevo Ipad", @"iPad", nil], 
                          nil];
     
 }
