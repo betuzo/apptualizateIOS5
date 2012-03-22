@@ -54,6 +54,9 @@
 		C06095CD151AADF2001517EB /* StoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06095CB151AADF2001517EB /* StoresViewController.xib */; };
 		C06467B2151ADE490092BF31 /* FeaturedParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */; };
 		C06467B3151ADE490092BF31 /* FeaturedParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */; };
+		C06467D2151B06830092BF31 /* iPhone4S.png in Resources */ = {isa = PBXBuildFile; fileRef = C06467D1151B06830092BF31 /* iPhone4S.png */; };
+		C06467D5151B068B0092BF31 /* newIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = C06467D4151B068B0092BF31 /* newIpad.png */; };
+		C06467D7151B06A10092BF31 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = C06467D6151B06A10092BF31 /* header.png */; };
 		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
 		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
 		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
@@ -142,6 +145,9 @@
 		C06467AF151ADE490092BF31 /* FeaturedParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedParentViewController.h; sourceTree = "<group>"; };
 		C06467B0151ADE490092BF31 /* FeaturedParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedParentViewController.m; sourceTree = "<group>"; };
 		C06467B1151ADE490092BF31 /* FeaturedParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedParentViewController.xib; sourceTree = "<group>"; };
+		C06467D1151B06830092BF31 /* iPhone4S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone4S.png; sourceTree = "<group>"; };
+		C06467D4151B068B0092BF31 /* newIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newIpad.png; sourceTree = "<group>"; };
+		C06467D6151B06A10092BF31 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
 		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
 		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
@@ -518,6 +524,9 @@
 		D396D4EA151ABADE0090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C06467D4151B068B0092BF31 /* newIpad.png */,
+				C06467D6151B06A10092BF31 /* header.png */,
+				C06467D1151B06830092BF31 /* iPhone4S.png */,
 				D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */,
 				D396D4F1151ABB360090F2A7 /* macstore Ipad.png */,
 			);
@@ -638,6 +647,9 @@
 				4AF6A729151AFC0A0026DB46 /* mini-iphone-negro.png in Resources */,
 				4AF6A72A151AFC0A0026DB46 /* mini-iphone.png in Resources */,
 				4AF6A72E151AFEB10026DB46 /* principal.png in Resources */,
+				C06467D2151B06830092BF31 /* iPhone4S.png in Resources */,
+				C06467D5151B068B0092BF31 /* newIpad.png in Resources */,
+				C06467D7151B06A10092BF31 /* header.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
