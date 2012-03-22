@@ -14,4 +14,6 @@
 }
 
 -(IBAction)presentHomeView:(id)sender;
+-(IBAction)presentRegisterView:(id)sender;
+
 @end

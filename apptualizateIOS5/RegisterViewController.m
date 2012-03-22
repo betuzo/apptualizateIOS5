@@ -1,16 +1,14 @@
 //
-//  LoginViewControlleriPhone.m
+//  RegisterViewController.m
 //  apptualizateIOS5
 //
-//  Created by Misael Pérez Chamorro on 3/21/12.
+//  Created by Roberto Salvador Olguín Lozano on 22/03/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "LoginViewControlleriPhone.h"
-#import "HomeViewController.h"
 #import "RegisterViewController.h"
 
-@implementation LoginViewControlleriPhone
+@implementation RegisterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,26 +27,11 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
--(IBAction)presentHomeView:(id)sender
-{
-    NSLog(@"presentHomeView");
-    HomeViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-    [self presentModalViewController:homeViewController animated:YES];
-}
-
--(IBAction)presentRegisterView:(id)sender
-{
-    NSLog(@"presentRegisterView");
-    RegisterViewController *registerViewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
-    [self presentModalViewController:registerViewController animated:YES];
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -64,6 +47,5 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 
 @end

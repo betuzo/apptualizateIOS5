@@ -41,6 +41,8 @@
 		4AC5EA2C151BC57600BA9253 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2A151BC57600BA9253 /* ShopViewController.xib */; };
 		4AC5EA30151BC58500BA9253 /* ShopParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2E151BC58500BA9253 /* ShopParentViewController.m */; };
 		4AC5EA31151BC58500BA9253 /* ShopParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2F151BC58500BA9253 /* ShopParentViewController.xib */; };
+		4AC5EA36151BC8F200BA9253 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA34151BC8F200BA9253 /* RegisterViewController.m */; };
+		4AC5EA37151BC8F200BA9253 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA35151BC8F200BA9253 /* RegisterViewController.xib */; };
 		4AF6A718151AE1790026DB46 /* ProductsParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */; };
 		4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */; };
 		4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */; };
@@ -177,6 +179,9 @@
 		4AC5EA2D151BC58400BA9253 /* ShopParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopParentViewController.h; sourceTree = "<group>"; };
 		4AC5EA2E151BC58500BA9253 /* ShopParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopParentViewController.m; sourceTree = "<group>"; };
 		4AC5EA2F151BC58500BA9253 /* ShopParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopParentViewController.xib; sourceTree = "<group>"; };
+		4AC5EA33151BC8F200BA9253 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		4AC5EA34151BC8F200BA9253 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		4AC5EA35151BC8F200BA9253 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		4AF6A715151AE1790026DB46 /* ProductsParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParentViewController.h; sourceTree = "<group>"; };
 		4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParentViewController.m; sourceTree = "<group>"; };
 		4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsParentViewController.xib; sourceTree = "<group>"; };
@@ -469,6 +474,23 @@
 			name = Shop;
 			sourceTree = "<group>";
 		};
+		4AC5EA32151BC8BE00BA9253 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5EA33151BC8F200BA9253 /* RegisterViewController.h */,
+				4AC5EA34151BC8F200BA9253 /* RegisterViewController.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		4AC5EA38151BC90200BA9253 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5EA35151BC8F200BA9253 /* RegisterViewController.xib */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
 		4AF6A724151AFB8D0026DB46 /* Controlls */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +533,7 @@
 		C06095A9151AAA85001517EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA32151BC8BE00BA9253 /* Register */,
 				4AC5EA1C151BC32900BA9253 /* Shop */,
 				D396D4F4151AC8720090F2A7 /* Loyalty */,
 				C06095BE151AACFC001517EB /* Stores */,
@@ -525,6 +548,7 @@
 		C06095AA151AAAB2001517EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA38151BC90200BA9253 /* Register */,
 				4AC5EA1D151BC36900BA9253 /* Shop */,
 				D396D4F3151AC8620090F2A7 /* Loyalty */,
 				4A6BD0CD151AB8FF009D801B /* Stores */,
@@ -875,6 +899,7 @@
 				4AC5EA27151BC3D100BA9253 /* LoyaltyParentViewController.xib in Resources */,
 				4AC5EA2C151BC57600BA9253 /* ShopViewController.xib in Resources */,
 				4AC5EA31151BC58500BA9253 /* ShopParentViewController.xib in Resources */,
+				4AC5EA37151BC8F200BA9253 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +956,7 @@
 				4AC5EA26151BC3D100BA9253 /* LoyaltyParentViewController.m in Sources */,
 				4AC5EA2B151BC57600BA9253 /* ShopViewController.m in Sources */,
 				4AC5EA30151BC58500BA9253 /* ShopParentViewController.m in Sources */,
+				4AC5EA36151BC8F200BA9253 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
