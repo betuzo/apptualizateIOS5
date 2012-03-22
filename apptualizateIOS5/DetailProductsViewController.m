@@ -32,6 +32,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    CGRect rectButton;
+    
+    rectButton.size.width = 48;
+    rectButton.size.height = 30;
+    
+    rectButton.origin.x = 0;
+    rectButton.origin.y = 0;
+    
+    UIButton * leftButtonItem = [[UIButton alloc] initWithFrame:rectButton];
+    
+    [leftButtonItem setImage:[UIImage imageNamed:@"boton-verde"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
+    
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    
     // Do any additional setup after loading the view from its nib.
 }
 
