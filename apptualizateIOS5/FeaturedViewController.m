@@ -98,14 +98,31 @@
     
     DetailProductsViewController *detailViewController = [[DetailProductsViewController alloc] initWithNibName:@"DetailProductsViewController" bundle:nil];
     
-    
-    [detailViewController setDetailsProducts:[[NSArray alloc] initWithObjects:
-                                     [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", nil],
-                                     [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", nil],
-                                     [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", nil], 
-                                     [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", nil], 
-                                     [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", nil], 
-                                     nil] ];
+    if (indexPath.row==0) 
+    {
+        [detailViewController setDetailsProducts:[[NSArray alloc] initWithObjects:
+                                                  [[NSArray alloc] initWithObjects:@"iPod touch 8 GB : $3,199.00", @"Ganas 100 MacPuntos", nil],
+                                                  [[NSArray alloc] initWithObjects:@"iPod touch 32 GB : $4,799.00", @"Ganas 200 MacPunto", nil],
+                                                  [[NSArray alloc] initWithObjects:@"iPod touch 64 GB1 : $6,399.00", @"Ganas 400 MacPunto", nil], 
+                                                  nil] ];
+
+    }
+    if (indexPath.row==2) 
+    {
+        [detailViewController setDetailsProducts:[[NSArray alloc] initWithObjects:
+                                              [[NSArray alloc] initWithObjects:@"iPod nano 8 GB : $2,099.00", @"Ganas 70 MacPuntos", nil],
+                                              [[NSArray alloc] initWithObjects:@"iPod touch 16 GB : $2,399.00", @"Ganas 85 MacPuntos", nil],
+                                              nil] ];
+    }
+    if (indexPath.row==1) 
+    {
+        [detailViewController setDetailsProducts:[[NSArray alloc] initWithObjects:
+                                              [[NSArray alloc] initWithObjects:@"New iPad 16 GB Wi-Fi: $9,999.00", @"Ganas 600 MacPuntos", nil],
+                                              [[NSArray alloc] initWithObjects:@"New iPad 32 GB Wi-Fi: $11,099.00", @"Ganas 800 MacPuntos", nil],
+                                              [[NSArray alloc] initWithObjects:@"iPad 2 16 GB Wi-Fi: $6,099.00", @"Ganas 400 MacPuntos", nil],
+                                              [[NSArray alloc] initWithObjects:@"iPad 2 16 GB Wi-Fi + 3G: $8,099.00", @"Ganas 500 MacPuntos", nil],
+                                              nil] ];
+    }
     
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
