@@ -30,6 +30,15 @@
 		4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */; };
 		4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */; };
 		4A7B4C76151CD81D0024EA66 /* boton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C75151CD81C0024EA66 /* boton.png */; };
+		4A7B4C87151CF7270024EA66 /* DetailPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B4C85151CF7270024EA66 /* DetailPointsViewController.m */; };
+		4A7B4C88151CF7270024EA66 /* DetailPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C86151CF7270024EA66 /* DetailPointsViewController.xib */; };
+		4A7B4C91151D01410024EA66 /* boton-con-puntos-rojo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8A151D01390024EA66 /* boton-con-puntos-rojo1.png */; };
+		4A7B4C92151D01410024EA66 /* boton-con-puntos-rojo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8B151D013B0024EA66 /* boton-con-puntos-rojo2.png */; };
+		4A7B4C93151D01410024EA66 /* boton-con-puntos-rojo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8C151D013C0024EA66 /* boton-con-puntos-rojo3.png */; };
+		4A7B4C94151D01410024EA66 /* boton-con-puntos-verde1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8D151D013E0024EA66 /* boton-con-puntos-verde1.png */; };
+		4A7B4C95151D01410024EA66 /* boton-con-puntos-verde2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8E151D013F0024EA66 /* boton-con-puntos-verde2.png */; };
+		4A7B4C96151D01410024EA66 /* boton-con-puntos-verde3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8F151D01400024EA66 /* boton-con-puntos-verde3.png */; };
+		4A7B4C99151D02470024EA66 /* boton-checkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C98151D02450024EA66 /* boton-checkin.png */; };
 		4A80962B151CAFC30080AB3F /* banner-inicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809629151CAFB20080AB3F /* banner-inicial.png */; };
 		4A80962C151CAFC30080AB3F /* punto.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80962A151CAFB70080AB3F /* punto.png */; };
 		4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */; };
@@ -198,6 +207,16 @@
 		4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewControlleriPad.m; sourceTree = "<group>"; };
 		4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewControlleriPad.xib; sourceTree = "<group>"; };
 		4A7B4C75151CD81C0024EA66 /* boton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton.png; sourceTree = "<group>"; };
+		4A7B4C84151CF7270024EA66 /* DetailPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPointsViewController.h; sourceTree = "<group>"; };
+		4A7B4C85151CF7270024EA66 /* DetailPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPointsViewController.m; sourceTree = "<group>"; };
+		4A7B4C86151CF7270024EA66 /* DetailPointsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPointsViewController.xib; sourceTree = "<group>"; };
+		4A7B4C8A151D01390024EA66 /* boton-con-puntos-rojo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-rojo1.png"; sourceTree = "<group>"; };
+		4A7B4C8B151D013B0024EA66 /* boton-con-puntos-rojo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-rojo2.png"; sourceTree = "<group>"; };
+		4A7B4C8C151D013C0024EA66 /* boton-con-puntos-rojo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-rojo3.png"; sourceTree = "<group>"; };
+		4A7B4C8D151D013E0024EA66 /* boton-con-puntos-verde1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-verde1.png"; sourceTree = "<group>"; };
+		4A7B4C8E151D013F0024EA66 /* boton-con-puntos-verde2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-verde2.png"; sourceTree = "<group>"; };
+		4A7B4C8F151D01400024EA66 /* boton-con-puntos-verde3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-verde3.png"; sourceTree = "<group>"; };
+		4A7B4C98151D02450024EA66 /* boton-checkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-checkin.png"; sourceTree = "<group>"; };
 		4A809629151CAFB20080AB3F /* banner-inicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial.png"; sourceTree = "<group>"; };
 		4A80962A151CAFB70080AB3F /* punto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto.png; sourceTree = "<group>"; };
 		4A809631151CC8AE0080AB3F /* PuntosCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuntosCellViewController.h; sourceTree = "<group>"; };
@@ -749,6 +768,13 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B4C98151D02450024EA66 /* boton-checkin.png */,
+				4A7B4C8A151D01390024EA66 /* boton-con-puntos-rojo1.png */,
+				4A7B4C8B151D013B0024EA66 /* boton-con-puntos-rojo2.png */,
+				4A7B4C8C151D013C0024EA66 /* boton-con-puntos-rojo3.png */,
+				4A7B4C8D151D013E0024EA66 /* boton-con-puntos-verde1.png */,
+				4A7B4C8E151D013F0024EA66 /* boton-con-puntos-verde2.png */,
+				4A7B4C8F151D01400024EA66 /* boton-con-puntos-verde3.png */,
 				C0D79B7D151CECA000DBC740 /* phone-icon.png */,
 				C0D79B6E151CDDBE00DBC740 /* pin.png */,
 				4A7B4C75151CD81C0024EA66 /* boton.png */,
@@ -845,6 +871,7 @@
 		D396D4F3151AC8620090F2A7 /* Loyalty */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B4C86151CF7270024EA66 /* DetailPointsViewController.xib */,
 				4AC5EA20151BC3B100BA9253 /* LoyaltyViewController.xib */,
 				4AC5EA25151BC3D100BA9253 /* LoyaltyParentViewController.xib */,
 			);
@@ -858,6 +885,8 @@
 				4AC5EA1F151BC3B100BA9253 /* LoyaltyViewController.m */,
 				4AC5EA23151BC3D100BA9253 /* LoyaltyParentViewController.h */,
 				4AC5EA24151BC3D100BA9253 /* LoyaltyParentViewController.m */,
+				4A7B4C84151CF7270024EA66 /* DetailPointsViewController.h */,
+				4A7B4C85151CF7270024EA66 /* DetailPointsViewController.m */,
 			);
 			name = Loyalty;
 			sourceTree = "<group>";
@@ -1057,6 +1086,14 @@
 				C0D79B6F151CDDBE00DBC740 /* pin.png in Resources */,
 				C0D79B74151CDEB300DBC740 /* StoresDescriptionViewController.xib in Resources */,
 				C0D79B7E151CECA300DBC740 /* phone-icon.png in Resources */,
+				4A7B4C88151CF7270024EA66 /* DetailPointsViewController.xib in Resources */,
+				4A7B4C91151D01410024EA66 /* boton-con-puntos-rojo1.png in Resources */,
+				4A7B4C92151D01410024EA66 /* boton-con-puntos-rojo2.png in Resources */,
+				4A7B4C93151D01410024EA66 /* boton-con-puntos-rojo3.png in Resources */,
+				4A7B4C94151D01410024EA66 /* boton-con-puntos-verde1.png in Resources */,
+				4A7B4C95151D01410024EA66 /* boton-con-puntos-verde2.png in Resources */,
+				4A7B4C96151D01410024EA66 /* boton-con-puntos-verde3.png in Resources */,
+				4A7B4C99151D02470024EA66 /* boton-checkin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1119,6 +1156,7 @@
 				4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */,
 				C0D79B68151CD5BD00DBC740 /* MacStorePinAnotation.m in Sources */,
 				C0D79B73151CDEB300DBC740 /* StoresDescriptionViewController.m in Sources */,
+				4A7B4C87151CF7270024EA66 /* DetailPointsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
