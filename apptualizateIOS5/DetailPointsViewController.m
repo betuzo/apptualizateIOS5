@@ -40,14 +40,44 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if ([_listData count] > 0) {
+        [_nameItem setText:[[[_listData objectAtIndex:0]allObjects]objectAtIndex:0]];
+        [_descItem setText:[[[_listData objectAtIndex:0]allObjects]objectAtIndex:1]];
+        [_imgItem setImage:[UIImage imageNamed:[[[_listData objectAtIndex:0] allObjects] objectAtIndex:2]]];
+    }
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    
+    CGRect rectButton;
+    
+    rectButton.size.width = 50;
+    rectButton.size.height = 40;
+    
+    rectButton.origin.x = 0;
+    rectButton.origin.y = 0;
+    
+    UIButton *leftButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [leftButtonItem addTarget:self action:@selector(goBackView:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButtonItem setFrame:rectButton];
+    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-atras"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
+    
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void) goBackView:(id) sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

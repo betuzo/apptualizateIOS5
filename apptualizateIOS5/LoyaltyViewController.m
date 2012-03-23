@@ -174,10 +174,8 @@
             [controllerSecondChild setListData:[[NSArray alloc] initWithObjects:
                                                 [[NSArray alloc] initWithObjects:@"Funda Incase", @"Funda Incase iPhone", @"boton-con-puntos-verde1", nil],
                                                 [[NSArray alloc] initWithObjects:@"Adaptador iPod", @"Adaptador iPod color blanco", @"boton-con-puntos-rojo1", nil],
-                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
-                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
-                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
-                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
+                                                [[NSArray alloc] initWithObjects:@"Funda Incase", @"Funda Incase iPhone", @"boton-con-puntos-verde2", nil],
+                                                [[NSArray alloc] initWithObjects:@"Adaptador iPod", @"Adaptador iPod color blanco", @"boton-con-puntos-rojo2", nil],
                                                 nil]
              ];
             
