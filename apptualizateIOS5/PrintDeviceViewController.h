@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PrintDeviceViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UILabel *labelPrintDevice;
+- (IBAction)textPrintDevice:(UITextField *)sender;
 @end

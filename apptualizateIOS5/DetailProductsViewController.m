@@ -8,6 +8,7 @@
 
 #import "DetailProductsViewController.h"
 #import "ShopViewController.h"
+#import "PrintDeviceViewController.h"
 
 @implementation DetailProductsViewController
 
@@ -121,6 +122,9 @@
     if (buttonIndex!=[actionSheet firstOtherButtonIndex]) {
         ShopViewController *miCarrito=[[ShopViewController alloc]initWithNibName:@"ShopViewController" bundle:nil];
         [self.navigationController pushViewController:miCarrito animated:YES];
+    } else {
+        PrintDeviceViewController *miGrabador=[[PrintDeviceViewController alloc] initWithNibName:@"PrintDeviceViewController" bundle:nil];
+        [self.navigationController pushViewController:miGrabador animated:YES];
     }
 }
 

@@ -13,6 +13,9 @@
 @end
 
 @implementation PrintDeviceViewController
+@synthesize labelPrintDevice;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +34,8 @@
 
 - (void)viewDidUnload
 {
+
+    [self setLabelPrintDevice:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -41,4 +46,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)textPrintDevice:(UITextField *)sender {
+    NSString *title=[sender text];
+    labelPrintDevice.text=title;
+}
 @end

@@ -134,6 +134,7 @@
 		D396D586151B94450090F2A7 /* iPodTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D580151B94450090F2A7 /* iPodTouch.png */; };
 		D3B0C55A151C45E30075C8A1 /* PrintDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B0C558151C45E20075C8A1 /* PrintDeviceViewController.m */; };
 		D3B0C55B151C45E30075C8A1 /* PrintDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B0C559151C45E20075C8A1 /* PrintDeviceViewController.xib */; };
+		D3B0C560151C47C00075C8A1 /* para-grabado.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B0C55F151C47C00075C8A1 /* para-grabado.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,6 +303,7 @@
 		D3B0C557151C45E20075C8A1 /* PrintDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintDeviceViewController.h; sourceTree = "<group>"; };
 		D3B0C558151C45E20075C8A1 /* PrintDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintDeviceViewController.m; sourceTree = "<group>"; };
 		D3B0C559151C45E20075C8A1 /* PrintDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintDeviceViewController.xib; sourceTree = "<group>"; };
+		D3B0C55F151C47C00075C8A1 /* para-grabado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "para-grabado.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -702,6 +704,7 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D3B0C55F151C47C00075C8A1 /* para-grabado.png */,
 				4AF71140151C2540003F1136 /* logo.png */,
 				4AF71130151C09A2003F1136 /* boton-atras-on.png */,
 				4AF71131151C09A2003F1136 /* boton-atras.png */,
@@ -982,6 +985,7 @@
 				4AF71137151C09A2003F1136 /* entrar.png in Resources */,
 				4AF71141151C2547003F1136 /* logo.png in Resources */,
 				D3B0C55B151C45E30075C8A1 /* PrintDeviceViewController.xib in Resources */,
+				D3B0C560151C47C00075C8A1 /* para-grabado.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
