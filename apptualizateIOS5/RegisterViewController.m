@@ -58,12 +58,26 @@
 
 -(IBAction)registerUser:(id)sender
 {
-    NSString *loyalty = @"NO";
-    if ([_loyaltyUser isOn]) {
-        loyalty = @"YES";
+    if (![[_firstNameUser text] isEqual:@""]
+        && ![[_lastNameUser text] isEqual:@""]
+        && ![[_emailUser text] isEqual:@""])
+    {
+        NSString *loyalty = @"NO";
+        if ([_loyaltyUser isOn]) 
+        {
+            loyalty = @"YES";
+        }
+        [UserService setInfoUser:[[NSArray alloc] initWithObjects:[_firstNameUser text],[_lastNameUser text],[_emailUser text], loyalty, nil]]; 
+        HomeViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        [self presentModalViewController:homeViewController animated:YES];
+        [self dismissModalViewControllerAnimated:YES];
     }
-    [UserService setInfoUser:[[NSArray alloc] initWithObjects:[_firstNameUser text],[_lastNameUser text],[_emailUser text], loyalty, nil]]; 
-    [self dismissModalViewControllerAnimated:YES];
+    else
+    {
+        NSString *message = @"Informacion requerida incompleta, campos (*) Requeridos";
+        UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Registro" message:message delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+        [usageAlertView show];
+    }
 }
 
 -(IBAction)editingEnded:(id)sender

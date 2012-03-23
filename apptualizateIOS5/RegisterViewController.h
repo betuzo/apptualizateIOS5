@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UserService.h"
+#import "HomeViewController.h"
 
 @interface RegisterViewController : UIViewController<UITextFieldDelegate>
 

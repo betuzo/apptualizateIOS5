@@ -40,6 +40,9 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    
+    [_storesMapView setZoomEnabled:YES];
+    [_storesMapView setScrollEnabled:YES];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
