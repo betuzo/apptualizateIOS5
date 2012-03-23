@@ -7,6 +7,7 @@
 //
 
 #import "DetailProductsViewController.h"
+#import "ShopViewController.h"
 
 @implementation DetailProductsViewController
 
@@ -114,6 +115,13 @@
 - (void)actionSheetCancel:(UIActionSheet *)actionSheet
 {
     [actionSheet removeFromSuperview];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if (buttonIndex!=[actionSheet firstOtherButtonIndex]) {
+        ShopViewController *miCarrito=[[ShopViewController alloc]initWithNibName:@"ShopViewController" bundle:nil];
+        [self.navigationController pushViewController:miCarrito animated:YES];
+    }
 }
 
 - (void) goBackView:(id) sender

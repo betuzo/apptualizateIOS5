@@ -133,6 +133,8 @@
 		D396D584151B94450090F2A7 /* iPodNano.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57E151B94450090F2A7 /* iPodNano.png */; };
 		D396D585151B94450090F2A7 /* iPodShuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D57F151B94450090F2A7 /* iPodShuffle.png */; };
 		D396D586151B94450090F2A7 /* iPodTouch.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D580151B94450090F2A7 /* iPodTouch.png */; };
+		D3B0C55A151C45E30075C8A1 /* PrintDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B0C558151C45E20075C8A1 /* PrintDeviceViewController.m */; };
+		D3B0C55B151C45E30075C8A1 /* PrintDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B0C559151C45E20075C8A1 /* PrintDeviceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,6 +301,9 @@
 		D396D57E151B94450090F2A7 /* iPodNano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodNano.png; sourceTree = "<group>"; };
 		D396D57F151B94450090F2A7 /* iPodShuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodShuffle.png; sourceTree = "<group>"; };
 		D396D580151B94450090F2A7 /* iPodTouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodTouch.png; sourceTree = "<group>"; };
+		D3B0C557151C45E20075C8A1 /* PrintDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintDeviceViewController.h; sourceTree = "<group>"; };
+		D3B0C558151C45E20075C8A1 /* PrintDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintDeviceViewController.m; sourceTree = "<group>"; };
+		D3B0C559151C45E20075C8A1 /* PrintDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrintDeviceViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -568,6 +573,7 @@
 		C06095A9151AAA85001517EB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D3B0C55E151C46120075C8A1 /* PrintDevices */,
 				4AC5EA32151BC8BE00BA9253 /* Register */,
 				4AC5EA1C151BC32900BA9253 /* Shop */,
 				D396D4F4151AC8720090F2A7 /* Loyalty */,
@@ -583,6 +589,7 @@
 		C06095AA151AAAB2001517EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D3B0C55D151C45F30075C8A1 /* PrintDevice */,
 				4AC5EA38151BC90200BA9253 /* Register */,
 				4AC5EA1D151BC36900BA9253 /* Shop */,
 				D396D4F3151AC8620090F2A7 /* Loyalty */,
@@ -798,6 +805,23 @@
 			name = Loyalty;
 			sourceTree = "<group>";
 		};
+		D3B0C55D151C45F30075C8A1 /* PrintDevice */ = {
+			isa = PBXGroup;
+			children = (
+				D3B0C559151C45E20075C8A1 /* PrintDeviceViewController.xib */,
+			);
+			name = PrintDevice;
+			sourceTree = "<group>";
+		};
+		D3B0C55E151C46120075C8A1 /* PrintDevices */ = {
+			isa = PBXGroup;
+			children = (
+				D3B0C557151C45E20075C8A1 /* PrintDeviceViewController.h */,
+				D3B0C558151C45E20075C8A1 /* PrintDeviceViewController.m */,
+			);
+			name = PrintDevices;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -961,6 +985,7 @@
 				4AF71137151C09A2003F1136 /* entrar.png in Resources */,
 				4AF71141151C2547003F1136 /* logo.png in Resources */,
 				4AF71143151C366B003F1136 /* banner-inicial.png in Resources */,
+				D3B0C55B151C45E30075C8A1 /* PrintDeviceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,6 +1044,7 @@
 				4AC5EA30151BC58500BA9253 /* ShopParentViewController.m in Sources */,
 				4AC5EA36151BC8F200BA9253 /* RegisterViewController.m in Sources */,
 				4AF7113A151C0B6E003F1136 /* UserService.m in Sources */,
+				D3B0C55A151C45E30075C8A1 /* PrintDeviceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
