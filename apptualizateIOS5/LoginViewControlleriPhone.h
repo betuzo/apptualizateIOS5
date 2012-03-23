@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserService.h"
 
 @interface LoginViewControlleriPhone : UIViewController<UITextFieldDelegate>
 {
 	
 }
+
+@property(nonatomic, strong)IBOutlet UITextField *emailUser;
+
+@property(nonatomic, strong)IBOutlet UITextField *passUser;
 
 -(IBAction)presentHomeView:(id)sender;
 -(IBAction)presentRegisterView:(id)sender;

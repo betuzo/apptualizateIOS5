@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UserService.h"
+#import "PuntosCellViewController.h"
 
 @interface LoyaltyViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
