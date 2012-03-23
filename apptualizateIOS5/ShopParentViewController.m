@@ -41,6 +41,8 @@
     _shopViewController = [[ShopViewController alloc]initWithNibName:@"ShopViewController" bundle:nil];
 	_shopNavigationController = [[UINavigationController alloc] initWithRootViewController:_shopViewController];
 	
+    [_shopNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header-iphone"] forBarMetrics:UIBarMetricsDefault];
+    
 	[_shopNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_shopNavigationController.view];}
 

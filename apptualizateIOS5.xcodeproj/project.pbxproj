@@ -39,11 +39,12 @@
 		4A7B4C95151D01410024EA66 /* boton-con-puntos-verde2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8E151D013F0024EA66 /* boton-con-puntos-verde2.png */; };
 		4A7B4C96151D01410024EA66 /* boton-con-puntos-verde3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C8F151D01400024EA66 /* boton-con-puntos-verde3.png */; };
 		4A7B4C99151D02470024EA66 /* boton-checkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C98151D02450024EA66 /* boton-checkin.png */; };
-		4A80962B151CAFC30080AB3F /* banner-inicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809629151CAFB20080AB3F /* banner-inicial.png */; };
+		4A7B4C9F151D133C0024EA66 /* carritopantalla.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C9E151D133C0024EA66 /* carritopantalla.png */; };
+		4A7B4CA2151D14130024EA66 /* banner-inicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4CA1151D14130024EA66 /* banner-inicial.png */; };
+		4A7B4CA4151D17DB0024EA66 /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4CA3151D17DB0024EA66 /* banner1.png */; };
 		4A80962C151CAFC30080AB3F /* punto.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80962A151CAFB70080AB3F /* punto.png */; };
 		4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */; };
 		4A809635151CC8B00080AB3F /* PuntosCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A809633151CC8AF0080AB3F /* PuntosCellViewController.xib */; };
-		4A809641151CD1AB0080AB3F /* banner-inicial-rotar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */; };
 		4A809642151CD1AB0080AB3F /* boton-con-puntos-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */; };
 		4A809643151CD1AB0080AB3F /* Foursquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809638151CD1430080AB3F /* Foursquare.png */; };
 		4A809644151CD1AB0080AB3F /* icono-macstore-retina-displ.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809639151CD14F0080AB3F /* icono-macstore-retina-displ.png */; };
@@ -218,12 +219,13 @@
 		4A7B4C8E151D013F0024EA66 /* boton-con-puntos-verde2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-verde2.png"; sourceTree = "<group>"; };
 		4A7B4C8F151D01400024EA66 /* boton-con-puntos-verde3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-verde3.png"; sourceTree = "<group>"; };
 		4A7B4C98151D02450024EA66 /* boton-checkin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-checkin.png"; sourceTree = "<group>"; };
-		4A809629151CAFB20080AB3F /* banner-inicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial.png"; sourceTree = "<group>"; };
+		4A7B4C9E151D133C0024EA66 /* carritopantalla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carritopantalla.png; sourceTree = "<group>"; };
+		4A7B4CA1151D14130024EA66 /* banner-inicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial.png"; sourceTree = "<group>"; };
+		4A7B4CA3151D17DB0024EA66 /* banner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner1.png; sourceTree = "<group>"; };
 		4A80962A151CAFB70080AB3F /* punto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto.png; sourceTree = "<group>"; };
 		4A809631151CC8AE0080AB3F /* PuntosCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuntosCellViewController.h; sourceTree = "<group>"; };
 		4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuntosCellViewController.m; sourceTree = "<group>"; };
 		4A809633151CC8AF0080AB3F /* PuntosCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuntosCellViewController.xib; sourceTree = "<group>"; };
-		4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial-rotar.png"; sourceTree = "<group>"; };
 		4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-negro.png"; sourceTree = "<group>"; };
 		4A809638151CD1430080AB3F /* Foursquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foursquare.png; sourceTree = "<group>"; };
 		4A809639151CD14F0080AB3F /* icono-macstore-retina-displ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-macstore-retina-displ.png"; sourceTree = "<group>"; };
@@ -770,6 +772,9 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B4CA3151D17DB0024EA66 /* banner1.png */,
+				4A7B4CA1151D14130024EA66 /* banner-inicial.png */,
+				4A7B4C9E151D133C0024EA66 /* carritopantalla.png */,
 				4A7B4C98151D02450024EA66 /* boton-checkin.png */,
 				4A7B4C8A151D01390024EA66 /* boton-con-puntos-rojo1.png */,
 				4A7B4C8B151D013B0024EA66 /* boton-con-puntos-rojo2.png */,
@@ -781,7 +786,6 @@
 				C0D79B7F151CF73B00DBC740 /* masStoreShop.png */,
 				C0D79B6E151CDDBE00DBC740 /* pin.png */,
 				4A7B4C75151CD81C0024EA66 /* boton.png */,
-				4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */,
 				4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */,
 				4A809638151CD1430080AB3F /* Foursquare.png */,
 				4A809639151CD14F0080AB3F /* icono-macstore-retina-displ.png */,
@@ -792,7 +796,6 @@
 				4A80963E151CD18C0080AB3F /* placa5.png */,
 				4A80963F151CD1940080AB3F /* placa6.png */,
 				4A809640151CD1A30080AB3F /* settings.png */,
-				4A809629151CAFB20080AB3F /* banner-inicial.png */,
 				4A80962A151CAFB70080AB3F /* punto.png */,
 				D3B0C55F151C47C00075C8A1 /* para-grabado.png */,
 				4AF71140151C2540003F1136 /* logo.png */,
@@ -1071,10 +1074,8 @@
 				4AF71141151C2547003F1136 /* logo.png in Resources */,
 				D3B0C55B151C45E30075C8A1 /* PrintDeviceViewController.xib in Resources */,
 				D3B0C560151C47C00075C8A1 /* para-grabado.png in Resources */,
-				4A80962B151CAFC30080AB3F /* banner-inicial.png in Resources */,
 				4A80962C151CAFC30080AB3F /* punto.png in Resources */,
 				4A809635151CC8B00080AB3F /* PuntosCellViewController.xib in Resources */,
-				4A809641151CD1AB0080AB3F /* banner-inicial-rotar.png in Resources */,
 				4A809642151CD1AB0080AB3F /* boton-con-puntos-negro.png in Resources */,
 				4A809643151CD1AB0080AB3F /* Foursquare.png in Resources */,
 				4A809644151CD1AB0080AB3F /* icono-macstore-retina-displ.png in Resources */,
@@ -1089,9 +1090,7 @@
 				C0D79B6F151CDDBE00DBC740 /* pin.png in Resources */,
 				C0D79B74151CDEB300DBC740 /* StoresDescriptionViewController.xib in Resources */,
 				C0D79B7E151CECA300DBC740 /* phone-icon.png in Resources */,
-
 				C0D79B80151CF73D00DBC740 /* masStoreShop.png in Resources */,
-
 				4A7B4C88151CF7270024EA66 /* DetailPointsViewController.xib in Resources */,
 				4A7B4C91151D01410024EA66 /* boton-con-puntos-rojo1.png in Resources */,
 				4A7B4C92151D01410024EA66 /* boton-con-puntos-rojo2.png in Resources */,
@@ -1100,7 +1099,9 @@
 				4A7B4C95151D01410024EA66 /* boton-con-puntos-verde2.png in Resources */,
 				4A7B4C96151D01410024EA66 /* boton-con-puntos-verde3.png in Resources */,
 				4A7B4C99151D02470024EA66 /* boton-checkin.png in Resources */,
-
+				4A7B4C9F151D133C0024EA66 /* carritopantalla.png in Resources */,
+				4A7B4CA2151D14130024EA66 /* banner-inicial.png in Resources */,
+				4A7B4CA4151D17DB0024EA66 /* banner1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
