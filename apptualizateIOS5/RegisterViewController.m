@@ -51,6 +51,12 @@
 {
     [super viewDidLoad];
     
+	
+	[_firstNameUser setDelegate:self];
+	[_lastNameUser setDelegate:self];
+	[_emailUser setDelegate:self];
+	[_phoneTextField setDelegate:self];
+	
     _detailsUser = [[NSArray alloc] initWithObjects:
                    [[NSArray alloc] initWithObjects:@"Dirrecion de Envio", @"Av Paseo de la Reforma, No 145, Col. Juarez, Mexico, D.F", nil],
                    [[NSArray alloc] initWithObjects:@"Cuenta de Banco", @"HSBC XXXX-XXXX-XXXX-1894, Abril/2015", nil],
@@ -153,7 +159,7 @@
 #pragma mark - View lifecycle
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-	if (textField == _emailUser || textField == _phoneTextField) {
+	if (textField == _phoneTextField) {
 		
 		[self moveToTopFields];
 
@@ -217,7 +223,7 @@
 						options: UIViewAnimationCurveEaseOut
 					 animations:^{
 						 
-						 [_contentView setFrame:CGRectMake(20,85, _contentView.bounds.size.width, _contentView.bounds.size.height)];
+						 [_contentView setFrame:CGRectMake(15,-18, _contentView.bounds.size.width, _contentView.bounds.size.height)];
 						 
 						 
 						 
@@ -234,7 +240,7 @@
 						options: UIViewAnimationCurveEaseOut
 					 animations:^{
 						 
-						 [_contentView setFrame:CGRectMake(20,150, _contentView.bounds.size.width,_contentView.bounds.size.height)];
+						 [_contentView setFrame:CGRectMake(15,35, _contentView.bounds.size.width,_contentView.bounds.size.height)];
 						 
 						 
 						 
