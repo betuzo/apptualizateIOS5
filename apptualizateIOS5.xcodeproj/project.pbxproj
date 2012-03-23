@@ -698,11 +698,8 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				D3B0C55F151C47C00075C8A1 /* para-grabado.png */,
-=======
 				4AF71142151C3660003F1136 /* banner-inicial.png */,
->>>>>>> 45138ea90a59d9b655857851bfc299f7e533f52d
 				4AF71140151C2540003F1136 /* logo.png */,
 				4AF71130151C09A2003F1136 /* boton-atras-on.png */,
 				4AF71131151C09A2003F1136 /* boton-atras.png */,
