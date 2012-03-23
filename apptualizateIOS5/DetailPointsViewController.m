@@ -41,18 +41,6 @@
 {
     [super viewDidLoad];
     
-    if ([_listData count] > 0) {
-        [_nameItem setText:[[[_listData objectAtIndex:0]allObjects]objectAtIndex:0]];
-        [_descItem setText:[[[_listData objectAtIndex:0]allObjects]objectAtIndex:1]];
-        [_imgItem setImage:[UIImage imageNamed:[[[_listData objectAtIndex:0] allObjects] objectAtIndex:2]]];
-    }
-    // Do any additional setup after loading the view from its nib.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    
     CGRect rectButton;
     
     rectButton.size.width = 50;
@@ -71,6 +59,18 @@
     
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
     
+    if ([_listData count] > 0) {
+        [_nameItem setText:[[[_listData objectAtIndex:0]allObjects]objectAtIndex:0]];
+        [_descItem setText:[[[_listData objectAtIndex:0]allObjects]objectAtIndex:1]];
+        [_imgItem setImage:[UIImage imageNamed:[[[_listData objectAtIndex:0] allObjects] objectAtIndex:2]]];
+    }
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+        
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
