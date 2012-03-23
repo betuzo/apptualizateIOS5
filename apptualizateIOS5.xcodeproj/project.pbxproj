@@ -137,6 +137,9 @@
 		C0D79B74151CDEB300DBC740 /* StoresDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B72151CDEB300DBC740 /* StoresDescriptionViewController.xib */; };
 		C0D79B7E151CECA300DBC740 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B7D151CECA000DBC740 /* phone-icon.png */; };
 		C0D79B80151CF73D00DBC740 /* masStoreShop.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B7F151CF73B00DBC740 /* masStoreShop.png */; };
+		C0D79B8D151D0FEB00DBC740 /* RegisterViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D79B8B151D0FEB00DBC740 /* RegisterViewControlleriPad.m */; };
+		C0D79B8E151D0FEB00DBC740 /* RegisterViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B8C151D0FEB00DBC740 /* RegisterViewControlleriPad.xib */; };
+		C0D79B91151D163C00DBC740 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B90151D163C00DBC740 /* icon.png */; };
 		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
 		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
 		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
@@ -336,6 +339,10 @@
 		C0D79B72151CDEB300DBC740 /* StoresDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoresDescriptionViewController.xib; sourceTree = "<group>"; };
 		C0D79B7D151CECA000DBC740 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
 		C0D79B7F151CF73B00DBC740 /* masStoreShop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masStoreShop.png; sourceTree = "<group>"; };
+		C0D79B8A151D0FEB00DBC740 /* RegisterViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewControlleriPad.h; sourceTree = "<group>"; };
+		C0D79B8B151D0FEB00DBC740 /* RegisterViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewControlleriPad.m; sourceTree = "<group>"; };
+		C0D79B8C151D0FEB00DBC740 /* RegisterViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewControlleriPad.xib; sourceTree = "<group>"; };
+		C0D79B90151D163C00DBC740 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
 		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
 		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
@@ -473,6 +480,9 @@
 			children = (
 				4A6BD0B6151AB3A1009D801B /* HomeViewControlleriPad.h */,
 				4A6BD0B7151AB3A1009D801B /* HomeViewControlleriPad.m */,
+				C0D79B8A151D0FEB00DBC740 /* RegisterViewControlleriPad.h */,
+				C0D79B8B151D0FEB00DBC740 /* RegisterViewControlleriPad.m */,
+				C0D79B8C151D0FEB00DBC740 /* RegisterViewControlleriPad.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -860,6 +870,7 @@
 		D396D4EA151ABADE0090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C0D79B90151D163C00DBC740 /* icon.png */,
 				C06467DB151B10210092BF31 /* header.png */,
 				C08D3167151BD9BF00A0449C /* macBig.png */,
 				C06467D4151B068B0092BF31 /* newIpad.png */,
@@ -1089,9 +1100,7 @@
 				C0D79B6F151CDDBE00DBC740 /* pin.png in Resources */,
 				C0D79B74151CDEB300DBC740 /* StoresDescriptionViewController.xib in Resources */,
 				C0D79B7E151CECA300DBC740 /* phone-icon.png in Resources */,
-
 				C0D79B80151CF73D00DBC740 /* masStoreShop.png in Resources */,
-
 				4A7B4C88151CF7270024EA66 /* DetailPointsViewController.xib in Resources */,
 				4A7B4C91151D01410024EA66 /* boton-con-puntos-rojo1.png in Resources */,
 				4A7B4C92151D01410024EA66 /* boton-con-puntos-rojo2.png in Resources */,
@@ -1100,7 +1109,8 @@
 				4A7B4C95151D01410024EA66 /* boton-con-puntos-verde2.png in Resources */,
 				4A7B4C96151D01410024EA66 /* boton-con-puntos-verde3.png in Resources */,
 				4A7B4C99151D02470024EA66 /* boton-checkin.png in Resources */,
-
+				C0D79B8E151D0FEB00DBC740 /* RegisterViewControlleriPad.xib in Resources */,
+				C0D79B91151D163C00DBC740 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,6 +1174,7 @@
 				C0D79B68151CD5BD00DBC740 /* MacStorePinAnotation.m in Sources */,
 				C0D79B73151CDEB300DBC740 /* StoresDescriptionViewController.m in Sources */,
 				4A7B4C87151CF7270024EA66 /* DetailPointsViewController.m in Sources */,
+				C0D79B8D151D0FEB00DBC740 /* RegisterViewControlleriPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
