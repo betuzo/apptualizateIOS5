@@ -49,14 +49,12 @@
             [_statusUser setText:[[UserService infoUser] objectAtIndex:2]];
             _listData = [[NSArray alloc] initWithObjects:
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"Puntos", @"Mac Puntos logrados: ", nil],
+                          [[NSArray alloc] initWithObjects:@"MacPuntos es el sitema de premios a nuestros Fan", @"Si compras ganas, si vienes ganas, si nos recomiendas ganas, aquí... !Tu ganas¡", @"punto", nil],
                           nil],
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
-                          [[NSArray alloc] initWithObjects:@"12 Meses sin Intereses iPod Touch", @"¡Regala el mejor reproductor!", nil],
-                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", nil],
+                          [[NSArray alloc] initWithObjects:@"¡Unete es Gratis!", @"Tus nos premias con tu preferencia y nosotros con Promociones", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"¿No te enteraste de la venta nocturna?", @"Con nosotros tu tienes el trato que te mereces", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"Con solo venir ya ganaste... !Así de simple¡", @"No tardes mas en unirte a nuesto programa FAN!", @"punto", nil],
                           nil],
                          nil];
         }
@@ -67,22 +65,17 @@
             [_statusUser setText:[[UserService infoUser] objectAtIndex:2]];
             _listData = [[NSArray alloc] initWithObjects:
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"Puntos", @"Mac Puntos logrados: ", nil],
+                          [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"punto", nil],
                           nil],
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
-                          [[NSArray alloc] initWithObjects:@"12 Meses sin Intereses iPod Touch", @"¡Regala el mejor reproductor!", nil],
-                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", nil],
+                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", @"punto", nil],
                           nil],
                          nil];
         }
     };
-    
-    
-    
-
 }
 
 - (void)viewDidUnload
@@ -101,18 +94,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+    PuntosCellViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PuntosCellViewController" owner:self options:nil];
+        cell = (PuntosCellViewController *)[nib objectAtIndex:0];
     }
+	
+	cell.selectionStyle = UITableViewCellSelectionStyleGray;
     
-    cell.selectionStyle = UITableViewCellSelectionStyleGray;
     
-    cell.textLabel.text = [[[[[_listData objectAtIndex:indexPath.section]allObjects]objectAtIndex:indexPath.row] allObjects] objectAtIndex:0];
-    cell.detailTextLabel.text = [[[[[_listData objectAtIndex:indexPath.section]allObjects]objectAtIndex:indexPath.row] allObjects] objectAtIndex:1];
-    
+    [[cell nameItem] setText:[[[[[_listData objectAtIndex:indexPath.section]allObjects]objectAtIndex:indexPath.row] allObjects] objectAtIndex:0]];
+    [[cell descItem] setText:[[[[[_listData objectAtIndex:indexPath.section]allObjects]objectAtIndex:indexPath.row] allObjects] objectAtIndex:1]];
+    [[cell imgItem] setImage:[UIImage imageNamed:[[[[[_listData objectAtIndex:indexPath.section]allObjects]objectAtIndex:indexPath.row] allObjects] objectAtIndex:2]]];	
     return cell;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -123,6 +120,11 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [_listData count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 51;
 }
 
 @end

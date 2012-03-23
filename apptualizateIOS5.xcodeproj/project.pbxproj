@@ -31,6 +31,19 @@
 		4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */; };
 		4A80962B151CAFC30080AB3F /* banner-inicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809629151CAFB20080AB3F /* banner-inicial.png */; };
 		4A80962C151CAFC30080AB3F /* punto.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80962A151CAFB70080AB3F /* punto.png */; };
+		4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */; };
+		4A809635151CC8B00080AB3F /* PuntosCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A809633151CC8AF0080AB3F /* PuntosCellViewController.xib */; };
+		4A809641151CD1AB0080AB3F /* banner-inicial-rotar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */; };
+		4A809642151CD1AB0080AB3F /* boton-con-puntos-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */; };
+		4A809643151CD1AB0080AB3F /* Foursquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809638151CD1430080AB3F /* Foursquare.png */; };
+		4A809644151CD1AB0080AB3F /* icono-macstore-retina-displ.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809639151CD14F0080AB3F /* icono-macstore-retina-displ.png */; };
+		4A809645151CD1AB0080AB3F /* placa1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80963A151CD15C0080AB3F /* placa1.png */; };
+		4A809646151CD1AB0080AB3F /* placa2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80963B151CD1650080AB3F /* placa2.png */; };
+		4A809647151CD1AB0080AB3F /* placa3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80963C151CD1710080AB3F /* placa3.png */; };
+		4A809648151CD1AB0080AB3F /* placa4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80963D151CD17E0080AB3F /* placa4.png */; };
+		4A809649151CD1AB0080AB3F /* placa5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80963E151CD18C0080AB3F /* placa5.png */; };
+		4A80964A151CD1AB0080AB3F /* placa6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80963F151CD1940080AB3F /* placa6.png */; };
+		4A80964B151CD1AB0080AB3F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809640151CD1A30080AB3F /* settings.png */; };
 		4AC5EA18151BB9A700BA9253 /* blanco-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA14151BB9A600BA9253 /* blanco-on.png */; };
 		4AC5EA19151BB9A700BA9253 /* blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA15151BB9A700BA9253 /* blanco.png */; };
 		4AC5EA1A151BB9A700BA9253 /* negro-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA16151BB9A700BA9253 /* negro-on.png */; };
@@ -180,6 +193,20 @@
 		4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewControlleriPad.xib; sourceTree = "<group>"; };
 		4A809629151CAFB20080AB3F /* banner-inicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial.png"; sourceTree = "<group>"; };
 		4A80962A151CAFB70080AB3F /* punto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto.png; sourceTree = "<group>"; };
+		4A809631151CC8AE0080AB3F /* PuntosCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuntosCellViewController.h; sourceTree = "<group>"; };
+		4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuntosCellViewController.m; sourceTree = "<group>"; };
+		4A809633151CC8AF0080AB3F /* PuntosCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuntosCellViewController.xib; sourceTree = "<group>"; };
+		4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial-rotar.png"; sourceTree = "<group>"; };
+		4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-con-puntos-negro.png"; sourceTree = "<group>"; };
+		4A809638151CD1430080AB3F /* Foursquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Foursquare.png; sourceTree = "<group>"; };
+		4A809639151CD14F0080AB3F /* icono-macstore-retina-displ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-macstore-retina-displ.png"; sourceTree = "<group>"; };
+		4A80963A151CD15C0080AB3F /* placa1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placa1.png; sourceTree = "<group>"; };
+		4A80963B151CD1650080AB3F /* placa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placa2.png; sourceTree = "<group>"; };
+		4A80963C151CD1710080AB3F /* placa3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placa3.png; sourceTree = "<group>"; };
+		4A80963D151CD17E0080AB3F /* placa4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placa4.png; sourceTree = "<group>"; };
+		4A80963E151CD18C0080AB3F /* placa5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placa5.png; sourceTree = "<group>"; };
+		4A80963F151CD1940080AB3F /* placa6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placa6.png; sourceTree = "<group>"; };
+		4A809640151CD1A30080AB3F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		4AC5EA14151BB9A600BA9253 /* blanco-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blanco-on.png"; sourceTree = "<group>"; };
 		4AC5EA15151BB9A700BA9253 /* blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blanco.png; sourceTree = "<group>"; };
 		4AC5EA16151BB9A700BA9253 /* negro-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "negro-on.png"; sourceTree = "<group>"; };
@@ -533,6 +560,9 @@
 				4AF6A721151AE9360026DB46 /* ProductsCellViewController.xib */,
 				4AF71138151C0B6E003F1136 /* UserService.h */,
 				4AF71139151C0B6E003F1136 /* UserService.m */,
+				4A809631151CC8AE0080AB3F /* PuntosCellViewController.h */,
+				4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */,
+				4A809633151CC8AF0080AB3F /* PuntosCellViewController.xib */,
 			);
 			name = Controlls;
 			sourceTree = "<group>";
@@ -700,6 +730,17 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */,
+				4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */,
+				4A809638151CD1430080AB3F /* Foursquare.png */,
+				4A809639151CD14F0080AB3F /* icono-macstore-retina-displ.png */,
+				4A80963A151CD15C0080AB3F /* placa1.png */,
+				4A80963B151CD1650080AB3F /* placa2.png */,
+				4A80963C151CD1710080AB3F /* placa3.png */,
+				4A80963D151CD17E0080AB3F /* placa4.png */,
+				4A80963E151CD18C0080AB3F /* placa5.png */,
+				4A80963F151CD1940080AB3F /* placa6.png */,
+				4A809640151CD1A30080AB3F /* settings.png */,
 				4A809629151CAFB20080AB3F /* banner-inicial.png */,
 				4A80962A151CAFB70080AB3F /* punto.png */,
 				D3B0C55F151C47C00075C8A1 /* para-grabado.png */,
@@ -978,6 +1019,18 @@
 				D3B0C560151C47C00075C8A1 /* para-grabado.png in Resources */,
 				4A80962B151CAFC30080AB3F /* banner-inicial.png in Resources */,
 				4A80962C151CAFC30080AB3F /* punto.png in Resources */,
+				4A809635151CC8B00080AB3F /* PuntosCellViewController.xib in Resources */,
+				4A809641151CD1AB0080AB3F /* banner-inicial-rotar.png in Resources */,
+				4A809642151CD1AB0080AB3F /* boton-con-puntos-negro.png in Resources */,
+				4A809643151CD1AB0080AB3F /* Foursquare.png in Resources */,
+				4A809644151CD1AB0080AB3F /* icono-macstore-retina-displ.png in Resources */,
+				4A809645151CD1AB0080AB3F /* placa1.png in Resources */,
+				4A809646151CD1AB0080AB3F /* placa2.png in Resources */,
+				4A809647151CD1AB0080AB3F /* placa3.png in Resources */,
+				4A809648151CD1AB0080AB3F /* placa4.png in Resources */,
+				4A809649151CD1AB0080AB3F /* placa5.png in Resources */,
+				4A80964A151CD1AB0080AB3F /* placa6.png in Resources */,
+				4A80964B151CD1AB0080AB3F /* settings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1037,6 +1090,7 @@
 				4AC5EA36151BC8F200BA9253 /* RegisterViewController.m in Sources */,
 				4AF7113A151C0B6E003F1136 /* UserService.m in Sources */,
 				D3B0C55A151C45E30075C8A1 /* PrintDeviceViewController.m in Sources */,
+				4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

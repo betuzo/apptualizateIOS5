@@ -196,7 +196,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<bool key="IBUIOn">YES</bool>
 					</object>
-					<object class="IBUIButton" id="886569207">
+					<object class="IBUIButton" id="103489130">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{12, 12}, {33, 33}}</string>
@@ -235,7 +235,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 				<string key="NSFrame">{{0, 64}, {320, 367}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="886569207"/>
+				<reference key="NSNextKeyView" ref="103489130"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -318,7 +318,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 							<reference ref="179251405"/>
 							<reference ref="675155309"/>
 							<reference ref="820574471"/>
-							<reference ref="886569207"/>
+							<reference ref="103489130"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -355,7 +355,7 @@ AAgACAAIAAEAAQABAAE</bytes>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="886569207"/>
+						<reference key="object" ref="103489130"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>

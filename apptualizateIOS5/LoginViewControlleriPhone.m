@@ -12,6 +12,10 @@
 
 @implementation LoginViewControlleriPhone
 
+@synthesize emailUser = _emailUser;
+
+@synthesize passUser = _passUser;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,8 +35,19 @@
 
 -(IBAction)presentHomeView:(id)sender
 {
-    HomeViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-    [self presentModalViewController:homeViewController animated:YES];
+    if (![[_passUser text] isEqual:@""]
+        && ![[_emailUser text] isEqual:@""])
+    {
+        [UserService setInfoUser:[[NSArray alloc] initWithObjects:@"Alejandro", @"Santillan",[_emailUser text], @"YES", nil]]; 
+        HomeViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        [self presentModalViewController:homeViewController animated:YES];
+    }
+    else
+    {
+        NSString *message = @"Introduzca su email y contraseña, por favor";
+        UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Iniciar Sesion" message:message delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+        [usageAlertView show];   
+    }
 }
 
 -(IBAction)presentRegisterView:(id)sender
