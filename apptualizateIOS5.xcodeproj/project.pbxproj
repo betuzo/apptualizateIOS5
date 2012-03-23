@@ -121,6 +121,7 @@
 		C08D3168151BD9BF00A0449C /* macBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C08D3167151BD9BF00A0449C /* macBig.png */; };
 		C08D316B151BD9DC00A0449C /* iPodnanoBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C08D316A151BD9DC00A0449C /* iPodnanoBig.png */; };
 		C08D3172151BF14900A0449C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D3171151BF14900A0449C /* MapKit.framework */; };
+		C0D79B68151CD5BD00DBC740 /* MacStorePinAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D79B67151CD5BD00DBC740 /* MacStorePinAnotation.m */; };
 		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
 		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
 		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
@@ -301,6 +302,8 @@
 		C08D3167151BD9BF00A0449C /* macBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macBig.png; sourceTree = "<group>"; };
 		C08D316A151BD9DC00A0449C /* iPodnanoBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodnanoBig.png; sourceTree = "<group>"; };
 		C08D3171151BF14900A0449C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C0D79B66151CD5BD00DBC740 /* MacStorePinAnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacStorePinAnotation.h; sourceTree = "<group>"; };
+		C0D79B67151CD5BD00DBC740 /* MacStorePinAnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacStorePinAnotation.m; sourceTree = "<group>"; };
 		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
 		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
 		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
@@ -723,6 +726,8 @@
 				C06095CA151AADF2001517EB /* StoresViewController.m */,
 				4AF6A71A151AE2BF0026DB46 /* StoresParentViewController.h */,
 				4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */,
+				C0D79B66151CD5BD00DBC740 /* MacStorePinAnotation.h */,
+				C0D79B67151CD5BD00DBC740 /* MacStorePinAnotation.m */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -1091,6 +1096,7 @@
 				4AF7113A151C0B6E003F1136 /* UserService.m in Sources */,
 				D3B0C55A151C45E30075C8A1 /* PrintDeviceViewController.m in Sources */,
 				4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */,
+				C0D79B68151CD5BD00DBC740 /* MacStorePinAnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
