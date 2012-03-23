@@ -40,10 +40,8 @@
 }
 
 - (void)drawRect:(CGRect)rect
-{
-    NSLog(@"drawRect");
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
+{    
+    /*CGContextRef context = UIGraphicsGetCurrentContext();
     
     int y = 0;
     int x = 0;
@@ -59,7 +57,7 @@
 	CGColorSpaceRelease(gray);
 	    
 	CGContextSetStrokeColorWithColor(context, color);
-	CGContextStrokePath(context);
+	CGContextStrokePath(context);*/
     
 }
 

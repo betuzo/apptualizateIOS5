@@ -59,18 +59,14 @@
     
     
     _listData = [[NSArray alloc] initWithObjects:
-                    [[NSArray alloc] initWithObjects:@"MIN", @"PTS", @"FTS", @"RBT", @"BLQ", @"AST", @"RBS", nil],
-                    [[NSArray alloc] initWithObjects:@"Si", @"No", @"Si", @"No", @"Si", @"Si", @"Si", nil],
-                    [[NSArray alloc] initWithObjects:@"Si", @"No", @"Si", @"No", @"No", @"No", @"No", nil],
                     [[NSArray alloc] initWithObjects:
-                      [[NSArray alloc] initWithObjects:@"TITULAR", @"CANCHA", @"LESION", @"FALTAS", @"EXPULSADO", nil], 
-                      [[NSArray alloc] initWithObjects:@"NORMAL", @"DE TRES", @"LINEA", nil],
-                      [[NSArray alloc] initWithObjects:@"NORMAL", @"TECNICA", @"GRAVE", nil],
-                      [[NSArray alloc] initWithObjects:@"DEFENSIVO", @"OFENSIVO", nil], 
-                      [[NSArray alloc] initWithObjects:@"NORMAL", nil], 
-                      [[NSArray alloc] initWithObjects:@"NORMAL", nil], 
-                      [[NSArray alloc] initWithObjects:@"NORMAL", nil], 
-                      nil],
+                        [[NSArray alloc] initWithObjects:@"Puntos", @"Mac Puntos logrados: ", nil],
+                        nil],
+                    [[NSArray alloc] initWithObjects:
+                        [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", nil],
+                        [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
+                        [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", nil],
+                        nil],
                     nil];
 }
 
