@@ -58,6 +58,15 @@
     NSLog(@"presentRegisterView");
     RegisterViewController *registerViewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
     
+    [[registerViewController addresUser]  setHidden:YES];
+    [[registerViewController imgLoyalty]setHidden:NO];
+    [[registerViewController loyaltyUser]setOn:YES];
+    [[registerViewController firstNameUser]setText:@""];
+    [[registerViewController lastNameUser]setText:@""];    
+    [[registerViewController emailUser]setText:@""];
+    [registerViewController setType:@"NEW"];
+
+    
     [self presentModalViewController:registerViewController animated:NO];
     //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
 }

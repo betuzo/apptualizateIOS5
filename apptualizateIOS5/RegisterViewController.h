@@ -10,7 +10,7 @@
 #import "UserService.h"
 #import "HomeViewController.h"
 
-@interface RegisterViewController : UIViewController<UITextFieldDelegate>
+@interface RegisterViewController : UIViewController<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong)IBOutlet UITextField *firstNameUser;
 
@@ -19,6 +19,14 @@
 @property(nonatomic, strong)IBOutlet UITextField *emailUser;
 
 @property(nonatomic, strong)IBOutlet UISwitch *loyaltyUser;
+
+@property(nonatomic, strong)IBOutlet UIView *addresUser;
+
+@property(nonatomic, strong)IBOutlet UIImageView *imgLoyalty;
+
+@property(nonatomic, strong) NSString *type;
+
+@property (nonatomic, strong) NSArray *detailsUser;
 
 -(IBAction)registerUser:(id)sender;
 

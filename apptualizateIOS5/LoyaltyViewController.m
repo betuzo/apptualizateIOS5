@@ -69,13 +69,51 @@
                           nil],
                          [[NSArray alloc] initWithObjects:
                           [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", @"placa1", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa2", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa6", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Desc Acc iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa2", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Desc Acc iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa6", nil],
                           [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", @"placa5", nil],
                           nil],
                          nil];
         }
+        
+        CGRect rectButton;
+        
+        rectButton.size.width = 50;
+        rectButton.size.height = 40;
+        
+        rectButton.origin.x = 0;
+        rectButton.origin.y = 0;
+        
+        UIButton *rightButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        [rightButtonItem addTarget:self action:@selector(goCheckInView:) forControlEvents:UIControlEventTouchUpInside];
+        [rightButtonItem setFrame:rectButton];
+        [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"Foursquare"] forState:UIControlStateNormal];
+        
+        UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButtonItem];
+        
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem;
     };
+}
+
+-(IBAction)goToSettings:(id)sender
+{
+    NSLog(@"presentRegisterView");
+    RegisterViewController *registerViewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
+    
+    [registerViewController setType:@"UPDATE"];
+    
+    [self presentModalViewController:registerViewController animated:NO];
+}
+
+- (void) goCheckInView:(id) sender
+{
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Bienvenido Fan"
+                                                       delegate:self
+                                              cancelButtonTitle:nil
+                                         destructiveButtonTitle:nil
+                                              otherButtonTitles:@"Ya llegue!", @"Ya llegue & FourSquare", nil];
+    [sheet showInView:self.view];
 }
 
 - (void)viewDidUnload
