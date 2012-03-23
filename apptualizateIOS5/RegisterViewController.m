@@ -58,7 +58,11 @@
 
 -(IBAction)registerUser:(id)sender
 {
-    [UserService setInfoUser:[[NSArray alloc] initWithObjects:[_firstNameUser text],[_lastNameUser text],[_emailUser text],[_loyaltyUser isOn], nil]]; 
+    NSString *loyalty = @"NO";
+    if ([_loyaltyUser isOn]) {
+        loyalty = @"YES";
+    }
+    [UserService setInfoUser:[[NSArray alloc] initWithObjects:[_firstNameUser text],[_lastNameUser text],[_emailUser text], loyalty, nil]]; 
     [self dismissModalViewControllerAnimated:YES];
 }
 
