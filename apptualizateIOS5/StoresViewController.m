@@ -123,5 +123,21 @@
     [_storesMapView setRegion:region animated:YES];
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    static NSString *AnnotationViewID = @"annotationViewID";
+	
+    MKAnnotationView *annotationView = (MKAnnotationView *)[_storesMapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
+	
+    if (annotationView == nil)
+    {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
+    }
+	
+    annotationView.image = [UIImage imageNamed:@"location.png"];
+    annotationView.annotation = annotation;
+	
+    return annotationView;
+}
 
 @end

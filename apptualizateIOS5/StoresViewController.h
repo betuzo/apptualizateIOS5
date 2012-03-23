@@ -11,7 +11,7 @@
 #import "MacStorePinAnotation.h"
 
 
-@interface StoresViewController : UIViewController <MKMapViewDelegate>
+@interface StoresViewController : UIViewController <MKMapViewDelegate , MKAnnotation>
 {
 	IBOutlet MKMapView *storesMapView;
 }
