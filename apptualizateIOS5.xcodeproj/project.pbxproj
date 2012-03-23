@@ -58,6 +58,10 @@
 		4AC5EA5D151BF10200BA9253 /* iphone-blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA59151BF10200BA9253 /* iphone-blanco.png */; };
 		4AC5EA5E151BF10200BA9253 /* iphone-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA5A151BF10200BA9253 /* iphone-negro.png */; };
 		4AC5EA5F151BF10200BA9253 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA5B151BF10200BA9253 /* twitter.png */; };
+		4AC5EA65151BF88A00BA9253 /* boton-azul-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA61151BF88800BA9253 /* boton-azul-on.png */; };
+		4AC5EA66151BF88A00BA9253 /* boton-azul.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA62151BF88900BA9253 /* boton-azul.png */; };
+		4AC5EA67151BF88A00BA9253 /* boton-carrito-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA63151BF88900BA9253 /* boton-carrito-on.png */; };
+		4AC5EA68151BF88A00BA9253 /* boton-carrito.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA64151BF88A00BA9253 /* boton-carrito.png */; };
 		4AF6A718151AE1790026DB46 /* ProductsParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */; };
 		4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */; };
 		4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */; };
@@ -214,6 +218,10 @@
 		4AC5EA59151BF10200BA9253 /* iphone-blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-blanco.png"; sourceTree = "<group>"; };
 		4AC5EA5A151BF10200BA9253 /* iphone-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-negro.png"; sourceTree = "<group>"; };
 		4AC5EA5B151BF10200BA9253 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		4AC5EA61151BF88800BA9253 /* boton-azul-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-azul-on.png"; sourceTree = "<group>"; };
+		4AC5EA62151BF88900BA9253 /* boton-azul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-azul.png"; sourceTree = "<group>"; };
+		4AC5EA63151BF88900BA9253 /* boton-carrito-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-carrito-on.png"; sourceTree = "<group>"; };
+		4AC5EA64151BF88A00BA9253 /* boton-carrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boton-carrito.png"; sourceTree = "<group>"; };
 		4AF6A715151AE1790026DB46 /* ProductsParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParentViewController.h; sourceTree = "<group>"; };
 		4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParentViewController.m; sourceTree = "<group>"; };
 		4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsParentViewController.xib; sourceTree = "<group>"; };
@@ -696,6 +704,10 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA61151BF88800BA9253 /* boton-azul-on.png */,
+				4AC5EA62151BF88900BA9253 /* boton-azul.png */,
+				4AC5EA63151BF88900BA9253 /* boton-carrito-on.png */,
+				4AC5EA64151BF88A00BA9253 /* boton-carrito.png */,
 				4AC5EA58151BF10200BA9253 /* facebook.png */,
 				4AC5EA59151BF10200BA9253 /* iphone-blanco.png */,
 				4AC5EA5A151BF10200BA9253 /* iphone-negro.png */,
@@ -968,6 +980,10 @@
 				4AC5EA5D151BF10200BA9253 /* iphone-blanco.png in Resources */,
 				4AC5EA5E151BF10200BA9253 /* iphone-negro.png in Resources */,
 				4AC5EA5F151BF10200BA9253 /* twitter.png in Resources */,
+				4AC5EA65151BF88A00BA9253 /* boton-azul-on.png in Resources */,
+				4AC5EA66151BF88A00BA9253 /* boton-azul.png in Resources */,
+				4AC5EA67151BF88A00BA9253 /* boton-carrito-on.png in Resources */,
+				4AC5EA68151BF88A00BA9253 /* boton-carrito.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

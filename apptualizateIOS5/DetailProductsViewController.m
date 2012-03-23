@@ -43,8 +43,8 @@
     
     CGRect rectButton;
     
-    rectButton.size.width = 48;
-    rectButton.size.height = 30;
+    rectButton.size.width = 50;
+    rectButton.size.height = 40;
     
     rectButton.origin.x = 0;
     rectButton.origin.y = 0;
@@ -55,11 +55,11 @@
 
     [rightButtonItem addTarget:self action:@selector(goShopView:) forControlEvents:UIControlEventTouchUpInside];
     [rightButtonItem setFrame:rectButton];
-    [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-verde"] forState:UIControlStateNormal];
+    [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-carrito"] forState:UIControlStateNormal];
     
     [leftButtonItem addTarget:self action:@selector(goBackView:) forControlEvents:UIControlEventTouchUpInside];
     [leftButtonItem setFrame:rectButton];
-    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-verde"] forState:UIControlStateNormal];
+    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-azul"] forState:UIControlStateNormal];
     
     UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
     
@@ -80,6 +80,10 @@
     [switchView addTarget:self action:@selector(changeColor:) forControlEvents:UIControlEventValueChanged];
         
     [[self view ] addSubview:switchView];
+    
+    if ([_detailsProducts count]>0) {
+        [self updateDetailByIndex:0];
+    }
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -143,6 +147,7 @@
     
     cell.textLabel.text = [[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:0];
     cell.detailTextLabel.text = [[[_detailsProducts objectAtIndex:indexPath.row]allObjects] objectAtIndex:1];
+    [self updateDetailByIndex:indexPath.row];
     
     return cell;
 }
@@ -156,6 +161,12 @@
 {
     [_nameProduct setText:[[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:0]];
     [_descProduct setText:[[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:1]];
+}
+
+- (void)updateDetailByIndex:(NSInteger) index
+{
+    [_nameProduct setText:[[[_detailsProducts objectAtIndex:index]allObjects]objectAtIndex:0]];
+    [_descProduct setText:[[[_detailsProducts objectAtIndex:index]allObjects]objectAtIndex:1]];
 }
 
 @end

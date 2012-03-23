@@ -42,28 +42,28 @@
 	
 	
 	UIViewController *viewController1 = [[FeaturedParentViewController alloc] initWithNibName:@"FeaturedParentViewController" bundle:nil];
-    UITabBarItem *tab1 = [[UITabBarItem alloc] initWithTitle:@""
+    UITabBarItem *tab1 = [[UITabBarItem alloc] initWithTitle:@"Destacados"
                                                        image:[UIImage imageNamed:@"destacados-on"] tag:1];
     [viewController1 setTabBarItem:tab1];  
     
 	UIViewController *viewController2 = [[ProductsParentViewController alloc] initWithNibName:@"ProductsParentViewController" bundle:nil];
-    UITabBarItem *tab2 = [[UITabBarItem alloc] initWithTitle:@""
+    UITabBarItem *tab2 = [[UITabBarItem alloc] initWithTitle:@"Productos"
                                                        image:[UIImage imageNamed:@"productos-on"] tag:2];
     [viewController2 setTabBarItem:tab2];      
     
 	UIViewController *viewController3 = [[StoresParentViewController alloc] initWithNibName:@"StoresParentViewController" bundle:nil];
-    UITabBarItem *tab3 = [[UITabBarItem alloc] initWithTitle:@""
+    UITabBarItem *tab3 = [[UITabBarItem alloc] initWithTitle:@"Tiendas"
                                                        image:[UIImage imageNamed:@"tiendas-on"] tag:3];
     [viewController3 setTabBarItem:tab3];  
     
     UIViewController *viewController4 = [[ShopViewController alloc] initWithNibName:@"ShopViewController" bundle:nil];
-    UITabBarItem *tab4 = [[UITabBarItem alloc] initWithTitle:@""
+    UITabBarItem *tab4 = [[UITabBarItem alloc] initWithTitle:@"Carrito"
                         image:[UIImage imageNamed:@"carrito-on"] tag:4];
     [viewController4 setTabBarItem:tab4];    
 
     
     UIViewController *viewController5 = [[LoyaltyViewController alloc] initWithNibName:@"LoyaltyViewController" bundle:nil];
-    UITabBarItem *tab5 = [[UITabBarItem alloc] initWithTitle:@""
+    UITabBarItem *tab5 = [[UITabBarItem alloc] initWithTitle:@"Fan"
                                                        image:[UIImage imageNamed:@"fan-on"] tag:5];
     [viewController5 setTabBarItem:tab5];    
 
