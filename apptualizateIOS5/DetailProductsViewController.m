@@ -12,6 +12,12 @@
 
 @synthesize detailsProducts = _detailsProducts;
 
+@synthesize nameProduct = _nameProduct;
+
+@synthesize descProduct = _descProduct;
+
+@synthesize imageProduct = _imageProduct;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -83,9 +89,11 @@
     if ([sender selectedSegmentIndex]==1) {
         [sender setImage:[UIImage imageNamed:@"blanco"] forSegmentAtIndex:0];
         [sender setImage:[UIImage imageNamed:@"negro-on"] forSegmentAtIndex:1];
+        [_imageProduct setImage:[UIImage imageNamed:@"iphone-negro"]];
     }else{
         [sender setImage:[UIImage imageNamed:@"blanco-on"] forSegmentAtIndex:0];
         [sender setImage:[UIImage imageNamed:@"negro"] forSegmentAtIndex:1];
+        [_imageProduct setImage:[UIImage imageNamed:@"iphone-blanco"]];
     }
 }
 
@@ -132,7 +140,6 @@
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleGray;
-    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     cell.textLabel.text = [[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:0];
     cell.detailTextLabel.text = [[[_detailsProducts objectAtIndex:indexPath.row]allObjects] objectAtIndex:1];
@@ -143,6 +150,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [_detailsProducts count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_nameProduct setText:[[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:0]];
+    [_descProduct setText:[[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:1]];
 }
 
 @end
