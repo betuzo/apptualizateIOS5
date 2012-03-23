@@ -26,6 +26,8 @@
 
 @synthesize detailsUser = _detailsUser;
 
+@synthesize phoneTextField = _phoneTextField;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -122,15 +124,7 @@
     }
 }
 
--(IBAction)editingEnded:(id)sender
-{
-    [sender resignFirstResponder]; 
-}
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    return NO;
-}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -154,6 +148,100 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [_detailsUser count];
+}
+
+#pragma mark - View lifecycle
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+	if (textField == _emailUser || textField == _phoneTextField) {
+		
+		[self moveToTopFields];
+
+	}
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	if (textField == _firstNameUser ) {
+		
+		[_lastNameUser becomeFirstResponder];
+		
+	}
+	else if (textField == _lastNameUser){
+		
+		[_emailUser becomeFirstResponder];
+	}
+	
+	else if (textField == _emailUser){
+		
+		[_phoneTextField becomeFirstResponder];
+		
+	}
+	
+	else if (textField == _phoneTextField){
+		
+		[_phoneTextField resignFirstResponder];
+		[self moveToTopOriginFields];
+		
+	}
+	
+	return NO;
+}
+
+
+-(IBAction)editingEnded:(id)sender
+{
+    [sender resignFirstResponder]; 
+}
+
+#pragma mark - Touches Handling
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	
+	[_firstNameUser resignFirstResponder];
+	[_lastNameUser resignFirstResponder];
+	[_phoneTextField resignFirstResponder];
+	[_emailUser resignFirstResponder];
+	
+	
+	[self moveToTopOriginFields];
+	
+}
+
+- (void) moveToTopFields
+{
+	[UIView animateWithDuration:1.5
+						  delay:0.05
+						options: UIViewAnimationCurveEaseOut
+					 animations:^{
+						 
+						 [_contentView setFrame:CGRectMake(20,85, _contentView.bounds.size.width, _contentView.bounds.size.height)];
+						 
+						 
+						 
+					 } 
+					 completion:^(BOOL finished){
+						 
+					 }];
+}
+
+- (void) moveToTopOriginFields
+{
+	[UIView animateWithDuration:1.5
+						  delay:0.05
+						options: UIViewAnimationCurveEaseOut
+					 animations:^{
+						 
+						 [_contentView setFrame:CGRectMake(20,150, _contentView.bounds.size.width,_contentView.bounds.size.height)];
+						 
+						 
+						 
+					 } 
+					 completion:^(BOOL finished){
+						 
+					 }];
 }
 
 @end

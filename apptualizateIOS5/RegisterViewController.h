@@ -11,12 +11,18 @@
 #import "HomeViewController.h"
 
 @interface RegisterViewController : UIViewController<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+{
+	IBOutlet UIView *_contentView;
+
+}
 
 @property(nonatomic, strong)IBOutlet UITextField *firstNameUser;
 
 @property(nonatomic, strong)IBOutlet UITextField *lastNameUser;
 
 @property(nonatomic, strong)IBOutlet UITextField *emailUser;
+
+@property(nonatomic, strong)IBOutlet UITextField *phoneTextField; 
 
 @property(nonatomic, strong)IBOutlet UISwitch *loyaltyUser;
 
@@ -31,5 +37,8 @@
 -(IBAction)registerUser:(id)sender;
 
 -(IBAction)editingEnded:(id)sender;
+
+- (void) moveToTopFields;
+- (void) moveToTopOriginFields;
 
 @end
