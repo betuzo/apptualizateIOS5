@@ -29,6 +29,7 @@
 		4A6BD0C5151AB447009D801B /* ProductsViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C3151AB447009D801B /* ProductsViewControlleriPad.xib */; };
 		4A6BD0C9151AB45C009D801B /* FeaturedViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */; };
 		4A6BD0CA151AB45C009D801B /* FeaturedViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */; };
+		4A7B4C76151CD81D0024EA66 /* boton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B4C75151CD81C0024EA66 /* boton.png */; };
 		4A80962B151CAFC30080AB3F /* banner-inicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A809629151CAFB20080AB3F /* banner-inicial.png */; };
 		4A80962C151CAFC30080AB3F /* punto.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A80962A151CAFB70080AB3F /* punto.png */; };
 		4A809634151CC8B00080AB3F /* PuntosCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A809632151CC8AE0080AB3F /* PuntosCellViewController.m */; };
@@ -192,6 +193,7 @@
 		4A6BD0C6151AB45C009D801B /* FeaturedViewControlleriPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturedViewControlleriPad.h; sourceTree = "<group>"; };
 		4A6BD0C7151AB45C009D801B /* FeaturedViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturedViewControlleriPad.m; sourceTree = "<group>"; };
 		4A6BD0C8151AB45C009D801B /* FeaturedViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeaturedViewControlleriPad.xib; sourceTree = "<group>"; };
+		4A7B4C75151CD81C0024EA66 /* boton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boton.png; sourceTree = "<group>"; };
 		4A809629151CAFB20080AB3F /* banner-inicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-inicial.png"; sourceTree = "<group>"; };
 		4A80962A151CAFB70080AB3F /* punto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto.png; sourceTree = "<group>"; };
 		4A809631151CC8AE0080AB3F /* PuntosCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuntosCellViewController.h; sourceTree = "<group>"; };
@@ -735,6 +737,7 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B4C75151CD81C0024EA66 /* boton.png */,
 				4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */,
 				4A809637151CD1370080AB3F /* boton-con-puntos-negro.png */,
 				4A809638151CD1430080AB3F /* Foursquare.png */,
@@ -1036,6 +1039,7 @@
 				4A809649151CD1AB0080AB3F /* placa5.png in Resources */,
 				4A80964A151CD1AB0080AB3F /* placa6.png in Resources */,
 				4A80964B151CD1AB0080AB3F /* settings.png in Resources */,
+				4A7B4C76151CD81D0024EA66 /* boton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

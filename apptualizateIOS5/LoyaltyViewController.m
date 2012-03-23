@@ -49,12 +49,12 @@
             [_statusUser setText:[[UserService infoUser] objectAtIndex:2]];
             _listData = [[NSArray alloc] initWithObjects:
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"MacPuntos es el sitema de premios a nuestros Fan", @"Si compras ganas, si vienes ganas, si nos recomiendas ganas, aquí... !Tu ganas¡", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"MacPuntos.. premios a nuestros Fan", @"Si compras ganas, si vienes ganas, si nos recomiendas ganas, aquí... !Tu ganas¡", @"boton", nil],
                           nil],
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"¡Unete es Gratis!", @"Tus nos premias con tu preferencia y nosotros con Promociones", @"punto", nil],
-                          [[NSArray alloc] initWithObjects:@"¿No te enteraste de la venta nocturna?", @"Con nosotros tu tienes el trato que te mereces", @"punto", nil],
-                          [[NSArray alloc] initWithObjects:@"Con solo venir ya ganaste... !Así de simple¡", @"No tardes mas en unirte a nuesto programa FAN!", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"¡Unete es Gratis!", @"Tus nos premias con tu preferencia y nosotros con Promociones", @"placa1", nil],
+                          [[NSArray alloc] initWithObjects:@"¿No sabes de la venta nocturna?", @"Con nosotros tu tienes el trato que te mereces", @"placa3", nil],
+                          [[NSArray alloc] initWithObjects:@"¡Con solo venir ya ganaste!", @"No tardes mas en unirte a nuesto programa FAN!", @"placa5", nil],
                           nil],
                          nil];
         }
@@ -65,13 +65,13 @@
             [_statusUser setText:[[UserService infoUser] objectAtIndex:2]];
             _listData = [[NSArray alloc] initWithObjects:
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
                           nil],
                          [[NSArray alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", @"punto", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"punto", nil],
-                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"punto", nil],
-                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", @"punto", nil],
+                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", @"placa1", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa2", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa6", nil],
+                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", @"placa5", nil],
                           nil],
                          nil];
         }
@@ -124,7 +124,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 51;
+    return 50;
 }
 
 @end
