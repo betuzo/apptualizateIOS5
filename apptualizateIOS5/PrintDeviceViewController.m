@@ -50,4 +50,7 @@
     NSString *title=[sender text];
     labelPrintDevice.text=title;
 }
+-(IBAction)textFieldDoneEditing:(id)sender{
+    [sender resignFirstResponder];
+}
 @end
