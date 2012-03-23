@@ -10,6 +10,7 @@
 #import "UserService.h"
 #import "PuntosCellViewController.h"
 #import "RegisterViewController.h"
+#import "DetailPointsViewController.h"
 
 @interface LoyaltyViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, UIActionSheetDelegate>
 

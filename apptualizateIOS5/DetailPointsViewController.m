@@ -84,8 +84,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[_nameProduct setText:[[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:0]];
-    //[_descProduct setText:[[[_detailsProducts objectAtIndex:indexPath.row]allObjects]objectAtIndex:1]];
+    [_nameItem setText:[[[_listData objectAtIndex:indexPath.row]allObjects]objectAtIndex:0]];
+    [_descItem setText:[[[_listData objectAtIndex:indexPath.row]allObjects]objectAtIndex:1]];
+    [_imgItem setImage:[UIImage imageNamed:[[[_listData objectAtIndex:indexPath.row] allObjects] objectAtIndex:2]]];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
 }
 
 @end

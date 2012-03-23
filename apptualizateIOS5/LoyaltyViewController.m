@@ -88,7 +88,7 @@
         
         [rightButtonItem addTarget:self action:@selector(goCheckInView:) forControlEvents:UIControlEventTouchUpInside];
         [rightButtonItem setFrame:rectButton];
-        [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"Foursquare"] forState:UIControlStateNormal];
+        [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-checkin"] forState:UIControlStateNormal];
         
         UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButtonItem];
         
@@ -163,6 +163,40 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 50;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    DetailPointsViewController *controllerSecondChild = [[DetailPointsViewController alloc]initWithNibName:@"DetailPointsViewController" bundle:nil];
+    switch ([indexPath section]) {
+        case 0:
+            [controllerSecondChild setListData:[[NSArray alloc] initWithObjects:
+                                                [[NSArray alloc] initWithObjects:@"Funda Incase", @"Funda Incase iPhone", @"boton-con-puntos-verde1", nil],
+                                                [[NSArray alloc] initWithObjects:@"Adaptador iPod", @"Adaptador iPod color blanco", @"boton-con-puntos-rojo1", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mis MacPuntos obtenidos son: ", @"Descubre en que puedes ocupar tus MacPuntos", @"boton-con-puntos-negro", nil],
+                                                nil]
+             ];
+            
+            
+            break;
+        case 1:
+            [controllerSecondChild setListData:[[NSArray alloc] initWithObjects:
+                                                [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", @"placa1", nil],
+                                                [[NSArray alloc] initWithObjects:@"20% Desc Acc iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa2", nil],
+                                                [[NSArray alloc] initWithObjects:@"20% Desc Acc iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", @"placa6", nil],
+                                                [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", @"placa5", nil],
+                                                 nil]
+             ];
+            break;
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:controllerSecondChild animated:YES];
+    
 }
 
 @end
