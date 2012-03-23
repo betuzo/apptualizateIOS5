@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UserService.h"
 
-@interface LoyaltyViewController : UIViewController
+@interface LoyaltyViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @property (strong,nonatomic) NSArray *listData;
 

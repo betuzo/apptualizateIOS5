@@ -54,12 +54,13 @@
 							<string key="NSResourceName">FondoIphone.png</string>
 						</object>
 					</object>
-					<object class="IBUISwitch" id="139959313">
+					<object class="IBUISwitch" id="625879742">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{11, 402}, {94, 27}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="498342708"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -198,7 +199,7 @@
 						<string key="NSFrame">{{20, 167}, {280, 31}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="687209216"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -220,13 +221,13 @@
 						<reference key="IBUIFontDescription" ref="965912829"/>
 						<reference key="IBUIFont" ref="219882194"/>
 					</object>
-					<object class="IBUIButton" id="379209357">
+					<object class="IBUIButton" id="498342708">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{215, 397}, {90, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="552898895"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:225</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -259,19 +260,19 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="552898895">
+					<object class="IBUIImageView" id="687209216">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 211}, {280, 173}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="625879742"/>
 						<string key="NSReuseIdentifierKey">_NS:567</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">logo.png</string>
+							<string key="NSResourceName">banner-inicial.png</string>
 						</object>
 					</object>
 				</array>
@@ -317,6 +318,14 @@
 						<reference key="destination" ref="800062866"/>
 					</object>
 					<int key="connectionID">21</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">loyaltyUser</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="625879742"/>
+					</object>
+					<int key="connectionID">34</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -393,7 +402,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">registerUser:</string>
-						<reference key="source" ref="379209357"/>
+						<reference key="source" ref="498342708"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -418,9 +427,9 @@
 							<reference ref="829056053"/>
 							<reference ref="800062866"/>
 							<reference ref="715563058"/>
-							<reference ref="552898895"/>
-							<reference ref="379209357"/>
-							<reference ref="139959313"/>
+							<reference ref="687209216"/>
+							<reference ref="498342708"/>
+							<reference ref="625879742"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -467,17 +476,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">16</int>
-						<reference key="object" ref="379209357"/>
+						<reference key="object" ref="498342708"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">32</int>
-						<reference key="object" ref="552898895"/>
+						<reference key="object" ref="687209216"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">33</int>
-						<reference key="object" ref="139959313"/>
+						<reference key="object" ref="625879742"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -502,7 +511,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">33</int>
+			<int key="maxID">34</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -564,8 +573,8 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="FondoIphone.png">{320, 480}</string>
+			<string key="banner-inicial.png">{280, 173}</string>
 			<string key="entrar.png">{120, 45}</string>
-			<string key="logo.png">{445, 116}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">933</string>
 	</data>
