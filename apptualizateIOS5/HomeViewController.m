@@ -10,8 +10,8 @@
 #import "FeaturedParentViewController.h"
 #import "ProductsParentViewController.h"
 #import "StoresParentViewController.h"
-#import "LoyaltyViewController.h"
-#import "ShopViewController.h"
+#import "LoyaltyParentViewController.h"
+#import "ShopParentViewController.h"
 
 @implementation HomeViewController
 
@@ -56,13 +56,13 @@
                                                        image:[UIImage imageNamed:@"tiendas-on"] tag:3];
     [viewController3 setTabBarItem:tab3];  
     
-    UIViewController *viewController4 = [[ShopViewController alloc] initWithNibName:@"ShopViewController" bundle:nil];
+    UIViewController *viewController4 = [[ShopParentViewController alloc] initWithNibName:@"ShopParentViewController" bundle:nil];
     UITabBarItem *tab4 = [[UITabBarItem alloc] initWithTitle:@"Carrito"
                         image:[UIImage imageNamed:@"carrito-on"] tag:4];
     [viewController4 setTabBarItem:tab4];    
 
     
-    UIViewController *viewController5 = [[LoyaltyViewController alloc] initWithNibName:@"LoyaltyViewController" bundle:nil];
+    UIViewController *viewController5 = [[LoyaltyParentViewController alloc] initWithNibName:@"LoyaltyParentViewController" bundle:nil];
     UITabBarItem *tab5 = [[UITabBarItem alloc] initWithTitle:@"Fan"
                                                        image:[UIImage imageNamed:@"fan-on"] tag:5];
     [viewController5 setTabBarItem:tab5];    

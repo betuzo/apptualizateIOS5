@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserService.h"
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController<UITextFieldDelegate>
+
+@property(nonatomic, strong)IBOutlet UITextField *firstNameUser;
+
+@property(nonatomic, strong)IBOutlet UITextField *lastNameUser;
+
+@property(nonatomic, strong)IBOutlet UITextField *emailUser;
+
+@property(nonatomic, strong)IBOutlet UISwitch *loyaltyUser;
+
+-(IBAction)registerUser:(id)sender;
+
+-(IBAction)editingEnded:(id)sender;
 
 @end

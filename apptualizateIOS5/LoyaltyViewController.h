@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserService.h"
 
 @interface LoyaltyViewController : UIViewController
+
+@property (strong,nonatomic) NSArray *listData;
+
+@property(nonatomic, strong)IBOutlet UILabel *fullNameUser;
+
+@property(nonatomic, strong)IBOutlet UILabel *statusUser;
+
+@property(nonatomic, strong)IBOutlet UISwitch *loyaltyUser;
 
 @end

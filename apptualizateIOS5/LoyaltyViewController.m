@@ -10,6 +10,14 @@
 
 @implementation LoyaltyViewController
 
+@synthesize listData = _listData;
+
+@synthesize fullNameUser = _fullNameUser;
+
+@synthesize statusUser = _statusUser;
+
+@synthesize loyaltyUser = _loyaltyUser;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,6 +41,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if ([[UserService infoUser] count]>3) {
+        if ([[UserService infoUser] objectAtIndex:3]) 
+        {
+            
+        }
+        else
+        {
+            
+        }
+    };
 }
 
 - (void)viewDidUnload

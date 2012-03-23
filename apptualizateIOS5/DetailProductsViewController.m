@@ -59,7 +59,7 @@
     
     [leftButtonItem addTarget:self action:@selector(goBackView:) forControlEvents:UIControlEventTouchUpInside];
     [leftButtonItem setFrame:rectButton];
-    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-azul"] forState:UIControlStateNormal];
+    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"boton-atras"] forState:UIControlStateNormal];
     
     UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
     
