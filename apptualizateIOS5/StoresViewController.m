@@ -7,6 +7,7 @@
 //
 
 #import "StoresViewController.h"
+#import "StoresDescriptionViewController.h"
 
 
 @implementation StoresViewController
@@ -35,6 +36,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header-iphone"] forBarMetrics:UIBarMetricsDefault];
+	
 	NSMutableArray* annotations=[[NSMutableArray alloc] init];
 	
 	CLLocationCoordinate2D theCoordinate1;
@@ -56,26 +60,26 @@
 	MacStorePinAnotation* myAnnotation1=[[MacStorePinAnotation alloc] init];
 	
 	myAnnotation1.coordinate=theCoordinate1;
-	myAnnotation1.title=@"Rohan";
-	myAnnotation1.subtitle=@"in the city";
+	myAnnotation1.title=@"MacStore Masaryk";
+	myAnnotation1.subtitle=@"Presidente Masaryk 419";
 	
 	MacStorePinAnotation* myAnnotation2=[[MacStorePinAnotation alloc] init];
 	
 	myAnnotation2.coordinate=theCoordinate2;
-	myAnnotation2.title=@"Vaibhav";
-	myAnnotation2.subtitle=@"on a Bridge";
+	myAnnotation2.title=@"MacStore Dakota";
+	myAnnotation2.subtitle=@"Plaza Dakota # 95";
 	
 	MacStorePinAnotation* myAnnotation3=[[MacStorePinAnotation alloc] init];
 	
 	myAnnotation3.coordinate=theCoordinate3;
-	myAnnotation3.title=@"Rituraj";
-	myAnnotation3.subtitle=@"in the forest";
+	myAnnotation3.title=@"MagnoCentro";
+	myAnnotation3.subtitle=@" Boulevard Magnocentro ";
 	
 	MacStorePinAnotation* myAnnotation4=[[MacStorePinAnotation alloc] init];
 	
 	myAnnotation4.coordinate=theCoordinate4;
-	myAnnotation4.title=@"Sahil";
-	myAnnotation4.subtitle=@"at Russian Hill";
+	myAnnotation4.title=@" MacStore Altavista ";
+	myAnnotation4.subtitle=@"Altavista 95, Alvaro Obregon";
 	
 	[_storesMapView addAnnotation:myAnnotation1];
 	[_storesMapView addAnnotation:myAnnotation2];
@@ -134,10 +138,29 @@
         annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
     }
 	
-    annotationView.image = [UIImage imageNamed:@"pin.png"];
-    annotationView.annotation = annotation;
 	
-    return annotationView;
+	if ([annotation isKindOfClass:[MacStorePinAnotation class]]) {
+		annotationView.image = [UIImage imageNamed:@"pin.png"];
+		annotationView.annotation = annotation;
+		annotationView.canShowCallout = YES;
+		UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+		annotationView.rightCalloutAccessoryView = rightButton;
+		
+		
+		return annotationView;
+	}
+	else{
+	    return nil;
+	}
+    
+	
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+	
+	StoresDescriptionViewController *storesDetailViewController = [[StoresDescriptionViewController alloc]initWithNibName:@"StoresDescriptionViewController" bundle:nil];
+	[self.navigationController pushViewController:storesDetailViewController animated:YES];
 }
 
 @end

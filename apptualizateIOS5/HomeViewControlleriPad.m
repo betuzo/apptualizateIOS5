@@ -46,8 +46,20 @@
 	
 	
     UIViewController *viewController1 = [[FeaturedViewControlleriPad alloc] initWithNibName:@"FeaturedViewControlleriPad" bundle:nil];
+	UITabBarItem *tab1 = [[UITabBarItem alloc] initWithTitle:@"Destacados"
+                                                       image:[UIImage imageNamed:@"destacados-on"] tag:1];
+	[viewController1 setTabBarItem:tab1];
+	
 	UIViewController *viewController2 = [[ProductsViewControlleriPad alloc] initWithNibName:@"ProductsViewControlleriPad" bundle:nil];
+	UITabBarItem *tab2 = [[UITabBarItem alloc] initWithTitle:@"Productos"
+                                                       image:[UIImage imageNamed:@"productos-on"] tag:2];
+    [viewController2 setTabBarItem:tab2];  
+	
 	UIViewController *viewController3 = [[StoresViewControlleriPad alloc] initWithNibName:@"StoresViewControlleriPad" bundle:nil];
+	
+	UITabBarItem *tab3 = [[UITabBarItem alloc] initWithTitle:@"Tiendas"
+                                                       image:[UIImage imageNamed:@"tiendas-on"] tag:3];
+    [viewController3 setTabBarItem:tab3]; 
 	
 	_homeTabBarController = [[UITabBarController alloc] init];
 	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];

@@ -126,6 +126,7 @@
 		C0D79B6F151CDDBE00DBC740 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B6E151CDDBE00DBC740 /* pin.png */; };
 		C0D79B73151CDEB300DBC740 /* StoresDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D79B71151CDEB300DBC740 /* StoresDescriptionViewController.m */; };
 		C0D79B74151CDEB300DBC740 /* StoresDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B72151CDEB300DBC740 /* StoresDescriptionViewController.xib */; };
+		C0D79B7E151CECA300DBC740 /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D79B7D151CECA000DBC740 /* phone-icon.png */; };
 		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
 		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
 		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
@@ -313,6 +314,7 @@
 		C0D79B70151CDEB300DBC740 /* StoresDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoresDescriptionViewController.h; sourceTree = "<group>"; };
 		C0D79B71151CDEB300DBC740 /* StoresDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoresDescriptionViewController.m; sourceTree = "<group>"; };
 		C0D79B72151CDEB300DBC740 /* StoresDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoresDescriptionViewController.xib; sourceTree = "<group>"; };
+		C0D79B7D151CECA000DBC740 /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone-icon.png"; sourceTree = "<group>"; };
 		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
 		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
 		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
@@ -747,6 +749,7 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C0D79B7D151CECA000DBC740 /* phone-icon.png */,
 				C0D79B6E151CDDBE00DBC740 /* pin.png */,
 				4A7B4C75151CD81C0024EA66 /* boton.png */,
 				4A809636151CD12B0080AB3F /* banner-inicial-rotar.png */,
@@ -1053,6 +1056,7 @@
 				4A7B4C76151CD81D0024EA66 /* boton.png in Resources */,
 				C0D79B6F151CDDBE00DBC740 /* pin.png in Resources */,
 				C0D79B74151CDEB300DBC740 /* StoresDescriptionViewController.xib in Resources */,
+				C0D79B7E151CECA300DBC740 /* phone-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
