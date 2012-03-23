@@ -69,5 +69,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction)editingEnded:(id)sender
+{
+    [sender resignFirstResponder]; 
+}
 
 @end

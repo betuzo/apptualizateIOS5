@@ -47,27 +47,42 @@
             [_loyaltyUser setOn:NO];
             [_fullNameUser setText:[[UserService infoUser] objectAtIndex:0]];
             [_statusUser setText:[[UserService infoUser] objectAtIndex:2]];
+            _listData = [[NSArray alloc] initWithObjects:
+                         [[NSArray alloc] initWithObjects:
+                          [[NSArray alloc] initWithObjects:@"Puntos", @"Mac Puntos logrados: ", nil],
+                          nil],
+                         [[NSArray alloc] initWithObjects:
+                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
+                          [[NSArray alloc] initWithObjects:@"12 Meses sin Intereses iPod Touch", @"¡Regala el mejor reproductor!", nil],
+                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", nil],
+                          nil],
+                         nil];
         }
         else
         {
             [_loyaltyUser setOn:YES];
             [_fullNameUser setText:[[UserService infoUser] objectAtIndex:0]];
             [_statusUser setText:[[UserService infoUser] objectAtIndex:2]];
+            _listData = [[NSArray alloc] initWithObjects:
+                         [[NSArray alloc] initWithObjects:
+                          [[NSArray alloc] initWithObjects:@"Puntos", @"Mac Puntos logrados: ", nil],
+                          nil],
+                         [[NSArray alloc] initWithObjects:
+                          [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
+                          [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
+                          [[NSArray alloc] initWithObjects:@"12 Meses sin Intereses iPod Touch", @"¡Regala el mejor reproductor!", nil],
+                          [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", nil],
+                          nil],
+                         nil];
         }
     };
     
     
     
-    _listData = [[NSArray alloc] initWithObjects:
-                    [[NSArray alloc] initWithObjects:
-                        [[NSArray alloc] initWithObjects:@"Puntos", @"Mac Puntos logrados: ", nil],
-                        nil],
-                    [[NSArray alloc] initWithObjects:
-                        [[NSArray alloc] initWithObjects:@"Venta Nocturna Nueva iPad", @"Tu puedes ser el elegido... ¡Aprovecha la venta Nocturna!", nil],
-                        [[NSArray alloc] initWithObjects:@"20% Descuento Accesorios p iPhone", @"Tienes el mejor telefono... ¡se merece los mejores accesorios!", nil],
-                        [[NSArray alloc] initWithObjects:@"Mas Promociones", @"¡Descubre mas promociones para nuestros Fans!", nil],
-                        nil],
-                    nil];
+
 }
 
 - (void)viewDidUnload
