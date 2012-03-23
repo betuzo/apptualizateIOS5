@@ -11,4 +11,5 @@
 @interface PrintDeviceViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *labelPrintDevice;
 - (IBAction)textPrintDevice:(UITextField *)sender;
+-(IBAction)textFieldDoneEditing:(id)sender;
 @end

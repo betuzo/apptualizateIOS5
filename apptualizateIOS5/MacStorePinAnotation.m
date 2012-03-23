@@ -10,4 +10,9 @@
 
 @implementation MacStorePinAnotation
 
+@synthesize coordinate = _coordinate;
+@synthesize title = _title;
+@synthesize subtitle = _subtitle;
+
+
 @end

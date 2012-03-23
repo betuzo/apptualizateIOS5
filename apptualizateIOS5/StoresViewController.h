@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "MacStorePinAnotation.h"
+
 
 @interface StoresViewController : UIViewController <MKMapViewDelegate>
 {
