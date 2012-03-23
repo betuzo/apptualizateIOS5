@@ -14,5 +14,6 @@
 }
 
 -(IBAction)presentHomeViewiPad:(id)sender;
+-(IBAction)showRegisterModally:(id)sender;
 
 @end

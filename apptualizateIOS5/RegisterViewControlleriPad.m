@@ -1,17 +1,15 @@
 //
-//  LoginViewControlleriPad.m
+//  RegisterViewControlleriPad.m
 //  apptualizateIOS5
 //
-//  Created by Misael Pérez Chamorro on 3/21/12.
+//  Created by Misael Pérez Chamorro on 3/23/12.
 //  Copyright (c) 2012 Valle del Bit. All rights reserved.
 //
 
-#import "LoginViewControlleriPad.h"
-#import "HomeViewControlleriPad.h"
 #import "RegisterViewControlleriPad.h"
+#import "HomeViewControlleriPad.h"
 
-
-@implementation LoginViewControlleriPad
+@implementation RegisterViewControlleriPad
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,22 +45,15 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight );
+    // Return YES for supported orientations
+	return YES;
 }
 
--(IBAction)presentHomeViewiPad:(id)sender
+- (IBAction)enterToApp:(id)sender
 {
-    NSLog(@"presentHomeView");
-    HomeViewControlleriPad *homeViewControlleriPad = [[HomeViewControlleriPad alloc] initWithNibName:@"HomeViewControlleriPad" bundle:nil];
+	HomeViewControlleriPad *homeViewControlleriPad = [[HomeViewControlleriPad alloc] initWithNibName:@"HomeViewControlleriPad" bundle:nil];
     [self presentModalViewController:homeViewControlleriPad animated:YES];
-    
-}
 
--(IBAction)showRegisterModally:(id)sender
-{
-	RegisterViewControlleriPad *registerView = [[RegisterViewControlleriPad alloc]initWithNibName:@"RegisterViewControlleriPad" bundle:nil];
-	[self presentModalViewController:registerView animated:YES];
 }
-
 
 @end

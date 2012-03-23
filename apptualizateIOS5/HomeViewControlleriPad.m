@@ -62,7 +62,7 @@
     [viewController3 setTabBarItem:tab3]; 
 	
 	_homeTabBarController = [[UITabBarController alloc] init];
-	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2,viewController3,nil];
+	_homeTabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController1,viewController3,nil];
  	[_homeTabBarController.view setFrame:self.view.bounds];
 	
 	[_homeTabBarController.view addSubview:headerView];
@@ -83,5 +83,7 @@
     // Return YES for supported orientations
 	return YES;
 }
+
+
 
 @end
