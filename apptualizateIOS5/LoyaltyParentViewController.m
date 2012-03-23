@@ -9,7 +9,6 @@
 #import "LoyaltyParentViewController.h"
 
 @implementation LoyaltyParentViewController
-@synthesize loyaltyViewController = _loyaltyViewController;
 @synthesize loyaltyNavigationController = _loyaltyNavigationController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,8 +36,11 @@
     
     // Do any additional setup after loading the view from its nib.
     
-    _loyaltyViewController = [[LoyaltyViewController alloc]initWithNibName:@"LoyaltyViewController" bundle:nil];
+    LoyaltyViewController *_loyaltyViewController = [[LoyaltyViewController alloc]initWithNibName:@"LoyaltyViewController" bundle:nil];
+    
 	_loyaltyNavigationController = [[UINavigationController alloc] initWithRootViewController:_loyaltyViewController];
+
+    [_loyaltyNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header-iphone"] forBarMetrics:UIBarMetricsDefault];
 	
 	[_loyaltyNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_loyaltyNavigationController.view];

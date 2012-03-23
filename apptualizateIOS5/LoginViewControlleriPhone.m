@@ -31,16 +31,20 @@
 
 -(IBAction)presentHomeView:(id)sender
 {
-    NSLog(@"presentHomeView");
     HomeViewController *homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     [self presentModalViewController:homeViewController animated:YES];
 }
 
 -(IBAction)presentRegisterView:(id)sender
 {
+    //[UIView beginAnimations:@"View Flip" context:nil];
+    //[UIView setAnimationDuration:1.25];
+    //[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     NSLog(@"presentRegisterView");
     RegisterViewController *registerViewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
-    [self presentModalViewController:registerViewController animated:YES];
+    
+    [self presentModalViewController:registerViewController animated:NO];
+    //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
 }
 
 #pragma mark - View lifecycle
@@ -65,5 +69,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction)editingEnded:(id)sender
+{
+    [sender resignFirstResponder]; 
+}
 
 @end

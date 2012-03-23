@@ -38,11 +38,11 @@
 	FeaturedViewController *controller = [[FeaturedViewController alloc]initWithNibName:@"FeaturedViewController" bundle:nil];
     
     [controller setFeaturedProducts:[[NSArray alloc] initWithObjects:
-                                    [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", @"mini-IpodT", nil],
-                                    [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", @"iPadOK", nil], 
-                                    [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", @"mini-iPodN", nil],
-                                    [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", @"mini-iphone", nil], 
-                                    [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", @"mini-iphone-negro", nil], 
+                                    [[NSArray alloc] initWithObjects:@"iPod touch", @"Tu música en tu dedo", @"iPodTouch", nil],
+                                    [[NSArray alloc] initWithObjects:@"iPad 2", @"Tu mejor aliado", @"ipadOK", nil], 
+                                    [[NSArray alloc] initWithObjects:@"iPod nano", @"Un pequeño gigante", @"iPodNano", nil],
+                                    [[NSArray alloc] initWithObjects:@"iPhone 4", @"Conectate al mundo", @"iphone-negro", nil], 
+                                    [[NSArray alloc] initWithObjects:@"MacBook Pro", @"Tu mejor aliado", @"MacBookPro", nil], 
                                     nil] ];
     
 	_featuredProdcutsNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];

@@ -18,4 +18,6 @@
 
 @property(nonatomic, strong)IBOutlet UIImageView *imageProduct;
 
+- (void)updateDetailByIndex:(NSInteger) index;
+
 @end

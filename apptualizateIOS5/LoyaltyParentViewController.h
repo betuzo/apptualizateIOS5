@@ -11,11 +11,8 @@
 
 @interface LoyaltyParentViewController : UIViewController
 {
-	UINavigationController *loyaltyNavigationController;
-	LoyaltyViewController *loyaltyViewController;
-    
+	UINavigationController *loyaltyNavigationController;    
 }
 
 @property (nonatomic,strong) UINavigationController *loyaltyNavigationController;
-@property (nonatomic,strong) LoyaltyViewController *loyaltyViewController;
 @end
