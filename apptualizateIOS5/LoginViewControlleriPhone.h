@@ -11,7 +11,7 @@
 
 @interface LoginViewControlleriPhone : UIViewController<UITextFieldDelegate>
 {
-	
+	IBOutlet UIView *_contentView;
 }
 
 @property(nonatomic, strong)IBOutlet UITextField *emailUser;
@@ -20,5 +20,8 @@
 
 -(IBAction)presentHomeView:(id)sender;
 -(IBAction)presentRegisterView:(id)sender;
+- (void) moveToTopFields;
+- (void) moveToTopOriginFields;
+
 
 @end

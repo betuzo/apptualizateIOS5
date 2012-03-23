@@ -71,12 +71,50 @@
     //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
 }
 
+- (void) moveToTopFields
+{
+	[UIView animateWithDuration:1.5
+						  delay:0.05
+						options: UIViewAnimationCurveEaseOut
+					 animations:^{
+						 
+						 [_contentView setFrame:CGRectMake(20,85, _contentView.bounds.size.width, _contentView.bounds.size.height)];
+						 
+						 
+						 
+					 } 
+					 completion:^(BOOL finished){
+						 
+					 }];
+}
+
+- (void) moveToTopOriginFields
+{
+	[UIView animateWithDuration:1.5
+						  delay:0.05
+						options: UIViewAnimationCurveEaseOut
+					 animations:^{
+						 
+						 [_contentView setFrame:CGRectMake(20,150, _contentView.bounds.size.width,_contentView.bounds.size.height)];
+						 
+						 
+						 
+					 } 
+					 completion:^(BOOL finished){
+						 
+					 }];
+}
+
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
+	[_emailUser setDelegate:self];
+	[_passUser setDelegate:self];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -93,9 +131,46 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - View lifecycle
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+	[self moveToTopFields];
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	if (textField == _emailUser ) {
+		
+		[_passUser becomeFirstResponder];
+		
+	}
+	else if (textField == _passUser){
+		
+		[_passUser resignFirstResponder];
+		[self moveToTopOriginFields];
+		
+	}
+	
+	return NO;
+}
+
+
 -(IBAction)editingEnded:(id)sender
 {
     [sender resignFirstResponder]; 
+}
+
+#pragma mark - Touches Handling
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	
+	[_emailUser resignFirstResponder];
+	[_passUser resignFirstResponder];
+	[self moveToTopOriginFields];
+	
+		
 }
 
 @end
