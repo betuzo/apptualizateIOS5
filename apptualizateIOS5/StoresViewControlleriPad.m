@@ -9,6 +9,8 @@
 #import "StoresViewControlleriPad.h"
 
 @implementation StoresViewControlleriPad
+@synthesize storesMapView = _storesMapView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +48,22 @@
 {
     // Return YES for supported orientations
 	return YES;
+}
+
+#pragma mark - mapview delegate 
+
+- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+	MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    span.latitudeDelta = 0.05;
+    span.longitudeDelta = 0.05;
+    CLLocationCoordinate2D location;
+    location.latitude = userLocation.coordinate.latitude;
+    location.longitude = userLocation.coordinate.longitude;
+    region.span = span;
+    region.center = location;
+    [_storesMapView setRegion:region animated:YES];
 }
 
 @end

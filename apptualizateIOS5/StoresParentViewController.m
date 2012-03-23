@@ -36,8 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    _storesViewController = [[StoresViewController alloc]initWithNibName:@"StoresViewController" bundle:nil];
-	_storesNavigationController = [[UINavigationController alloc] initWithRootViewController:storesViewController];
+    StoresViewController *controller = [[StoresViewController alloc]initWithNibName:@"StoresViewController" bundle:nil];
+	_storesNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
 	
 	[_storesNavigationController.view setFrame:self.view.bounds];
 	[self.view addSubview:_storesNavigationController.view];
