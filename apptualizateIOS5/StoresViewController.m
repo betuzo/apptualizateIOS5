@@ -134,7 +134,7 @@
         annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
     }
 	
-    annotationView.image = [UIImage imageNamed:@"location.png"];
+    annotationView.image = [UIImage imageNamed:@"pin.png"];
     annotationView.annotation = annotation;
 	
     return annotationView;
