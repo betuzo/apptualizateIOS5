@@ -18,4 +18,5 @@
 
 @property (nonatomic,strong) UINavigationController *storesNavigationController;
 @property (nonatomic,strong) StoresViewController *storesViewController;
+
 @end
