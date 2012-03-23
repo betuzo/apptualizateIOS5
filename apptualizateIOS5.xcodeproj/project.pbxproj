@@ -43,6 +43,21 @@
 		4AC5EA31151BC58500BA9253 /* ShopParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA2F151BC58500BA9253 /* ShopParentViewController.xib */; };
 		4AC5EA36151BC8F200BA9253 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5EA34151BC8F200BA9253 /* RegisterViewController.m */; };
 		4AC5EA37151BC8F200BA9253 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA35151BC8F200BA9253 /* RegisterViewController.xib */; };
+		4AC5EA48151BE01700BA9253 /* carrito-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA3D151BE01700BA9253 /* carrito-on.png */; };
+		4AC5EA49151BE01700BA9253 /* carrito.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA3E151BE01700BA9253 /* carrito.png */; };
+		4AC5EA4A151BE01700BA9253 /* destacados-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA3F151BE01700BA9253 /* destacados-on.png */; };
+		4AC5EA4B151BE01700BA9253 /* destacados.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA40151BE01700BA9253 /* destacados.png */; };
+		4AC5EA4C151BE01700BA9253 /* fan-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA41151BE01700BA9253 /* fan-on.png */; };
+		4AC5EA4D151BE01700BA9253 /* fan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA42151BE01700BA9253 /* fan.png */; };
+		4AC5EA4E151BE01700BA9253 /* ipadOK.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA43151BE01700BA9253 /* ipadOK.png */; };
+		4AC5EA4F151BE01700BA9253 /* productos-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA44151BE01700BA9253 /* productos-on.png */; };
+		4AC5EA50151BE01700BA9253 /* productos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA45151BE01700BA9253 /* productos.png */; };
+		4AC5EA51151BE01700BA9253 /* tiendas-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA46151BE01700BA9253 /* tiendas-on.png */; };
+		4AC5EA52151BE01700BA9253 /* tiendas.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA47151BE01700BA9253 /* tiendas.png */; };
+		4AC5EA5C151BF10200BA9253 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA58151BF10200BA9253 /* facebook.png */; };
+		4AC5EA5D151BF10200BA9253 /* iphone-blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA59151BF10200BA9253 /* iphone-blanco.png */; };
+		4AC5EA5E151BF10200BA9253 /* iphone-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA5A151BF10200BA9253 /* iphone-negro.png */; };
+		4AC5EA5F151BF10200BA9253 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AC5EA5B151BF10200BA9253 /* twitter.png */; };
 		4AF6A718151AE1790026DB46 /* ProductsParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */; };
 		4AF6A719151AE1790026DB46 /* ProductsParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */; };
 		4AF6A71D151AE2C00026DB46 /* StoresParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF6A71B151AE2C00026DB46 /* StoresParentViewController.m */; };
@@ -185,6 +200,21 @@
 		4AC5EA33151BC8F200BA9253 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		4AC5EA34151BC8F200BA9253 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		4AC5EA35151BC8F200BA9253 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		4AC5EA3D151BE01700BA9253 /* carrito-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "carrito-on.png"; sourceTree = "<group>"; };
+		4AC5EA3E151BE01700BA9253 /* carrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrito.png; sourceTree = "<group>"; };
+		4AC5EA3F151BE01700BA9253 /* destacados-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "destacados-on.png"; sourceTree = "<group>"; };
+		4AC5EA40151BE01700BA9253 /* destacados.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destacados.png; sourceTree = "<group>"; };
+		4AC5EA41151BE01700BA9253 /* fan-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fan-on.png"; sourceTree = "<group>"; };
+		4AC5EA42151BE01700BA9253 /* fan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fan.png; sourceTree = "<group>"; };
+		4AC5EA43151BE01700BA9253 /* ipadOK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadOK.png; sourceTree = "<group>"; };
+		4AC5EA44151BE01700BA9253 /* productos-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "productos-on.png"; sourceTree = "<group>"; };
+		4AC5EA45151BE01700BA9253 /* productos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = productos.png; sourceTree = "<group>"; };
+		4AC5EA46151BE01700BA9253 /* tiendas-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiendas-on.png"; sourceTree = "<group>"; };
+		4AC5EA47151BE01700BA9253 /* tiendas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiendas.png; sourceTree = "<group>"; };
+		4AC5EA58151BF10200BA9253 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		4AC5EA59151BF10200BA9253 /* iphone-blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-blanco.png"; sourceTree = "<group>"; };
+		4AC5EA5A151BF10200BA9253 /* iphone-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-negro.png"; sourceTree = "<group>"; };
+		4AC5EA5B151BF10200BA9253 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		4AF6A715151AE1790026DB46 /* ProductsParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParentViewController.h; sourceTree = "<group>"; };
 		4AF6A716151AE1790026DB46 /* ProductsParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParentViewController.m; sourceTree = "<group>"; };
 		4AF6A717151AE1790026DB46 /* ProductsParentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsParentViewController.xib; sourceTree = "<group>"; };
@@ -670,6 +700,21 @@
 		D396D4E8151ABAD00090F2A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AC5EA58151BF10200BA9253 /* facebook.png */,
+				4AC5EA59151BF10200BA9253 /* iphone-blanco.png */,
+				4AC5EA5A151BF10200BA9253 /* iphone-negro.png */,
+				4AC5EA5B151BF10200BA9253 /* twitter.png */,
+				4AC5EA3D151BE01700BA9253 /* carrito-on.png */,
+				4AC5EA3E151BE01700BA9253 /* carrito.png */,
+				4AC5EA3F151BE01700BA9253 /* destacados-on.png */,
+				4AC5EA40151BE01700BA9253 /* destacados.png */,
+				4AC5EA41151BE01700BA9253 /* fan-on.png */,
+				4AC5EA42151BE01700BA9253 /* fan.png */,
+				4AC5EA43151BE01700BA9253 /* ipadOK.png */,
+				4AC5EA44151BE01700BA9253 /* productos-on.png */,
+				4AC5EA45151BE01700BA9253 /* productos.png */,
+				4AC5EA46151BE01700BA9253 /* tiendas-on.png */,
+				4AC5EA47151BE01700BA9253 /* tiendas.png */,
 				4AC5EA14151BB9A600BA9253 /* blanco-on.png */,
 				4AC5EA15151BB9A700BA9253 /* blanco.png */,
 				4AC5EA16151BB9A700BA9253 /* negro-on.png */,
@@ -912,6 +957,21 @@
 				4AC5EA37151BC8F200BA9253 /* RegisterViewController.xib in Resources */,
 				C08D3168151BD9BF00A0449C /* macBig.png in Resources */,
 				C08D316B151BD9DC00A0449C /* iPodnanoBig.png in Resources */,
+				4AC5EA48151BE01700BA9253 /* carrito-on.png in Resources */,
+				4AC5EA49151BE01700BA9253 /* carrito.png in Resources */,
+				4AC5EA4A151BE01700BA9253 /* destacados-on.png in Resources */,
+				4AC5EA4B151BE01700BA9253 /* destacados.png in Resources */,
+				4AC5EA4C151BE01700BA9253 /* fan-on.png in Resources */,
+				4AC5EA4D151BE01700BA9253 /* fan.png in Resources */,
+				4AC5EA4E151BE01700BA9253 /* ipadOK.png in Resources */,
+				4AC5EA4F151BE01700BA9253 /* productos-on.png in Resources */,
+				4AC5EA50151BE01700BA9253 /* productos.png in Resources */,
+				4AC5EA51151BE01700BA9253 /* tiendas-on.png in Resources */,
+				4AC5EA52151BE01700BA9253 /* tiendas.png in Resources */,
+				4AC5EA5C151BF10200BA9253 /* facebook.png in Resources */,
+				4AC5EA5D151BF10200BA9253 /* iphone-blanco.png in Resources */,
+				4AC5EA5E151BF10200BA9253 /* iphone-negro.png in Resources */,
+				4AC5EA5F151BF10200BA9253 /* twitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

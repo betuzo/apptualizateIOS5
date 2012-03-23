@@ -12,4 +12,10 @@
 
 @property (nonatomic, strong) NSArray *detailsProducts;
 
+@property(nonatomic, strong)IBOutlet UILabel *nameProduct;
+
+@property(nonatomic, strong)IBOutlet UILabel *descProduct;
+
+@property(nonatomic, strong)IBOutlet UIImageView *imageProduct;
+
 @end
