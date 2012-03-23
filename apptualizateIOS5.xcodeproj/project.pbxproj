@@ -115,6 +115,7 @@
 		C06467DC151B10210092BF31 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = C06467DB151B10210092BF31 /* header.png */; };
 		C08D3168151BD9BF00A0449C /* macBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C08D3167151BD9BF00A0449C /* macBig.png */; };
 		C08D316B151BD9DC00A0449C /* iPodnanoBig.png in Resources */ = {isa = PBXBuildFile; fileRef = C08D316A151BD9DC00A0449C /* iPodnanoBig.png */; };
+		C08D3172151BF14900A0449C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D3171151BF14900A0449C /* MapKit.framework */; };
 		D396D4ED151ABB000090F2A7 /* FondoIphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EB151ABB000090F2A7 /* FondoIphone.png */; };
 		D396D4EE151ABB000090F2A7 /* macstore.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EC151ABB000090F2A7 /* macstore.png */; };
 		D396D4F0151ABB0F0090F2A7 /* FondoIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */; };
@@ -286,6 +287,7 @@
 		C06467DB151B10210092BF31 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		C08D3167151BD9BF00A0449C /* macBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macBig.png; sourceTree = "<group>"; };
 		C08D316A151BD9DC00A0449C /* iPodnanoBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPodnanoBig.png; sourceTree = "<group>"; };
+		C08D3171151BF14900A0449C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D396D4EB151ABB000090F2A7 /* FondoIphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIphone.png; sourceTree = "<group>"; };
 		D396D4EC151ABB000090F2A7 /* macstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macstore.png; sourceTree = "<group>"; };
 		D396D4EF151ABB0F0090F2A7 /* FondoIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoIpad.png; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08D3172151BF14900A0449C /* MapKit.framework in Frameworks */,
 				C06467DA151B07CF0092BF31 /* QuartzCore.framework in Frameworks */,
 				4A6BD05C151A54AE009D801B /* UIKit.framework in Frameworks */,
 				4A6BD05E151A54AE009D801B /* Foundation.framework in Frameworks */,
@@ -340,6 +343,7 @@
 		4A6BD04C151A54AE009D801B = {
 			isa = PBXGroup;
 			children = (
+				C08D3171151BF14900A0449C /* MapKit.framework */,
 				4A6BD061151A54AE009D801B /* apptualizateIOS5 */,
 				4A6BD082151A54AE009D801B /* apptualizateIOS5Tests */,
 				4A6BD05A151A54AE009D801B /* Frameworks */,
